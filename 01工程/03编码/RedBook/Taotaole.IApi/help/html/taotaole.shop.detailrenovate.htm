@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   detailrenovate (商品详情刷新)</th>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://api.ewaywin.com</div>
+                            <div>domain/ilerrshop?action=detail&shopid=商品ID&sign=签名</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>shopid</td>
+                                    <td>STRING</td>
+                                    <td>false</td>
+                                    <td>一元购商品ID。与productid参数二选一</td>
+                                </tr>
+                                <tr>
+                                    <td>sign</td>
+                                    <td>STRING</td>
+                                    <td>false</td>
+                                    <td>用户签名</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>返回结果</legend>
+                            <div style="float:left">
+                                {<br/>
+                                    "state":"0",<br/>
+                                    "imgroot":"http://tplatform.ewaywin.com/Resources/uploads/",<br/>
+                                    "ismybuy":0,<br/>
+                                    "ismywon":0,<br/>
+                                    "YId": 844,<br/>
+                                    "Productid": 4,<br/>
+                                    "Title": "30元话费卡 可充值支付宝",<br/>
+                                    "Yunjiage": 1.0000,<br/>
+                                    "Zongjiage": 36.0000,<br/>
+                                    "Zongrenshu": 36,<br/>
+                                    "Canyurenshu": 25,<br/>
+                                    "Shengyurenshu": 11,<br/>
+                                    "Qishu": 77,<br/>
+                                    "Maxqishu": 65000,<br/>
+                                    "Time": "2016-09-13 16:56:01.333",<br/>
+                                    "Q_uid": null,<br/>
+                                    "Q_code": null,<br/>
+                                    "Q_counttime": null,<br/>
+                                    "Q_end_time": null,<br/>
+                                    "Q_showtime": 0,<br/>
+                                    "Zhiding": null,<br/>
+                                    "HadConfirm": 0,<br/>
+                                    "Pricerange": "1,3,5,10",<br/>
+                                    "Codetable": "go_shopcode#2",<br/>
+                                    "Orders": 3,<br/>
+                                    "recover": 0,<br/>
+                                    "Q_showstate": "1",<br/>
+                                    "originalid": 4<br/>
+                                }<br/>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

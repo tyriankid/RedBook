@@ -1,0 +1,26 @@
+
+更新人：闭婷婷
+更新时间：2016.09.19
+更新标识：更新
+更新备注：
+
+  1、最新揭晓，最多展示200条记录。
+  /index.lottery.aspx
+  
+  2、查看他人购买记录，最多展示50条记录
+  /index.userindex.aspx
+
+  3、添加协议页面
+  /index.zhifubaoAgreement.aspx，/user.winningconfirm.aspx
+
+--------------------------------
+
+更新人：闭婷婷
+更新时间：2016.09.20
+更新标识：更新
+更新备注：
+
+  1、网吧专题第二版，转盘
+  /WxZhuanti/WangbaV2.aspx，/WxZhuanti/css，/WxZhuanti/css
+  
+--------------------------------

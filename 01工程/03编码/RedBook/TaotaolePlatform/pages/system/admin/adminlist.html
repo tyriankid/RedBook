@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>管理员列表</title>
+		<link rel="stylesheet" type="text/css" href="/Resources/css/system/comm.css"/>
+        <script src="/Resources/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/Resources/js/comm.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="crumbs">
+				<ul id="breadcrumbs" class="breadcrumb"> 
+	                <li><a href="#">主页</a></li>
+	                <li><a href="#">管理员管理</a></li>
+	                <li class="active"><a href="#" title="">管理员列表</a></li>
+	            </ul>
+			</div>
+		    <div class="content">
+		    	<div class="oprationbtn">
+		    		<a class="btn" href="javascript:;" onclick="openNewWin('/pages/system/admin/addadmin.html')">添加管理员</a>
+		    		<div class="search">
+		    			查询关键字
+		    			<input type="text" placeholder="search website..." id="autocomplete" autocomplete="off">
+		    			<select name="">
+		    				<option value="">按添加时间升序</option>
+		    				<option value="">按添加时间倒序</option>
+		    			</select>
+		    			<input type="submit" class="btn btn-primary" value="Search">
+		    		</div>
+		    	</div>
+		    	<table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>用户名</th>
+                            <th>所属角色</th>
+                            <th>最后登录IP</th>
+                            <th>最后登录时间</th>
+                            <th>E-Mail</th>
+                            <th>管理操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>admin</td>
+                            <td>超级管理员</td>
+                            <td>58.19.56.241</td>
+                            <td>2016-07-28 15:35:30</td>
+                            <td>996396700@qq.com</td>
+                            <td class="opration"><span>修改</span><span>删除</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+		    </div>
+		</div>
+        <script>
+            function openNewWin() {
+                alert(1);
+            }
+        </script>
+	</body>
+</html>

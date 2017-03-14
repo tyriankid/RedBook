@@ -1,0 +1,33 @@
+更新人：魏红亮
+更新时间：2016-09-07
+更新标识：维护
+更新备注：go_channel_activitydetail 表新增字段applytime
+alter table go_channel_activitydetail add applytime datetime 
+
+--------------------------------
+更新人：魏红亮
+更新时间：2016-09-07
+更新标识：维护
+更新备注：新增网吧渠道商申请提现功能,修改平台结算流程
+   影响的文件
+   /channel/activityDetailList.aspx
+   /channel/activityList.aspx
+--------------------------------
+更新人：葛壮
+更新时间：2016-09-07
+更新标识：维护
+更新备注：维护订单页面信息，永乐账单页面信息,用户信息排序
+	影响页面：
+	OrderClass/orderList.aspx
+	OrderClass/orderLucky.aspx
+	OrderClass/orderNotOut.aspx
+	OrderClass/orderdetail.aspx
+--------------------------------
+
+更新人：刘冬
+更新时间：2016-09-07
+更新标识：维护
+更新备注：服务商列表，服务商佣金,服务商提现，渠道商列表，渠道商佣金，网吧活动记录，会员兑换记录 以上页面的汇总实时变化
+	影响页面：
+	
+--------------------------------

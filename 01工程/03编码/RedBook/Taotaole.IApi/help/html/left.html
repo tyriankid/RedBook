@@ -1,0 +1,650 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>易惠管理系统 by www.ewaywin.com</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(../images/left.gif);
+}
+-->
+</style>
+<link href="../css/css.css" rel="stylesheet" type="text/css" />
+</head>
+<SCRIPT language=JavaScript>
+function tupian(idt){
+    var nametu="xiaotu"+idt;
+    var tp = document.getElementById(nametu);
+    tp.src="../images/ico05.gif";//图片ico04为白色的正方形
+	
+	for(var i=1;i<100;i++)
+	{
+	  
+	  var nametu2="xiaotu"+i;
+	  if(i!=idt*1)
+	  {
+	    var tp2=document.getElementById('xiaotu'+i);
+		if(tp2!=undefined)
+	    {tp2.src="../images/ico06.gif";}//图片ico06为蓝色的正方形
+	  }
+	}
+}
+
+function list(idstr) {
+	var name1="subtree"+idstr;
+	var name2="img"+idstr;
+	var objectobj=document.all(name1);
+	var imgobj=document.all(name2);
+	
+	
+	//alert(imgobj);
+	
+	if(objectobj.style.display=="none"){
+		for(i=1;i<10;i++){
+			var name3="img"+i;
+			var name="subtree"+i;
+			var o=document.all(name);
+			if(o!=undefined){
+				o.style.display="none";
+				var image=document.all(name3);
+				image.src="../images/ico04.gif";
+			}
+		}
+		objectobj.style.display="";
+		imgobj.src="../images/ico03.gif";
+	}
+	else{
+		objectobj.style.display="none";
+		imgobj.src="../images/ico04.gif";
+	}
+}
+
+function urlToMainFrame(url) {
+    var rid = Math.random();
+    parent.window.document.getElementById("mainFrame").src="html/"+url+"?rid=" + rid;
+}
+</SCRIPT>
+
+<body>
+<table width="198" border="0" cellpadding="0" cellspacing="0" class="left-table01">
+  <tr>
+    <TD>
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		  <tr>
+			<td width="207" height="55" background="../images/nav01.gif">
+				<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+				  <tr>
+					<td width="25%" rowspan="2"><img src="../images/ico02.gif" width="35" height="35" /></td>
+					<td width="75%" height="22" class="">您好，<span class="">Admin</span></td>
+				  </tr>
+                    <tr>
+                        <td colspan="2" style="font-size:12px; color:blue">易惠爽乐购平台APP内部使用接口帮助 V0.1</td>
+                    </tr>
+				</table>
+			</td>
+		  </tr>
+		</table>
+		
+
+
+		<!--  A开始    -->
+		<TABLE width="100%" border="0" cellpadding="0" cellspacing="0" class="left-table03">
+          <tr>
+            <td height="29">
+				<table width="85%" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+						<td width="8%"><img name="img1" id="img1" src="../images/ico04.gif" width="8" height="11" /></td>
+						<td width="92%">
+								<a href="javascript:" target="mainFrame" class="left-font03" onClick="list('1');" >商品相关接口</a></td>
+					</tr>
+				</table>
+			</td>
+          </tr>		  
+        </TABLE>
+		<table id="subtree1" style="DISPLAY: none" width="80%" border="0" align="center" cellpadding="0" 
+				cellspacing="0" class="left-table02">
+				<tr>
+				  <td width="9%" height="20" ><img id="xiaotu1" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%"><a href="javascript:urlToMainFrame('taotaole.shop.listinfo.htm')" target="mainFrame" class="left-font03" onClick="tupian('1');">获取商品列表</a></td>
+				</tr>
+				<tr>
+				  <td width="9%" height="21" ><img id="xiaotu2" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%"><a href="javascript:urlToMainFrame('taotaole.shop.detail.htm')" target="mainFrame" class="left-font03" onClick="tupian('2');">获取商品详情</a></td>
+				</tr>
+            				<tr>
+				  <td width="9%" height="21" ><img id="xiaotu8" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%"><a href="javascript:urlToMainFrame('taotaole.shop.detailrenovate.htm')" target="mainFrame" class="left-font03" onClick="tupian('8');">商品详情刷新</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu3" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.shop.buyrecord.htm')" target="mainFrame" class="left-font03" onClick="tupian('3');">获取商品参与记录</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu4" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.shop.history.htm')" target="mainFrame" class="left-font03" onClick="tupian('4');">获取往期揭晓记录</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu5" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.shop.algorithmwon.htm')" target="mainFrame" class="left-font03" onClick="tupian('5');">获取中奖纪录结果</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu6" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.shop.getshopcategory.htm')" target="mainFrame" class="left-font03" onClick="tupian('6');">获取商品分类列表</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu7" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.shop.shopidbyqishu.htm')" target="mainFrame" class="left-font03" onClick="tupian('7');">获取一元购商品ID</a></td>
+				</tr>
+      </table>
+		<!--  A结束    -->
+
+		 <!--  D开始    -->
+		<TABLE width="100%" border="0" cellpadding="0" cellspacing="0" class="left-table03">
+          <tr>
+            <td height="29">
+				<table width="85%" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+						<td width="8%"><img name="img2" id="img4" src="../images/ico04.gif" width="8" height="11" /></td>
+						<td width="92%">
+								<a href="javascript:" target="mainFrame" class="left-font03" onClick="list('4');" >商品晒单相关接口</a></td>
+					</tr>
+				</table>
+			</td>
+          </tr>		  
+        </TABLE>
+		<table id="subtree4" style="DISPLAY: none" width="80%" border="0" align="center" cellpadding="0" 
+				cellspacing="0" class="left-table02">
+				<tr>
+				  <td width="9%" height="20" ><img id="xiaotu17" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.shareorder.listinfo.htm')" target="mainFrame" class="left-font03" onClick="tupian('17');">获取某商品晒单列表</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu18" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.shareorder.detail.htm')" target="mainFrame" class="left-font03" onClick="tupian('18');">获取晒单详情</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu19" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.shareorder.listreply.htm')" target="mainFrame" class="left-font03" onClick="tupian('19');">获取某晒单评论列表</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu20" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.shareorder.insert.htm')" target="mainFrame" class="left-font03" onClick="tupian('20');">发表商品晒单</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu21" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.shareorder.insertreply.htm')" target="mainFrame" class="left-font03" onClick="tupian('21');">发表商品晒单评论</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu22" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.shareorder.praise.htm')" target="mainFrame" class="left-font03" onClick="tupian('22');">商品晒单点赞</a></td>
+				</tr>
+      </table>
+		<!--  D结束    -->
+
+		<!--  B开始    -->
+		<TABLE width="100%" border="0" cellpadding="0" cellspacing="0" class="left-table03">
+          <tr>
+            <td height="29">
+				<table width="85%" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+						<td width="8%"><img name="img2" id="img2" src="../images/ico04.gif" width="8" height="11" /></td>
+						<td width="92%">
+								<a href="javascript:" target="mainFrame" class="left-font03" onClick="list('2');" >用户相关接口</a></td>
+					</tr>
+				</table>
+			</td>
+          </tr>		  
+        </TABLE>
+		<table id="subtree2" style="DISPLAY: none" width="80%" border="0" align="center" cellpadding="0" 
+				cellspacing="0" class="left-table02">
+				<tr>
+				  <td width="9%" height="20" ><img id="xiaotu32" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.user.login.htm')" target="mainFrame" class="left-font03" onClick="tupian('32');">用户登录</a></td>
+				</tr>
+				<tr>
+				  <td width="9%" height="20" ><img id="xiaotu33" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+					<a href="javascript:urlToMainFrame('taotaole.user.checkname.htm')" target="mainFrame" class="left-font03" onClick="tupian('33');">检查用户名</a></td>
+				</tr>
+				<tr>
+				  <td width="9%" height="20" ><img id="xiaotu34" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.user.register.htm')" target="mainFrame" class="left-font03" onClick="tupian('34');">用户注册
+							</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu35" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.sms.sendvercode.htm')" target="mainFrame" class="left-font03" onClick="tupian('35');">发送短信验证码
+							</a></td>
+				</tr>
+                <tr>
+				    <td width="9%" height="20" ><img id="xiaotu36" src="../images/ico06.gif" width="8" height="12" /></td>
+				    <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.sms.checkvercode.htm')" target="mainFrame" class="left-font03" onClick="tupian('36');">验证短信验证码
+							</a></td>
+				</tr>
+                <tr>
+				    <td width="9%" height="20" ><img id="xiaotu37" src="../images/ico06.gif" width="8" height="12" /></td>
+				    <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.user.updatepwd.htm')" target="mainFrame" class="left-font03" onClick="tupian('37');">设置新密码
+						</a></td>
+				</tr>
+                <tr>
+				    <td width="9%" height="20" ><img id="xiaotu38" src="../images/ico06.gif" width="8" height="12" /></td>
+				    <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.user.showinfobyuid.htm')" target="mainFrame" class="left-font03" onClick="tupian('38');">查看某用户基本信息
+						</a></td>
+				</tr>
+                 <tr>
+				    <td width="9%" height="20" ><img id="xiaotu39" src="../images/ico06.gif" width="8" height="12" /></td>
+				    <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.user.useraddresslist.htm')" target="mainFrame" class="left-font03" onClick="tupian('39');">收货地址列表
+						</a></td>
+				</tr>
+                 <tr>
+				    <td width="9%" height="20" ><img id="xiaotu40" src="../images/ico06.gif" width="8" height="12" /></td>
+				    <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.user.adduseraddress.htm')" target="mainFrame" class="left-font03" onClick="tupian('40');">添加收货地址
+						</a></td>
+				</tr>
+                  <tr>
+				    <td width="9%" height="20" ><img id="xiaotu41" src="../images/ico06.gif" width="8" height="12" /></td>
+				    <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.user.deleteuseraddress.htm')" target="mainFrame" class="left-font03" onClick="tupian('41');">删除收货地址
+						</a></td>
+				</tr>
+                <tr>
+				    <td width="9%" height="20" ><img id="xiaotu42" src="../images/ico06.gif" width="8" height="12" /></td>
+				    <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.user.defauleuseraddress.htm')" target="mainFrame" class="left-font03" onClick="tupian('42');">默认收货地址
+						</a></td>
+				</tr>
+                            <tr>
+				    <td width="9%" height="20" ><img id="xiaotu43" src="../images/ico06.gif" width="8" height="12" /></td>
+				    <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.user.detailedaddress.htm')" target="mainFrame" class="left-font03" onClick="tupian('43');">查看地址详情
+						</a></td>
+				</tr>
+                                        <tr>
+				    <td width="9%" height="20" ><img id="xiaotu45" src="../images/ico06.gif" width="8" height="12" /></td>
+				    <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.user.updateuserinfo.htm')" target="mainFrame" class="left-font03" onClick="tupian('45');">修改用户信息
+						</a></td>
+				</tr>
+                    <tr>
+				    <td width="9%" height="20" ><img id="xiaotu46" src="../images/ico06.gif" width="8" height="12" /></td>
+				    <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.user.countingo.htm')" target="mainFrame" class="left-font03" onClick="tupian('46');">今日统计
+						</a></td>
+				</tr>
+      </table>
+		<!--  B结束    -->
+
+        <!--  C开始    -->
+		<TABLE width="100%" border="0" cellpadding="0" cellspacing="0" class="left-table03">
+          <tr>
+            <td height="29">
+				<table width="85%" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+						<td width="8%"><img name="img2" id="img3" src="../images/ico04.gif" width="8" height="11" /></td>
+						<td width="92%">
+								<a href="javascript:" target="mainFrame" class="left-font03" onClick="list('3');" >订单&用户晒单相关接口</a></td>
+					</tr>
+				</table>
+			</td>
+          </tr>		  
+        </TABLE>
+		<table id="subtree3" style="DISPLAY: none" width="80%" border="0" align="center" cellpadding="0" 
+				cellspacing="0" class="left-table02">
+				<tr>
+				  <td width="9%" height="20" ><img id="xiaotu53" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.order.mylist.htm')" target="mainFrame" class="left-font03" onClick="tupian('53');">我的订单(云购记录)</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu54" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.order.mywinninglist.htm')" target="mainFrame" class="left-font03" onClick="tupian('54');">我的中奖记录</a></td>
+				</tr>
+
+                            <tr>
+				  <td width="9%" height="20" ><img id="xiaotu55" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.order.partakewin.htm')" target="mainFrame" class="left-font03" onClick="tupian('55');">参与记录</a></td>
+				</tr>
+                <tr>
+
+				  <td width="9%" height="20" ><img id="xiaotu57" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.order.myshareorderlist.htm')" target="mainFrame" class="left-font03" onClick="tupian('57');">我的晒单</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu58" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.order.listbyuid.htm')" target="mainFrame" class="left-font03" onClick="tupian('58');">查看某人的订单(云购记录)</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu59" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.order.winninglistbyuid.htm')" target="mainFrame" class="left-font03" onClick="tupian('59');">查看某人的中奖记录</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu60" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.order.shareorderlistbyuid.htm')" target="mainFrame" class="left-font03" onClick="tupian('60');">查看某人的晒单</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu61" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.order.winningremind.htm')" target="mainFrame" class="left-font03" onClick="tupian('61');">中奖提醒</a></td>
+				</tr>
+                 <tr>
+				  <td width="9%" height="20" ><img id="xiaotu62" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.order.productaffirm.htm')" target="mainFrame" class="left-font03" onClick="tupian('62');">商品确认</a></td>
+				</tr>
+                             <tr>
+				  <td width="9%" height="20" ><img id="xiaotu63" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.order.affirminfo.htm')" target="mainFrame" class="left-font03" onClick="tupian('63');">确定提交</a></td>
+				</tr>
+                <!--<tr>
+                    <td colspan="2" style="border-top:1px dotted #036"></td>
+                </tr>-->
+                
+      </table>
+		<!--  C结束    -->
+
+        <!--  E开始    -->
+		<TABLE width="100%" border="0" cellpadding="0" cellspacing="0" class="left-table03">
+          <tr>
+            <td height="29">
+				<table width="85%" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+						<td width="8%"><img name="img2" id="img5" src="../images/ico04.gif" width="8" height="11" /></td>
+						<td width="92%">
+								<a href="javascript:" target="mainFrame" class="left-font03" onClick="list('5');" >支付&购买相关接口</a></td>
+					</tr>
+				</table>
+			</td>
+          </tr>		  
+        </TABLE>
+		<table id="subtree5" style="DISPLAY: none" width="80%" border="0" align="center" cellpadding="0" 
+				cellspacing="0" class="left-table02">
+				<tr>
+				  <td width="9%" height="20" ><img id="xiaotu73" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.buy.listinfo.htm')" target="mainFrame" class="left-font03" onClick="tupian('73');">获取最新已揭晓列表</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu74" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.buy.listwill.htm')" target="mainFrame" class="left-font03" onClick="tupian('74');">获取马上揭晓列表</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu75" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.pay.userpayment.htm')" target="mainFrame" class="left-font03" onClick="tupian('75');">用户付款</a></td>
+				</tr>
+                <tr>
+				  <td width="9%" height="20" ><img id="xiaotu76" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.pay.userpaymentsubmit.htm')" target="mainFrame" class="left-font03" onClick="tupian('76');">立即支付</a></td>
+				</tr>
+                            <tr>
+				  <td width="9%" height="20" ><img id="xiaotu77" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.pay.mycharge.htm')" target="mainFrame" class="left-font03" onClick="tupian('77');">用户充值记录</a></td>
+				</tr>
+                            <tr>
+				  <td width="9%" height="20" ><img id="xiaotu78" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.pay.myconsume.htm')" target="mainFrame" class="left-font03" onClick="tupian('78');">用户消费记录</a></td>
+				</tr>
+                                        <tr>
+				  <td width="9%" height="20" ><img id="xiaotu79" src="../images/ico06.gif" width="8" height="12" /></td>
+				  <td width="91%">
+						<a href="javascript:urlToMainFrame('taotaole.pay.myconsumehuizong.htm')" target="mainFrame" class="left-font03" onClick="tupian('79');">用户充值汇总</a></td>
+				</tr>
+      </table>
+		<!--  E结束    -->
+
+        <!--  团购接口开始    -->
+		<TABLE width="100%" border="0" cellpadding="0" cellspacing="0" class="left-table03">
+			<tr>
+				<td height="29">
+					<table width="85%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td width="8%"><img name="img8" id="img15" src="../images/ico04.gif" width="8" height="11" /></td>
+							<td width="92%">
+								<a href="javascript:" target="mainFrame" class="left-font03" onClick="list('8');" >团购相关接口</a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</TABLE>
+		<table id="subtree8" style="DISPLAY: none" width="80%" border="0" align="center" cellpadding="0" cellspacing="0" class="left-table02">
+			<tr>
+				<td width="9%" height="20" ><img id="xiaotu88" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaole.tuan.tuanlist.htm')" target="mainFrame" class="left-font03" onClick="tupian('88');">团购列表</a></td>
+			</tr>
+
+            <tr>
+				<td width="9%" height="20" ><img id="xiaotu89" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaole.tuan.tuanlistdetail.htm')" target="mainFrame" class="left-font03" onClick="tupian('89');">团购明细</a></td>
+			</tr>
+
+             <tr>
+				<td width="9%" height="20" ><img id="xiaotu44" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaole.pay.userpaymenttuan.htm')" target="mainFrame" class="left-font03" onClick="tupian('44');">用户团购付款校验</a></td>
+			</tr>
+            
+            <tr>
+				<td width="9%" height="20" ><img id="xiaotu87" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaole.pay.userpaymenttuansubmit.htm')" target="mainFrame" class="left-font03" onClick="tupian('87');">立即支付</a></td>
+			</tr>
+
+            <tr>
+				<td width="9%" height="20" ><img id="Img8" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaole.tuan.tuanmylist.htm')" target="mainFrame" class="left-font03" onClick="tupian('86');">我的团购</a></td>
+			</tr>
+            <tr>
+				<td width="9%" height="20" ><img id="Img11" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaole.tuan.tuanwinnerlist.htm')" target="mainFrame" class="left-font03" onClick="tupian('86');">团购中奖列表</a></td>
+			</tr>
+            <tr>
+				<td width="9%" height="20" ><img id="Img12" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaole.tuan.tuankeeplist.htm')" target="mainFrame" class="left-font03" onClick="tupian('86');">我的收藏团购商品列表</a></td>
+			</tr>
+             <tr>
+				<td width="9%" height="20" ><img id="Img13" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaole.tuan.tuankeep.htm')" target="mainFrame" class="left-font03" onClick="tupian('86');">我的收藏团购操作</a></td>
+			</tr>
+		</table>
+		<!--  团购接口结束    -->
+
+        <!--  F开始    -->
+		<TABLE width="100%" border="0" cellpadding="0" cellspacing="0" class="left-table03">
+			<tr>
+				<td height="29">
+					<table width="85%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td width="8%"><img name="img6" id="img6" src="../images/ico04.gif" width="8" height="11" /></td>
+							<td width="92%">
+								<a href="javascript:" target="mainFrame" class="left-font03" onClick="list('6');" >退款相关接口</a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</TABLE>
+		<table id="subtree6" style="DISPLAY: none" width="80%" border="0" align="center" cellpadding="0" cellspacing="0" class="left-table02">
+			<tr>
+				<td width="9%" height="20" ><img id="xiaotu101" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaolerefund.refund.html')" target="mainFrame" class="left-font03" onClick="tupian('101');">退款</a></td>
+			</tr>
+		</table>
+		<!--  F结束    -->
+		<!--  G开始    -->
+		<TABLE width="100%" border="0" cellpadding="0" cellspacing="0" class="left-table03">
+			<tr>
+				<td height="29">
+					<table width="85%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td width="8%"><img name="img2" id="img7" src="../images/ico04.gif" width="8" height="11" /></td>
+							<td width="92%">
+								<a href="javascript:" target="mainFrame" class="left-font03" onClick="list('7');" >红包相关接口</a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</TABLE>
+		<table id="subtree7" style="DISPLAY: none" width="80%" border="0" align="center" cellpadding="0" cellspacing="0" class="left-table02">
+			<tr>
+				<td width="9%" height="20" ></td>
+				<td width="91%">
+					php接口</td>
+			</tr>
+            <tr>
+				<td width="9%" height="20" ><img id="xiaotu86" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaolerepack.num.html')" target="mainFrame" class="left-font03" onClick="tupian('86');">获取用户可用红包数量</a></td>
+			</tr>
+			<tr>
+				<td width="9%" height="20" ><img id="xiaotu85" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaolerepack.list.html')" target="mainFrame" class="left-font03" onClick="tupian('85');">获取用户红包列表)</a></td>
+			</tr>
+			<tr>
+				<td width="9%" height="20" ><img id="xiaotu84" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaolerepack.getlist.html')" target="mainFrame" class="left-font03" onClick="tupian('84');">获取用户消费时红包列表</a></td>
+			</tr>
+            <tr>
+				<td width="9%" height="20" ></td>
+				<td width="91%">
+					&nbsp;</td>
+			</tr>
+            <tr>
+				<td width="9%" height="20" ></td>
+				<td width="91%">
+					.net接口</td>
+			</tr>
+            <tr>
+				<td width="9%" height="20" ><img id="xiaotu83" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaolerepack.netlist.html')" target="mainFrame" class="left-font03" onClick="tupian('83');">获取用户红包列表(.net)</a></td>
+			</tr>
+            <tr>
+				<td width="9%" height="20" ><img id="xiaotu70" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaolerepack.netgetlist.html')" target="mainFrame" class="left-font03" onClick="tupian('70');">获取用户消费时红包列表(.net)</a></td>
+			</tr>
+            <tr>
+				<td width="9%" height="20" ><img id="xiaotu71" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaolerepack.netnum.html')" target="mainFrame" class="left-font03" onClick="tupian('71');">获取用户可用红包个数(.net)</a></td>
+			</tr>
+            <tr>
+				<td width="9%" height="20" ><img id="xiaotu72" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaolerepack.netqualification.html')" target="mainFrame" class="left-font03" onClick="tupian('72');">领取活动资格接口(.net)</a></td>
+			</tr>
+            <tr>
+				<td width="9%" height="20" ><img id="Img10" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaolerepack.netvalqualification.html')" target="mainFrame" class="left-font03" onClick="tupian('72');">判断活动资格接口(.net)</a></td>
+			</tr>
+            <tr>
+				<td width="9%" height="20" ><img id="xiaotu69" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaolerepack.netpullactivity.html')" target="mainFrame" class="left-font03" onClick="tupian('69');">拉新活动发包接口(.net)</a></td>
+			</tr>
+            <tr>
+				<td width="9%" height="20" ><img id="xiaotu68" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaolerepack.netstayactivity.html')" target="mainFrame" class="left-font03" onClick="tupian('68');">留存活动发包(.net)</a></td>
+			</tr>
+		</table>
+		<!--  G结束    -->
+
+     		<!--  H开始    -->
+		<TABLE width="100%" border="0" cellpadding="0" cellspacing="0" class="left-table03">
+			<tr>
+				<td height="29">
+					<table width="85%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td width="8%"><img name="img2" id="img9" src="../images/ico04.gif" width="8" height="11" /></td>
+							<td width="92%">
+								<a href="javascript:" target="mainFrame" class="left-font03" onClick="list('9');" >内容相关接口</a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</TABLE>
+		<table id="subtree9" style="DISPLAY: none" width="80%" border="0" align="center" cellpadding="0" cellspacing="0" class="left-table02">
+			<tr>
+			
+            <tr>
+				<td width="9%" height="20" ><img id="xiaotu67" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaolearticle.list.html')" target="mainFrame" class="left-font03" onClick="tupian('67');">获取文章列表</a></td>
+			</tr>
+			<tr>
+				<td width="9%" height="20" ><img id="xiaotu66" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaolearticledetail.detail.html')" target="mainFrame" class="left-font03" onClick="tupian('66');">获取文章详情</a></td>
+			</tr>
+			<tr>
+				<td width="9%" height="20" ><img id="xiaotu65" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaoleslides.list.html')" target="mainFrame" class="left-font03" onClick="tupian('65');">获取幻灯片</a></td>
+			</tr>
+            <tr>
+				<td width="9%" height="20" ><img id="xiaotu64" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaoleslides.detail.html')" target="mainFrame" class="left-font03" onClick="tupian('64');">幻灯片详情（仅供app使用）</a></td>
+			</tr>
+           
+
+            	<tr>
+				<td width="9%" height="20" ><img id="xiaotu90" src="../images/ico06.gif" width="8" height="12" /></td>
+				<td width="91%">
+					<a href="javascript:urlToMainFrame('taotaolego_channel_activitydetailpass.html')" target="mainFrame" class="left-font03" onClick="tupian('90');">用户参与网吧活动的资格</a></td>
+			</tr>
+          
+
+		</table>
+		<!--  G结束    -->
+
+	  </TD>
+  </tr>
+  
+</table>
+</body>
+</html>

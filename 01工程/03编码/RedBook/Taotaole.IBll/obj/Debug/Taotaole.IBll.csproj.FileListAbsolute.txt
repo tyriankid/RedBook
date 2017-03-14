@@ -1,0 +1,4 @@
+C:\project\RedBook\01工程\03编码\RedBook\Taotaole.IBll\bin\Debug\Taotaole.IBll.dll
+C:\project\RedBook\01工程\03编码\RedBook\Taotaole.IBll\bin\Debug\Taotaole.IBll.pdb
+C:\project\RedBook\01工程\03编码\RedBook\Taotaole.IBll\obj\Debug\Taotaole.IBll.dll
+C:\project\RedBook\01工程\03编码\RedBook\Taotaole.IBll\obj\Debug\Taotaole.IBll.pdb

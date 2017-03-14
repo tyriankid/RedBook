@@ -1,0 +1,22 @@
+
+更新人：闭婷婷
+更新时间：2016.09.13
+更新标识：更新
+更新备注：
+  1、商品详情页增加局部刷新,改变接口
+  /index.item.aspx
+
+  2、首页商品传productID
+  /index.aspx
+
+  3、团购，两个按钮 开团(...)  立即参团
+  /WxTuan/tuan.item.aspx
+  /WxTuan/tuan.join.aspx
+
+  4、最新揭晓，最多展示200条记录。
+  /index.lottery.aspx
+  
+  5、查看他人购买记录，最多展示50条记录
+  /index.userindex.aspx
+
+--------------------------------

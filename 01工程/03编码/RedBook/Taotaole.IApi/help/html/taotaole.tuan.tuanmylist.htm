@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   tuanmylist (我的团购列表)</th>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://api.ewaywin.com</div>
+                            <div>domain/ilerrtuan?action=tuanmylist&sign=&uid=&status=状态(全部、进行中、成功、失败、已开奖)&p=页码</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>action</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>tuanmylist</td>
+                                </tr>
+                                <tr>
+                                    <td>sign</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>签名</td>
+                                </tr>
+                                <tr>
+                                    <td>uid</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>用户ID加密后</td>
+                                </tr>
+                                <tr>
+                                    <td>status</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>团购状态（0为全部、1为进行中、2为成团、3为失败、4为已开奖）</td>
+                                </tr>
+                                <tr>
+                                    <td>p</td>
+                                    <td>STRING</td>
+                                    <td>false</td>
+                                    <td>页码</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                           <legend>返回结果</legend>
+                             <div>
+                                 {
+                                    <br/>
+                                    "state":0,<span style="color:red">//接口放回状态0为成功，其它失败</span><br/>
+                                    "count":7,<span style="color:red">//总行数</span><br/>
+                                    "pageCount":1,<span style="color:red">//每页大小</span><br/>
+                                    "nextPage":0,<span style="color:red">//下一页码</span><br/>
+                                    "imgroot":"http://platform.ewaywin.com/Resources/uploads/",<span style="color:red">//图片头路径</span><br/>
+                                    "data":[<br/>
+                                     <div style="padding-left:60px">{</div>
+                                     <div style="padding-left:80px">"rid": 1,<span style="color:red">//行数</span></div>
+                                     <div style="padding-left:80px">"tId": 8,<span style="color:red">//团商品ID</span></div>
+                                     <div style="padding-left:80px">"productid": 69,<span style="color:red">//商品ID</span></div>
+                                     <div style="padding-left:80px">"title": "源计划：林（易）",<span style="color:red">//团购名称</span></div>
+                                     <div style="padding-left:80px">"per_price": 0.0100,<span style="color:red">//团购单价</span></div>
+                                     <div style="padding-left:80px">"total_num": 2,<span style="color:red">//团人数</span></div>
+                                     <div style="padding-left:80px">"start_time": 2,<span style="color:red">//团开始时间</span></div>
+                                     <div style="padding-left:80px">"end_time": 2,<span style="color:red">//团结束时间</span></div>
+                                     <div style="padding-left:80px">"deadline": null,<span style="color:red">//开团、参团截止时间。未设即为即时开奖</span></div>
+                                     <div style="padding-left:80px">"is_delete": 0,<span style="color:red">//是否删除，1为删除，默认为0</span></div>
+                                     <div style="padding-left:80px">"status": 0,<span style="color:red">//0:未过期  1：已经到过期</span></div>
+                                     <div style="padding-left:80px">"tuanlistId": 29,<span style="color:red">//开团主键id</span></div>
+                                     <div style="padding-left:80px">"addtime": "2016-08-18T17:23:34.08",<span style="color:red">//开团时间</span></div>
+                                     <div style="padding-left:80px">"tzid": 1948,<span style="color:red">//团长id</span></div>
+                                     <div style="padding-left:80px">"involvement_num": 1,<span style="color:red">//当前参团人数</span></div>
+                                     <div style="padding-left:80px">"remain_num": 1,<span style="color:red">//当前剩余人数</span></div>
+                                     <div style="padding-left:80px">"winners_id": null,<span style="color:red">//中奖人ID</span></div>
+                                     <div style="padding-left:80px">"winning_code": null,<span style="color:red">//中奖码</span></div>
+                                     <div style="padding-left:80px">"tuanstate": 0,<span style="color:red">//0:进行中 1:成团  2:失败 3已开奖</span></div>
+                                     <div style="padding-left:80px">"cyid": 1948,<span style="color:red">//成员id</span></div>
+                                     <div style="padding-left:80px">"quantity": 1,<span style="color:red">//购买次数</span></div>
+                                     <div style="padding-left:80px">"goucode": "10000001",<span style="color:red">//购买码</span></div>
+                                     <div style="padding-left:80px">"money": 0.0100,<span style="color:red">//购买金额</span></div>
+                                     <div style="padding-left:80px">"ip": "",<span style="color:red">//用户ip地址信息</span></div>
+                                     <div style="padding-left:80px">"cytime": "2016-08-18T17:23:34.08",<span style="color:red">//参团时间</span></div>
+                                     <div style="padding-left:80px">"tzname": "王腾",<span style="color:red">//团长姓名</span></div>
+                                     <div style="padding-left:80px">"tzimg": "http://wx.qlogo.cn/mmopen/9yJ7sq366WlC9iaWwsuy1NveTod7Wld6D2S7t5aDjpeM0IWQvkKRSvssh4mwuxA8eKWYGwUHgibJrMWAQvLcTL2HDwMBz3HASH/0",<span style="color:red">//团长图标</span></div>
+                                     <div style="padding-left:80px">"cyname": "王腾",<span style="color:red">//成员姓名</span></div>
+                                     <div style="padding-left:80px">"cyimg": "http://wx.qlogo.cn/mmopen/9yJ7sq366WlC9iaWwsuy1NveTod7Wld6D2S7t5aDjpeM0IWQvkKRSvssh4mwuxA8eKWYGwUHgibJrMWAQvLcTL2HDwMBz3HASH/0",<span style="color:red">//成员图标</span></div>
+                                     <div style="padding-left:80px">"picimg": "shopimg/20160722/71873775170621.jpg"<span style="color:red">//商品图片</span></div>
+                                    <div style="padding-left:60px">}</div>
+                                    <div style="padding-left:30px">]</div>
+                                 }<br/>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

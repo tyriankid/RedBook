@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   tuanlist (团购商品列表)</th>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://api.ewaywin.com</div>
+                            <div>domain/ilerrtuan?action=tuanjoinlistdetail&p=页码</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>tlistid</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>团ID，对应go_tuan_listinfo表中的tuanlistId</td>
+                                </tr>
+                                <tr>
+                                    <td>tid</td>
+                                    <td>STRING</td>
+                                    <td>false</td>
+                                    <td>团够商品ID，对应go_tuan表中的tId</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>返回结果</legend>
+                             <div>
+                                 {
+                                    <br/>
+                                    "state":0,<span style="color:red">//接口放回状态0为成功，其它失败</span><br/>
+                                    "title":"源计划：风（亚索）",<span style="color:red">//团购名称</span><br/>
+                                    "imgroot":"http://platform.ewaywin.com/Resources/uploads/",<span style="color:red">//团购商品图片路径头信息</span><br/>
+                                    "timg":"shopimg/20160722/69355333171725.jpg",<span style="color:red">//团购商品图片路径</span><br/>
+                                    "tzid":"1948",<span style="color:red">//团长ID</span><br/>
+                                    "tzname":"王腾",<span style="color:red">//团长名称</span><br/>
+                                    "tzimg":"http://wx.qlogo.cn/mmopen/9yJ7sq366WlC9iaWwsuy1NveTod7Wld6D2S7t5aDjpeM0IWQvkKRSvssh4mwuxA8eKWYGwUHgibJrMWAQvLcTL2HDwMBz3HASH/0",<span style="color:red">//团长小图标路径</span><br/>
+                                    "price":"0.0100",<span style="color:red">//团购金额</span><br/>
+                                    "tnum":"5",<span style="color:red">//团总人数</span><br/>
+                                    "cynum":"2",<span style="color:red">//参与人数</span><br/>
+                                    "synum":"3",<span style="color:red">//剩余人数</span><br/>
+                                    "tuanstate":"0",<span style="color:red">//团状态</span><br/>
+                                    "ismy":"0",<span style="color:red">//本人购买状态(0为本人未参团,大于0表示已参团)</span><br/>
+                                    "data":[<br/>
+                                        <div style="padding-left:60px">{</div>
+                                        <div style="padding-left:80px">"tId": 2,</div>
+                                        <div style="padding-left:80px">"productid": 72,</div>
+                                        <div style="padding-left:80px">"title": "源计划：风（亚索）",</div>
+                                        <div style="padding-left:80px">"per_price": 0.0100,</div>
+                                        <div style="padding-left:80px">"start_time": "2016-08-15T10:48:34",</div>
+                                        <div style="padding-left:80px">"end_time": "2016-08-31T10:48:38",</div>
+                                        <div style="padding-left:80px">"deadline": "2016-08-30T10:48:46",</div>
+                                        <div style="padding-left:80px">"status": 0,</div>
+                                        <div style="padding-left:80px">"thumb": "shopimg/20160722/69355333171725.jpg",</div>
+                                        <div style="padding-left:80px">"tzid": 1948,</div>
+                                        <div style="padding-left:80px">"tuanlistId": 9,</div>
+                                        <div style="padding-left:80px">"total_num": 5,</div>
+                                        <div style="padding-left:80px">"involvement_num": 2,</div>
+                                        <div style="padding-left:80px">"remain_num": 3,</div>
+                                        <div style="padding-left:80px">"uid": 1941,<span style="color:red">//成员ID</span></div>
+                                        <div style="padding-left:80px">"time": "2016-08-16T20:37:03.597",<span style="color:red">//参团时间</span></div>
+                                        <div style="padding-left:80px">"tzname": "王腾",</div>
+                                        <div style="padding-left:80px">"tzip": null,</div>
+                                        <div style="padding-left:80px">"tzimg": "http://wx.qlogo.cn/mmopen/9yJ7sq366WlC9iaWwsuy1NveTod7Wld6D2S7t5aDjpeM0IWQvkKRSvssh4mwuxA8eKWYGwUHgibJrMWAQvLcTL2HDwMBz3HASH/0",</div>
+                                        <div style="padding-left:80px">"tyname": "靳华斌",<span style="color:red">//成员名称</span></div>
+                                        <div style="padding-left:80px">"tyip": null,<span style="color:red">//成员ip</span></div>
+                                        <div style="padding-left:80px">"tyimg": "http://wx.qlogo.cn/mmopen/fZ0UnOv9sITt34AP7prr30lQcnNibCluw5VxiaGLjLXuFWsib89lEZiayM8uAPo0opIPy56ssgSRhBKicttvmApm4r0ibASy635mhs/0"<span style="color:red">//成员图标</span></div>
+                                        <div style="padding-left:60px">},</div>
+                                        <div style="padding-left:60px">{</div>
+                                        <div style="padding-left:80px">"tId": 2,</div>
+                                        <div style="padding-left:80px">"productid": 72,</div>
+                                        <div style="padding-left:80px">"title": "源计划：风（亚索）",</div>
+                                        <div style="padding-left:80px">"per_price": 0.0100,</div>
+                                        <div style="padding-left:80px">"start_time": "2016-08-15T10:48:34",</div>
+                                        <div style="padding-left:80px">"end_time": "2016-08-31T10:48:38",</div>
+                                        <div style="padding-left:80px">"deadline": "2016-08-30T10:48:46",</div>
+                                        <div style="padding-left:80px">"status": 0,</div>
+                                        <div style="padding-left:80px">"thumb": "shopimg/20160722/69355333171725.jpg",</div>
+                                        <div style="padding-left:80px">"tzid": 1948,</div>
+                                        <div style="padding-left:80px">"tuanlistId": 9,</div>
+                                        <div style="padding-left:80px">"total_num": 5,</div>
+                                        <div style="padding-left:80px">"involvement_num": 2,</div>
+                                        <div style="padding-left:80px">"remain_num": 3,</div>
+                                        <div style="padding-left:80px">"uid": 1948,</div>
+                                        <div style="padding-left:80px">"time": "2016-08-16T11:28:40.78",</div>
+                                        <div style="padding-left:80px">"tzname": "王腾",</div>
+                                        <div style="padding-left:80px">"tzip": null,</div>
+                                        <div style="padding-left:80px">"tzimg": "http://wx.qlogo.cn/mmopen/9yJ7sq366WlC9iaWwsuy1NveTod7Wld6D2S7t5aDjpeM0IWQvkKRSvssh4mwuxA8eKWYGwUHgibJrMWAQvLcTL2HDwMBz3HASH/0",</div>
+                                        <div style="padding-left:80px">"tyname": "王腾",</div>
+                                        <div style="padding-left:80px">"tyip": null,</div>
+                                        <div style="padding-left:80px">"tyimg": "http://wx.qlogo.cn/mmopen/9yJ7sq366WlC9iaWwsuy1NveTod7Wld6D2S7t5aDjpeM0IWQvkKRSvssh4mwuxA8eKWYGwUHgibJrMWAQvLcTL2HDwMBz3HASH/0"</div>
+                                      <div style="padding-left:60px">}</div>
+                                    <div style="padding-left:30px">]</div>
+                                 }<br/>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

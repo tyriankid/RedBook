@@ -1,0 +1,11 @@
+﻿
+更新人：葛壮
+更新时间：2016-09-20
+更新标识：更新
+更新备注：添加渠道商在线提款功能
+	影响文件：
+	Resources/js/channel.js
+	后台DLL文件——渠道商未体现CS页面 activityDetailList.aspx
+	接口DLL文件——永乐过度充值接口   taotaoleinterfaceapi.ashx
+	config/SiteSettings.config
+--------------------------------

@@ -1,0 +1,44 @@
+更新人：刘冬
+更新时间：2016.09.12
+更新标识：增加操作日志页面
+更新备注：
+ 增加了 操作日志页面     
+  channel/activityDetailList.aspx
+ 
+  用户列表,商品列表,分类列表,品牌列表,一元购商品,团购商品列表,系统账单页面的权限设置
+
+--------------------------------
+
+更新人：闭婷婷
+更新时间：2016.09.12
+更新标识：更新
+更新备注：
+  1、添加网吧专题页活动已过期状态，针对终止合作的网吧
+  /WxZhuanti/Wangba.aspx
+  2、修复查看他人个人主页无法下拉刷新
+  /index.userindex.aspx
+ 
+
+
+--------------------------------
+更新人：余跃
+更新时间：2016.09.08修改 2016.09.12上传
+更新标识：维护
+更新备注：
+   1、修改后台首冲5元不中包赔、五折大狂欢、0元购、买爆款不中包赔活动适用范围JSON中保存商品信息从productid改为originalid
+   operative/halfoffCarnival.aspx
+   operative/halfoffCarnival.aspx.cs
+   operative/buyHotCake.aspx
+   operative/buyHotCake.aspx.cs
+   operative/firstFiveYuan.aspx
+   operative/firstFiveYuan.aspx.cs
+   operative/zeroBuy.aspx
+   operative/zeroBuy.aspx.cs
+
+   --------------------------------
+更新人：葛壮
+更新时间：2016.09.12
+更新标识：更新
+更新备注：更新订单导出为XLS格式 ，添加永乐充值失败后点击线下充值
+  
+  /yolly/SystemBillList.aspx

@@ -1,0 +1,120 @@
+﻿*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, table, td, th, div,b{margin:0; padding:0; border:0;}
+body,html{height:100%;margin:0;}
+body,td,tr,p,li,select,input,textarea,div, h1, h2, h3, h4, h5, h6, h7{FONT: 16px/1.5 "\5FAE\8F6F\96C5\9ED1", "微软雅黑", "Lucida Grande",  "BitStream Vera Sans", Verdana, Sans-Serif; }
+fieldset, img, button{ border:none; }
+em,i{font-style:normal}
+b{font-weight:100;}
+ul, ol { list-style:none; }
+a{text-decoration: none;}
+#top{
+	width: 100%;
+	height: 60px;
+	background: #FD524E;
+    z-index:900;
+}
+#top .toptxet{
+	font-size: 30px;
+	color: #FFFFFF;
+	line-height: 30px;
+	/*border: 1px solid black;*/
+	width: 100px;
+	margin: 0 auto;
+	padding: 10px 0 0 0;
+}
+#main .content{
+	/*border: 1px solid #4e8f0c;*/
+	margin: 0 auto;
+    margin:10px 8px 10px 8px ;
+    min-height: 380px;
+}
+#today{
+	
+}
+.title{
+	font-size: 20px;
+	width: 180px;
+	color: #fff;
+	text-align: center;
+	background: url(/images/gonggaobg.JPG) repeat-x;
+	font-family: "微软雅黑";
+	padding: 0 20px;
+}
+#today .topcon{
+	padding: 10px 2px;
+	margin: 4px;
+	border: solid #4e8f0c;
+	border-width:3px 0 0 0;
+    overflow: hidden;
+}
+#today .topcon .todayin{
+	 padding: 5px;
+	 width: 49%;
+	 float: left;
+}
+#today .topcon .today1{
+	
+	border: 1px solid #EDEDED;
+		
+	border-radius: 20px;
+   
+}
+#today .topcon .today1 .todaytext{
+	padding: 7px 4px 10px 4px;
+}
+#today .topcon .today1 .todaytext span{
+	color: #9BC200;
+	padding: 0 0 0 3px;
+    font-size:0.8em;
+}
+    #today .topcon .today1 .todaytext .num {
+    font-size:1.3em;
+    color:red;
+    
+    
+    }
+#today .topcon .today1 .todaytext em{
+	float: right;
+	padding: 0 13px 0 0;
+	color: #858585;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+#update{
+	margin: 20px 0 0 0;
+}
+#update .countcon{
+	padding: 10px 2px;
+	margin: 4px;
+	border: solid #4e8f0c;
+	border-width:3px 0 0 0;
+}
+.clearfix{
+	background: #f6f6f6;
+}
+#update .countcon .count1 .wbg{
+	padding: 0 11px;
+    width:100%;
+    line-height:30px;
+}
+#update .countcon .count1 .wbg span{
+	font-family: "微软雅黑";
+	color: #574f42;
+	font-weight: bold;
+	padding: 0 11px 0 0;
+	
+}
+#footer{
+	float: right;
+}
+#footer .date{
+	float: right;
+	padding: 0 20px 0 0;
+}
+#footer .date em{
+	color: darkgrey;
+}

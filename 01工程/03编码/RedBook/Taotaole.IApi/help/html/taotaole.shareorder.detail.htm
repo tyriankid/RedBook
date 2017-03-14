@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   shaidandetails (获取晒单详情)</th>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://api.ewaywin.com</div>
+                           <div>domain/ilerrshareorder?action=shaidandetails&sign=用户签名&shaidanid=晒单ID</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>sign</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>用户ID随机签名，不接收未知的签名</td>
+                                </tr>
+                                <tr>
+                                    <td>shaidanid</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>晒单ID</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>返回结果</legend>
+                            <div>
+                                {<br/>
+                                    state:"0",                      //状态，0验证通过  2未知的签名参数 3商品ID有误 4获取晒单列表失败<br/>
+                                    imgroot:"G_UPLOAD_PATH",        //图片根目录<br/>
+                                    data:$shaidan //晒单记录实体(仅公开部分属性)<br/>
+                                    <div style="padding-left:60px">{</div>
+                                    <div style="padding-left:80px">username:'理想',//晒单人，中奖人</div>
+                                    <div style="padding-left:80px">sd_id:'1',//晒单ID</div>
+                                    <div style="padding-left:80px">sd_title:'surface pro 4',//晒单标题</div>
+                                    <div style="padding-left:80px">sd_ip:'湖北省武汉市,58.19.7.10',//晒单IP</div>
+                                    <div style="padding-left:80px">sd_photolist:'1.gpg;2.jpg',//晒单图片,多图以分号分隔</div>
+                                    <div style="padding-left:80px">sd_time:'00000',//晒单时间</div>
+                                    <div style="padding-left:80px">sd_shopid:'1',//晒单商品ID</div>
+                                    <div style="padding-left:80px">sd_zan:'11',//晒单赞数</div>
+                                    <div style="padding-left:80px">sd_ping:'12',//晒单评论数</div>
+                                    <div style="padding-left:80px">q_uid:'11',//中奖人ID</div>
+                                    <div style="padding-left:80px">title:'50元移动充值话费 酷炫场',//商品标题</div>
+                                    <div style="padding-left:80px">q_code:'10000003',//中奖码</div>
+                                    <div style="padding-left:80px">qishu:'1',//期数</div>
+                                    <div style="padding-left:80px">quantity:'12',//购买次数</div>
+                                    <div style="padding-left:80px">q_end_time:'2016-08-09 20:23:02.647',//开奖时间</div>
+                                    <div style="padding-left:80px">img:'1.jpg',//中奖人头像      ----------头像是完美路径  不需要添加imgroot</div>
+                                    <div style="padding-left:80px">praise:"0"//是否点赞，1已点赞 0未点赞或已取消点赞</div>
+                                    <div style="padding-left:60px">}</div>
+                                }<br/>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

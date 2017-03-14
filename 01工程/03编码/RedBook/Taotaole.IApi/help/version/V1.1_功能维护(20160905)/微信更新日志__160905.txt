@@ -1,0 +1,23 @@
+更新人：闭婷婷
+更新时间：2016.09.05
+更新标识：维护
+更新备注：微信专题、分类点击
+   影响的文件
+   /WxZhuanti
+   /WxTuan
+   /user.recharge.aspx,/index.userindex.aspx,/index.aspx,/index.AllGoods.aspx,
+   /index.goodsdesc.aspx,
+----------------------------------------------------------------
+更新人：文杰
+更新时间：2016.09.05
+更新标识：维护
+更新备注：
+   1、话费转让，卡号卡密（6-10，****）
+   2、新增《爽乐购隐私政策》
+   3、新增404页面
+影响的文件:
+   /user.winningconfirm.aspx
+   /xieyi2.aspx
+   /404.html
+   /bin/taotaole.dll
+

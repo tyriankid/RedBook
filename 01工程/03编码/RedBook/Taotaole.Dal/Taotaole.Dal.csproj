@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8AC707E8-096C-4564-AAD7-7944B9B67400}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Taotaole.Dal</RootNamespace>
+    <AssemblyName>Taotaole.Dal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomManager.cs" />
+    <Compile Include="go_activityManager.cs" />
+    <Compile Include="go_activityMemberManager.cs" />
+    <Compile Include="go_activity_codeManager.cs" />
+    <Compile Include="go_activity_userManager.cs" />
+    <Compile Include="go_adminlogsManager.cs" />
+    <Compile Include="go_articleManager.cs" />
+    <Compile Include="go_baidu_cfgManager.cs" />
+    <Compile Include="go_brandManager.cs" />
+    <Compile Include="go_BrokerageSetManager.cs" />
+    <Compile Include="go_card_rechargeManager.cs" />
+    <Compile Include="go_categoryManager.cs" />
+    <Compile Include="go_channel_activitydetailManager.cs" />
+    <Compile Include="go_channel_cash_outManager.cs" />
+    <Compile Include="go_channel_recodesManager.cs" />
+    <Compile Include="go_channel_typeManager.cs" />
+    <Compile Include="go_channel_userManager.cs" />
+    <Compile Include="go_code_configManager.cs" />
+    <Compile Include="go_configsManager.cs" />
+    <Compile Include="go_giftNumsManager.cs" />
+    <Compile Include="go_giftsManager.cs" />
+    <Compile Include="go_giftWinDetailManager.cs" />
+    <Compile Include="go_memberManager.cs" />
+    <Compile Include="go_member_accountManager.cs" />
+    <Compile Include="go_member_addmoney_recordManager.cs" />
+    <Compile Include="go_member_dizhiManager.cs" />
+    <Compile Include="go_member_dizhi_gameManager.cs" />
+    <Compile Include="go_member_groupManager.cs" />
+    <Compile Include="go_moneyPoolDetailManager.cs" />
+    <Compile Include="go_ordersManager.cs" />
+    <Compile Include="go_productsManager.cs" />
+    <Compile Include="go_scoreDetailManager.cs" />
+    <Compile Include="go_serverworklogManager.cs" />
+    <Compile Include="go_shaidanManager.cs" />
+    <Compile Include="go_shaidan_huifuManager.cs" />
+    <Compile Include="go_shaidan_zanManager.cs" />
+    <Compile Include="go_slidesManager.cs" />
+    <Compile Include="go_tuankeepManager.cs" />
+    <Compile Include="go_tuanManager.cs" />
+    <Compile Include="go_tuan_listinfoManager.cs" />
+    <Compile Include="go_wxmenuManager.cs" />
+    <Compile Include="go_wxreplyManager.cs" />
+    <Compile Include="go_wxreply_articleManager.cs" />
+    <Compile Include="go_yiyuanManager.cs" />
+    <Compile Include="go_yolly_orderinfoManager.cs" />
+    <Compile Include="go_yolly_orderinfo_apiManager.cs" />
+    <Compile Include="go_zenPointDetailManager.cs" />
+    <Compile Include="go_zhigouManager.cs" />
+    <Compile Include="Init.cs" />
+    <Compile Include="go_adminManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Taotaole.Model\Taotaole.Model.csproj">
+      <Project>{951b3bd2-2779-40d3-8fb3-d1397a82c175}</Project>
+      <Name>Taotaole.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YH.DataAccess\YH.DataAccess.csproj">
+      <Project>{1380dd8f-95d3-45ed-9e78-00f1d9528f48}</Project>
+      <Name>YH.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YH.Utility\YH.Utility.csproj">
+      <Project>{bf2cde81-2953-4d6e-ae67-b6f255e43baa}</Project>
+      <Name>YH.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

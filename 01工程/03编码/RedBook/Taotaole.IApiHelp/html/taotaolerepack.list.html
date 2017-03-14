@@ -1,0 +1,109 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   json_redpacknum (获取用户红包数量)</th>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://888.ewaywin.com</div>
+                            <div>domain/?/api/redpack/json_redpacklist/加密用户ID</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>segment(4)</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>用户ID随机签名，不接收未知的签名</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>返回结果</legend>
+                            <div>
+                                {<br/>
+                                state:"0",              //个人私有数据凭证状态，0验证通过 1缺少签名参数 2未知的签名参数 <br/>
+                                doRedPack："Array",               //可用红包列表<br/>
+                                saveRedPack："Array",               //待发红包列表<br/>
+                                overdueRedPack："Array",               //过期及已使用红包列表<br/>
+                                }<br/>
+                                Array{<br/>
+                                id:"0",              //红包ID <br/>
+                                activity_id："0",               //来源活动ID<br/>
+                                code_config_id："0",               //红包类型ID<br/>
+                                channel_id："0",               //来源渠道商ID<br/>
+                                uid:"0",              //用户ID <br/>
+                                order_id："0",               //使用与那个订单<br/>
+                                starttime："0",               //开始时间<br/>
+                                endtime："0",               //结束时间<br/>
+                                raisetime："0",               //顺延时间<br/>
+                                timespans："0",               //生效时段<br/>
+                                use_range："0",               //生效商品范围<br/>
+                                usetime："0",               //使用时间<br/>
+                                descript："0",               //来源活动类型<br/>
+                                d_type："0",               //时间类型：0.永久有效 1.日期生效   2.领取时顺延 3.综合 4.时段生效 <br/>
+                                amount："0",               //限制使用金额<br/>
+                                discount："0",               //抵扣金额<br/>
+                                state："0",               //使用状态: 0待派发 1.可用   2.已使用  3.过期<br/>
+                                from："0",               //0系统发放 1活动   2朋友分享 3晒单返现<br/>
+                                addtime："0",               //创建时间<br/>
+                                overtime："0",               //过期时间<br/>
+                                senttime："0",               //发放时间<br/>
+                                title："0",               //红包类型标题<br/>
+                                remark："0",               //活动备注<br/>
+                                show："0",               //显示title<br/>
+                                }<br/>
+
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

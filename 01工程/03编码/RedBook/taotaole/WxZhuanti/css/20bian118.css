@@ -1,0 +1,46 @@
+﻿
+*{margin:0;padding:0;}
+html{background:#FACD89;}
+body{font-size: 12px;font-family: arial, 微软雅黑 ;max-width:640px; margin:0 auto;padding:0;}
+ul{padding:0;margin:0;list-style:none;}
+a{color: #000;text-decoration: none;outline: medium none;}
+img{border: 0;}
+.head_zhuanti{height:46px;width: 100%;z-index: 99;background: #eb3c46;overflow:hidden;position:relative;}
+.head_zhuanti h2{text-align: center;color: #fff;line-height: 46px;font-size: 20px;font-weight: normal;}
+.head_zhuanti .close{display: block;height: 46px;line-height:46px;overflow: hidden;position: absolute;left: 0;top: 0;z-index:10;font-size:14px;color:#FFF;padding:0 10px;}
+.head_zhuanti .share{height: 46px;line-height:46px;display: block;position: absolute;right: 0;top: 0;color:#FFF;padding:0 10px;font-size:14px;}
+.head_zhuanti .share:before{content:"";display:inline-block;vertical-align:middle;width:25px;height: 46px;background: url(/images/icon-share.png) left center no-repeat;background-size: 22px;}
+.zhuantibody{max-width:640px;margin:0 auto;padding:0;}
+.Picbox{max-width:640px;margin:0 auto;padding:0;height:auto;}
+.Picbox img{width:100%;display:block;border:0;padding:0;margin:0;}
+.DrinkList{background:#eb3c46;clear:both;overflow:hidden;}
+.DrinkList:after{content:"";height:0;clear:both;overflow:hidden;zoom:1;}
+.DrinkList li{display:block;width: 29%;height:auto;margin: 0 0 0 3%;float:left;/*position:relative;*//*background:url(../images/wangba/drank-img-bg.jpg) center center no-repeat;background-size:100% 100%;*/}
+.DrinkList li:last-child{/*margin-right: 2%;*/}
+.DrinkList li img{width:100%;}
+.DrinkList .weidui{display:block;}
+.DrinkList .yidui{display:none;/*position:absolute;top:0;left:0;*//*perspective: 1000;transform-style: preserve-3d;*//*transform: rotateX(-180deg);*/-webkit-animation:rotate 1.5s 1 ease-out;/*animation-iteration-count:1;*//*transform: rotateY(180deg);*//*-webkit-animation:circle 1s infinite linear;*/}
+@-moz-keyframes rotate{0%{opacity: 0;}
+100%{opacity: 1;}
+/*0%{-moz-transform:rotate(0deg);}
+25%{-moz-transform:rotate(180deg);}
+50%{-moz-transform:rotate(360deg);}
+75%{-moz-transform:rotate(180deg);}
+100%{-moz-transform:rotate(0);}*/}
+@-webkit-keyframes rotate{0%{opacity: 0;}
+100%{opacity: 1;}} @keyframes rotate{0%{opacity: 0;}
+100%{opacity: 1;}}
+/*@-webkit-keyframes rotate{from{-webkit-transform:rotateY(0deg);}
+to{-webkit-transform:rotateY(360deg);}}*/.btnList{background:#0C182E url(../images/wangba/drank_3.png) top center no-repeat;background-size:100% auto;clear:both;overflow:hidden;}
+.btnList a{display:block;width:90%;height:auto;margin:0 auto 2% auto;}
+.btnList a:last-child{margin-bottom:0;}
+.btnList a img{width:100%;}
+.Picbox{position:relative;}
+.Picbox .btn-canyu{display: inline-block;/* position:absolute;*/width: 50%;/* top: 12%;*//* left: 50%;*/margin: 0 auto;transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);/*top:0;margin:0 auto;width:50%;*/}
+.Picbox .btn-canyued,
+.Picbox .btn-nozige,
+.Picbox .btn-yiduihuan{display:none;}
+.Picbox a.btn-down{position:absolute;top:0;margin:0 auto;width:56%;top: 17%;left: 50%;transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);}
+.CanyuBox{background:#EE3A41;text-align: center;overflow: hidden;padding: 10px 0;}
+.CanyuBox .btn-canyu{text-align: center;width:100%;display:none;}
+.CanyuBox .btn-canyu img{display:inline-block;width:50%;}

@@ -1,0 +1,4 @@
+C:\project\RedBook\01工程\03编码\RedBook\YH.DataSetHelper\bin\Debug\YH.DataSetHelper.dll
+C:\project\RedBook\01工程\03编码\RedBook\YH.DataSetHelper\bin\Debug\YH.DataSetHelper.pdb
+C:\project\RedBook\01工程\03编码\RedBook\YH.DataSetHelper\obj\Debug\YH.DataSetHelper.dll
+C:\project\RedBook\01工程\03编码\RedBook\YH.DataSetHelper\obj\Debug\YH.DataSetHelper.pdb

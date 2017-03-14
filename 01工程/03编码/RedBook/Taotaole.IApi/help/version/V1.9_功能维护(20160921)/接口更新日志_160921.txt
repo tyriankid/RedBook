@@ -1,0 +1,11 @@
+﻿
+更新人：葛壮
+更新时间：2016-09-20
+更新标识：更新
+更新备注：添加我的购买记录返回充值订单号、永乐接口
+	影响文件：
+	Resources/js/channel.js
+	taotaoleorder.ashx
+	接口DLL文件——永乐过度充值接口   taotaoleinterfaceapi.ashx
+	config/SiteSettings.config
+--------------------------------

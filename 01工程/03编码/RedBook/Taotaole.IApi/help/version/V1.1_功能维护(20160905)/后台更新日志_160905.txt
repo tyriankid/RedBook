@@ -1,0 +1,22 @@
+更新人：葛壮
+更新时间：2016.09.05
+更新标识：维护
+更新备注：后台管理员更改密码、后台用户编辑、更改订单列表、中奖订单列表
+   影响的文件
+   /admin/ResettingPass.aspx
+   /member/addmember.aspx
+   /OrderClass/orderslist.aspx
+   /OrderClass/orderLucky.aspx
+--------------------------------
+更新人：刘冬
+更新时间：2016.09.05
+更新标识：维护
+更新备注：增加后台权限管理、
+   影响的文件
+
+   影响的数据库
+   Alter Table go_admin ADD menujson nvarchar(max)
+
+  新增的页面modifymenujson.aspx
+    index.js
+--------------------------------

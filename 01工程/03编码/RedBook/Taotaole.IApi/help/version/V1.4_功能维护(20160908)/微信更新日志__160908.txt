@@ -1,0 +1,41 @@
+更新人：btt
+更新时间：2016-09-08
+更新标识：维护
+更新备注：
+	1、商品全部分类：跳到最新一期商品详情
+	2、最新揭晓：倒计时中的商品添加链接，修复后退倒计时
+影响的文件
+	/index.AllGoods.aspx
+    /index.lottery.aspx,/index.item.aspx,/index.userindex.aspx,/css/lottery.css
+    /community.index.aspx
+	/index.aspx,/index.item.aspx,/js/QuickPay.js
+--------------------------------
+
+更新人：余跃
+更新时间：2016.09.08
+更新标识：维护
+更新备注：
+   1、修改首页刷新状态获取页数BUG
+   index.aspx
+
+   --------------------------------
+
+更新人：葛壮
+更新时间：2016.09.08
+更新标识：新增功能
+更新备注：新增活动商品参与一次之后再不能参与
+  影响文件：
+  community.index.aspx
+  index.wangqi.aspx
+  index.item.aspx
+  user.winningconfirm.aspx
+  --------------------------------
+
+  更新人：董兰兰
+更新时间：2016-09-08
+更新标识：新增刷新功能
+更新备注：新增刷新功能
+影响的文件
+  taotaole/WxZhuanti/wxgonggao.aspx
+  taotaole/images/win/sxbutton.png
+--------------------------------

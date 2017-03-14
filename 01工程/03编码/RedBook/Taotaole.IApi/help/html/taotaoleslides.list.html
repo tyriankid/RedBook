@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   slides (获取幻灯片)</th>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://api.ewaywin.com</div>
+                            <div>domain/ilerrarticle?action=slides&slidetype=幻灯片类型</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>slidetype</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>类型：1微信 2APP  3商城</td>
+                                </tr>
+                                 
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>微信和商城的返回结果</legend>
+                             <div>
+                                {<br/>
+                                    state："0",                      //获取数据状态，0成功获取 2缺少参数 3错误的参数<br/>
+                                    imgroot:"G_UPLOAD_PATH",        //图片根目录<br/>
+
+
+                                    data:                           //返回数据值<br/>
+                                    <div style="padding-left:60px">{</div>
+                                    <div style="padding-left:80px">slideid:50,//幻灯片唯一标识id</div>
+                                    <div style="padding-left:80px">slidelink:'www.baidu.com',//链接地址(当类型slidetype=2时查询的是app数据量过大  不显示)</div>
+                                    <div style="padding-left:80px">slideimg:'slides/20160817/products_090542.jpg',//幻灯片地址</div>
+                                    <div style="padding-left:80px">slidetype:1,//幻灯片类型</div>
+                                    <div style="padding-left:80px">slideorder:99999,//排序号</div>    
+                                 <div style="padding-left:80px">slidelastupdatetime:'2016-08-16T16:25:00.003'//上一次修改时间</div>
+                                 <div style="padding-left:80px">slidestate:0,//幻灯片状态 0 启用 1禁用</div>     
+                                 
+                                                                
+                                    <div style="padding-left:60px">}</div>
+                                }<br/>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>app的返回结果</legend>
+                             <div>
+                                {<br/>
+                                    state："0",                      //获取数据状态，0成功获取 2缺少参数 3错误的参数<br/>
+                                    imgroot:"G_UPLOAD_PATH",        //图片根目录<br/>
+                                  
+                                 "id":18,   //最近一次活动表的id  <br/>
+"title":"五折大狂欢",  //最近一次活动标题  <br/>
+"endtime":22588,    //最近一次活动剩余秒数  <br/>
+"type":2,     //类型  1  活动未开始 2活动进行中  3活动结束 <br/>
+                                    data:                           //返回数据值<br/>
+                                    <div style="padding-left:60px">{</div>
+                                    <div style="padding-left:80px">id:18,//活动id</div>
+                                    <div style="padding-left:80px">slideid:1,//幻灯片id</div>
+                                    <div style="padding-left:80px">slideimg:'slides/20160817/products_090542.jpg',//幻灯片地址</div>
+                                    <div style="padding-left:80px">title:'五折大狂欢'//活动名称</div>
+                                                         
+                                    <div style="padding-left:60px">}</div>
+                                }<br/>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
+

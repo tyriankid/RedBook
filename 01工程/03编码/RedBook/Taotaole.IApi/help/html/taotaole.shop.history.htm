@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   history (获取往期揭晓记录)</th>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://api.ewaywin.com</div>
+                            <div>domain/ilerrshop?action=history&productid=商品ID</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>productid</td>
+                                    <td>int</td>
+                                    <td>true</td>
+                                    <td>商品详细信息ID</td>
+                                </tr>
+                                <tr>
+                                    <td>p</td>
+                                    <td>int</td>
+                                    <td>false</td>
+                                    <td>页码，默认为1</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>返回结果</legend>
+                            <div>
+                                {<br/>
+                                    state:"0",                      //获取数据状态，0成功获取 1未获取到数据或数据已加载完毕  2代表产品id错误<br/>
+                                    count:"0",                     //获取总的数量<br/>
+                                    pageCount:"1",                  //总页数<br/>
+                                    nextPage:"20",                  //下一页页码<br/>
+                                    imgroot:"G_UPLOAD_PATH",        //图片根目录<br/>
+                                    data:                           //获取返回数据<br/>
+                                    <div style="padding-left:60px">{</div>
+                                    <div style="padding-left:80px">yId:'1',//1元购商品唯一标识</div>
+                                    <div style="padding-left:80px">productid:'1',//商品id,来源go_products.productid</div>
+                                    <div style="padding-left:80px">username:'张三',//中奖人名称</div>
+                                    <div style="padding-left:80px">img:'1.jpg',//中奖人头像</div>
+                                    <div style="padding-left:80px">uid:'3',//中奖人ID</div>
+                                    <div style="padding-left:80px">qishu:'2',//商品期数</div>
+                                    <div style="padding-left:80px">quantity:'1',//购买次数</div>
+                                    <div style="padding-left:80px">q_code:'00000001',//中奖号码</div>
+                                    <div style="padding-left:80px">q_end_time:'1.jpg',//开奖时间</div>
+                                    <div style="padding-left:60px">}</div>
+                                }<br/>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

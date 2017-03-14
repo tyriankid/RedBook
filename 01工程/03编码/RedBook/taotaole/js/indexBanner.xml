@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<banners>
+	<li id="6">
+		<class>chongzhi</class>
+		<href>/mobile/home/userrecharge</href>
+		<em>立即充值</em>
+	</li>
+	<li id="2">
+		<class>bian2</class>
+		<href>/mobile/mobile/itemnew/584</href>
+		<em>1元变20</em>
+	</li>
+	<li id="3">
+		<class>zhongjiang</class>
+		<href>/mobile/mobile/winning</href>
+		<em>99%中奖</em>
+	</li>
+	<li id="4">
+		<class>apple</class>
+		<href>/mobile/mobile/apple</href>
+		<em>苹果专区</em>
+	</li>
+	<li id="5">
+		<class>new</class>
+		<href>/mobile/mobile/help</href>
+		<em>新手入门</em>
+	</li>
+	<li id="8">
+		<class>lyuan</class>
+		<href>/mobile/Obuy</href>
+		<em>零购专区</em>
+	</li>
+	<li id="1">
+		<class>game</class>
+		<href>/mobile/mobile/game</href>
+		<em>游戏专区</em>
+	</li>
+	<li id="7">
+		<class>debi</class>
+		<href>/mobile/tuan</href>
+		<em>团购专区</em>
+	</li>
+	
+	<li id="9">
+		<class>fenlei</class>
+		<href>/mobile/mobile/glist</href>
+		<em>全部分类</em>
+	</li>
+	<li id="10">
+		<class>shuaidan</class>
+		<href>/mobile/shaidan/</href>
+		<em>晒单送币</em>
+	</li>
+	
+	<!--<li id="7">
+		<class>game</class>
+		<href>/mobile/mobile/glist/12</href>
+		<em>发给专区</em>
+</li>-->
+</banners>
+<!-- 首页两行banner_top配置-->

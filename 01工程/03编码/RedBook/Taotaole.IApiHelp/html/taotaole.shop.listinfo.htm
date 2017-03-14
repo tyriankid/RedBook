@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   (获取商品列表)</th>/ilerrshop?action=listinfo
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://api.ewaywin.com</div>
+                            <div>domain/ilerrshop?/action=listinfo&typeid=商品分类ID&order=排序ID&p=当前页码</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>typeid</td>
+                                    <td>STRING</td>
+                                    <td>false</td>
+                                    <td>商品分类ID，默认为list,表示所有分类</td>
+                                </tr>
+                                <tr>
+                                    <td>order</td>
+                                    <td>STRING</td>
+                                    <td>false</td>
+                                    <td>排序ID，默认为10。10表示剩余人数升序、20表示人气、30表示参与人数倒序、40表示时间倒序、50表示价格倒序、60表示价格升序</td>
+                                </tr>
+                                <tr>
+                                    <td>p</td>
+                                    <td>STRING</td>
+                                    <td>false</td>
+                                    <td>当前页码，默认为1</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>返回结果</legend>
+                            <div>
+                                {<br/>
+                                    state："0",                      //获取数据状态，0成功获取 1未获取到数据或数据已加载完毕<br/>
+                                    count:"163",                    //总记录数<br/>
+                                    pageCount:"3",                  //总页码<br/>
+                                    nextPage:"3",                  //下一页码，为0时表示数据加载完毕<br/>
+                                    imgroot:"G_UPLOAD_PATH",        //图片根目录<br/>
+                                    data:$shop //商品实体(仅公开部分属性)<br/>
+                                    <div style="padding-left:60px">{</div>
+                                    <div style="padding-left:80px">id:'1',//商品ID</div>
+                                    <div style="padding-left:80px">title:'surface pro 4',//商品名称</div>
+                                    <div style="padding-left:80px">thumb:'1.jpg',//商品缩略图</div>
+                                    <div style="padding-left:80px">qishu:'3',//商品期数</div>
+                                    <div style="padding-left:80px">zongrenshu:'100',//总人数</div>
+                                    <div style="padding-left:80px">shenyurenshu:'30',//剩余人数</div>
+                                    <div style="padding-left:80px">canyurenshu:'70',//参与人数</div>
+                                    <div style="padding-left:60px">}</div>
+                                }<br/>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

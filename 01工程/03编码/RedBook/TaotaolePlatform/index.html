@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>爽乐购后台管理系统</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<link rel="stylesheet" type="text/css" href="/Resources/iconfont/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="/Resources/css/comm.css"/>
+	<link rel="stylesheet" type="text/css" href="/Resources/css/index.css"/>
+	
+	<script src="/Resources/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/Resources/js/index.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/Resources/js/comm.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div id="top">
+		<div class="top-fixed minwidth">
+			<a href="#" class="logo"><img src="/Resources/images/logo.png" alt="logo"></a>
+			<ul class="top-menu">
+				<li class="active"><a href="javascript:;"><i class="iconfont icon-bangongxitong"></i>系统设置</a></li>
+				<li><a href="javascript:;"><i class="iconfont icon-neirongguanli"></i>内容管理</a></li>
+				<li><a href="javascript:;"><i class="iconfont icon-shangpinguanli"></i>商品管理</a></li>
+				<li><a href="javascript:;"><i class="iconfont icon-tubiao30"></i>订单管理</a></li>
+				<li><a href="javascript:;"><i class="iconfont icon-yingxiaohuodong"></i>运营活动</a></li>
+				<li><a href="javascript:;"><i class="iconfont icon-qudao"></i>渠道管理</a></li>
+			</ul>
+			<ul class="top-menu admin">
+				<li><a href="javascript:;"><i class="iconfont icon-guanliyuan"></i>admin[超级管理员]</a></li>
+				<li><a href="javascript:;"><i class="iconfont icon-tuichu-copy"></i>退出</a></li>
+			</ul>
+			
+		</div>
+	</div>
+	<div class="content">
+		<div class="left-bar">
+			<div class="left-top">
+				<a href="javascript:;" class="fold"><i class="iconfont icon-fenlei"></i></a>
+			</div>
+			<ul>
+				
+			</ul>
+		</div>
+		<div class="right-bar">
+			<iframe id="rightIframe" src="pages/system/seo.html" frameborder="0"></iframe>
+		</div>
+	</div>
+	<script type="text/javascript">
+	    $(function () {
+	        //默认加载第一页
+	        leftbar(0);
+	        setIfremeSize();
+
+	        $(".top-menu>li").click(function () {
+	            $(this).addClass("active");
+	            $(this).siblings().removeClass("active");
+	            leftbar($(this).index());
+	        })
+	    })
+	</script>
+</body>
+</html>

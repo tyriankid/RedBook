@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   productaffirm (商品确认（中奖之后点击的商品确认）)</th>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://api.ewaywin.com</div>
+                            <div>domain/ilerrshareorder?action=productaffirm&sign=用户ID随机签名&orderid=订单ID&shopid=一元购商品ID</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>sign</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>用户ID随机签名，不接收未知的签名，微信不用传此参数</td>
+                                </tr>
+
+                                <tr>
+                                    <td>orderid</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>订单ID</td>
+                                </tr>
+
+                                <tr>
+                                  <td>shopid</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>一元购商品ID</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>返回结果</legend>
+                            <div>
+                                status=待确认<br/>{<br/>
+                                    typeid:"1"                                                         //商品类型ID        0:实体,1:卡密,2:游戏<br/>
+                                    state:"0",                                                         //个人私有数据凭证状态，0获取信息成功 2未知的签名参数 3订单ID错误 4获取订单信息失败<br/>
+                                    title:"兰博基尼",                                                  //商品标题<br/>
+                                    thumb:"shopimg/20160721/43567191085075.jpg",                       //商品图片<br/>
+                                    quantity:"2",                                                      //购买次数<br/>
+                                    orderId:"T160812143222453375"                                      //订单ID<br/>
+                                    status:"待确认",                                                   //订单状态<br/>
+                                    imgroot:"G_UPLOAD_PATH",                                           //图片根目录<br/>
+                                }<br/>
+                                 status=待发货<br/>{<br/>
+                                    typeid:"1"              //商品类型ID        0:实体,1:卡密,2:游戏<br/>
+                                    state:"0",              //个人私有数据凭证状态，0获取信息成功 2未知的签名参数 3订单ID错误 4获取订单信息失败<br/>
+                                    title:"兰博基尼",              //商品标题<br/>
+                                    thumb:"shopimg/20160721/43567191085075.jpg",                       //商品图片<br/>
+                                    quantity:"2",                         //购买次数<br/>
+                                    orderId:"T160812143222453375"           //订单ID<br/>
+                                    status:"待发货",                      //订单状态<br/>
+                                    info:"用户填写的信息"              //用户填写的信息<br/>
+                                    phone："1347707856"              //用户填写的手机号<br/>
+                                    imgroot:"G_UPLOAD_PATH",        //图片根目录<br/>
+                                }<br/>
+                                status=已发货/已收货<br/>{<br/>
+                                    typeid:"1"              //商品类型ID        0:实体,1:卡密,2:游戏<br/>
+                                    state:"0",              //个人私有数据凭证状态，0获取信息成功 2未知的签名参数 3订单ID错误 4获取订单信息失败<br/>
+                                    title:"兰博基尼",              //商品标题<br/>
+                                    thumb:"shopimg/20160721/43567191085075.jpg",                       //商品图片<br/>
+                                    quantity:"2",                         //购买次数<br/>
+                                    orderId:"T160812143222453375"           //订单ID<br/>
+                                    status:"已发货/已收货",                      //订单状态<br/>
+                                    info:"用户填写的信息"              //用户填写的信息<br/>
+                                    phone："1347707856"              //用户填写的手机号<br/>
+                                    kuaidihao："1234564"             //快递单号<br/>
+                                    kuaidigongsi："顺丰"             //快递公司<br/>
+                                    imgroot:"G_UPLOAD_PATH",        //图片根目录<br/>
+                                }<br/>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

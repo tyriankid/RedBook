@@ -1,0 +1,30 @@
+更新人：btt
+更新时间：2016-09-07
+更新标识：维护
+更新备注：
+   1、商品详情：参加人员，爽乐购记录：中奖纪录,重复加载
+   2、别人个人主页总需剩余相同
+   3、拼团详情：参团人员出现重复加载并把自动加载改成点击加载，图片详情出现断裂，
+影响的文件
+   /community.index.aspx，/index.item.aspx
+   /index.userindex.aspx，/css/goods.css
+   /WxTuan/tuan.item.aspx,/css/tuan.css
+--------------------------------
+更新人：葛壮
+更新时间：2016-09-07
+更新标识：新增
+更新备注：新增今日统计功能
+		新增今日统计信息
+影响的文件
+   taotaole/internalapi/taotaoleuser.ashx
+--------------------------------
+更新人：董兰兰
+更新时间：2016-09-07
+更新标识：新增公告页面
+更新备注：新增公告页面  今日统计信息  公告
+影响的文件
+  taotaole/WxZhuanti/wxgonggao.aspx
+  taotaole/WxZhuanti/wxgonggao.css
+  taotaole/images/gonggaobg.JPG
+--------------------------------
+

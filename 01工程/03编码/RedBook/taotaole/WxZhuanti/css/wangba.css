@@ -1,0 +1,165 @@
+﻿
+*{margin:0;padding:0;}
+html{background:#eb3c46;}
+body{font-size: 12px;font-family: arial, 微软雅黑 ; max-width:640px; margin:0 auto; padding:0;}
+ul{padding:0;margin:0;list-style:none;}
+a{color: #000;text-decoration: none;outline: medium none;}
+img{border: 0;}
+.head_wangba{height:46px;width: 100%;z-index: 99;background: #eb3c46;overflow:hidden;position:relative;}
+.head_wangba h2{text-align: center;color: #fff;line-height: 46px;font-size: 20px;font-weight: normal;}
+.head_wangba .close{display: block;height: 46px;line-height:46px;overflow: hidden;position: absolute;left: 0;top: 0;z-index:10;font-size:14px;color:#FFF;padding:0 10px;}
+.head_wangba .share{height: 46px;line-height:46px;display: block;position: absolute;right: 0;top: 0;color:#FFF;padding:0 10px;font-size:14px;}
+.head_wangba .share:before{content:"";display:inline-block;vertical-align:middle;width:25px;height: 46px;background: url(/images/icon-share.png) left center no-repeat;background-size: 22px;}
+.WangbaBox{max-width:640px;margin:0 auto;padding:0;}
+.Picbox{max-width:1080px;margin:0 auto;padding:0;height:auto;}
+.Picbox img{width:100%;display:block;border:0;padding:0;margin:0;}
+.DrinkListbox{ /*position:relative;*/ overflow:hidden;background:url(../images/wangba/drankbox-bg.gif) top center repeat-y; background-size:100%; }
+.DrinkListbox .drankbox_bg{ width:100%;}
+.DrinkList{/*background:#eb3c46;*/clear:both;overflow:hidden; 
+           /*position:absolute; top:0; left:0; width:100%;*/}
+.DrinkList:after{content:"";height:0;clear:both;overflow:hidden;zoom:1;}
+.DrinkList li{display:block;width: 28%;height:auto;margin: 0 0 0 3%;float:left;/*position:relative;*//*background:url(../images/wangba/drank-img-bg.jpg) center center no-repeat;background-size:100% 100%;*/}
+.DrinkList li:last-child{/*margin-right: 2%;*/}
+.DrinkList li img{width:100%; margin-bottom:0; }
+.DrinkList .weidui{display:block;}
+.DrinkList .yidui{display:none;/*position:absolute;top:0;left:0;*//*perspective: 1000;transform-style: preserve-3d;*//*transform: rotateX(-180deg);*/-webkit-animation:rotate 1.5s 1 ease-out;/*animation-iteration-count:1;*//*transform: rotateY(180deg);*//*-webkit-animation:circle 1s infinite linear;*/}
+@-moz-keyframes rotate{0%{opacity: 0;}
+100%{opacity: 1;}
+/*0%{-moz-transform:rotate(0deg);}
+25%{-moz-transform:rotate(180deg);}
+50%{-moz-transform:rotate(360deg);}
+75%{-moz-transform:rotate(180deg);}
+100%{-moz-transform:rotate(0);}*/}
+@-webkit-keyframes rotate{0%{opacity: 0;}
+100%{opacity: 1;}} @keyframes rotate{0%{opacity: 0;}
+100%{opacity: 1;}}
+/*@-webkit-keyframes rotate{from{-webkit-transform:rotateY(0deg);}
+to{-webkit-transform:rotateY(360deg);}}*/.btnList{background:#0C182E url(../images/wangba/drank_3.png) top center no-repeat;background-size:100% auto;clear:both;overflow:hidden;}
+.btnList a{display:block;width:90%;height:auto;margin:0 auto 2% auto;}
+.btnList a:last-child{margin-bottom:0;}
+.btnList a img{width:100%;}
+.Picbox{position:relative;}
+.Picbox .btn-canyu{display: inline-block;/* position:absolute;*/width: 50%;/* top: 12%;*//* left: 50%;*/margin: 0 auto;transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);/*top:0;margin:0 auto;width:50%;*/}
+.Picbox .btn-canyued,
+.Picbox .btn-nozige,
+.Picbox .btn-yiduihuan{display:none;}
+.Picbox a.btn-down{position:absolute;top:0;margin:0 auto;width:56%;top: 17%;left: 50%;transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);}
+.CanyuBox{background:#EE3A41;text-align: center;overflow: hidden;padding: 10px 0;}
+.CanyuBox .btn-canyu{text-align: center;width:100%;display:none;}
+.CanyuBox .btn-canyu img{display:inline-block;width:50%;}
+
+
+
+/*各种弹出层*/
+
+/* PopupBg */
+.PopupBg{ background: rgba(0,0,0,.7); width: 100%; height: 100%;position: fixed;top: 0;left: 0;z-index: 9000; display:none; }
+.PopupLayer{ background: #FFF;color: #333333; width: 80%;position: fixed; top:0; left:0;  margin: auto;border:1px solid #F0F1F1;border-radius:10px; z-index: 9001;display:none;}
+.PopupLayer h1{ text-align:center; height:50px; line-height:50px; border-bottom:1px solid #F0F1F1; font-size:16px; }
+.PopupLayer .po-nrbox{padding: 30px 30px 0 30px;text-align:center;}
+.PopupLayer .TwobtnBox {
+    border-top: 1px solid #EDEEEF;
+    margin-top: 30px;
+}
+.PopupLayer .TwobtnBox a{width:50%;text-align:center;height:44px;line-height:44px;/* border:1px solid #EDEEEF; */font-size:18px;background:#FFF;display:block;float: left;border-radius: 0 0 5px 0;}
+.PopupLayer .TwobtnBox a.Cancelbtn {
+    border-left: 1px solid #CCC;
+    margin-left: -1px;
+    border-radius: 0 0 0 5px;
+}
+.PopupLayer .TwobtnBox a.Surebtn {
+    background: #5FD664;
+    color: #FFF;
+}
+.PopupLayer .OnebtnBox .btn{width: 80%;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    background: #ffa707;
+    display: block;
+    border-radius: 5px;
+    margin: 10px auto;
+    color: #fff;}
+.PopupLayer .po-nrbox h2 {
+    padding: 15px 0 0 0;
+    font-size: 20px;
+}
+    
+#InfoPopup .po-nrbox h2{padding:0;font-size: 16px;line-height: 30px;}
+.PopupLayer .po-nrbox p{
+    color: #757575;
+    font-size: 14px;
+    line-height:21px;
+    font-weight: bold;
+}
+.OnebtnBox p{
+    color: #757575;
+    text-align:center;
+    font-size: 12px;
+    line-height:21px;
+    margin-bottom:20px;
+    font-weight: bold;
+}
+.PopupLayer .po-nrbox p:nth-child(3) span{
+    color: #FD524E;
+}
+.PopupLayer .textBox {
+    position:relative;
+    padding: 0 30px;
+    margin-top: 10px;
+}
+.PopupLayer .textBox input {
+    width:100%;
+    font-size:16px;
+    padding: 15px 0;
+    text-indent: 90px;
+    background:#FFF;
+    border:0;
+    border-bottom:1px solid #CCC;
+}
+.PopupLayer .textBox span{position:absolute;top:0;left: 30px;font-size:16px;padding: 15px 0; color:#666; }
+.PopupLayer .textBox2 span{ width:100px; text-align:right; }
+.PopupLayer .textBox2 input{text-indent: 110px;}
+
+/* 公共弹出层提示 */
+#InfoPopupBg{ z-index:999999999999; }
+#InfoPopup{ z-index:999999999999; }
+#InfoPopup h1{ font-size:16px;}
+#InfoPopup .po-nrbox{ font-size:16px;}
+
+
+/* 关注二维码弹出层 */
+.GuanzhuPopup{ background: rgba(0,0,0,.7); width: 100%; height: 100%;position: fixed;top: 0;left: 0;z-index: 90000; display:none; }
+.GuanzhuPopup .Poplayer{width: 100%; height: 100%;  position:relative; }
+.GuanzhuPopup .fixedbox{
+	position: fixed;
+    width:70%;
+    padding:0 5%;
+    background: #FFF;
+    margin:0 auto;
+	top: 50%;
+    right: 0;
+    left: 0;
+	transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+    text-align:center;
+    border-radius:5px;
+}
+.GuanzhuPopup  h1{ font-size: 18px;  font-weight: normal;  color: #373941; height: 50px;   
+                      line-height: 50px;    
+    text-align: center;
+    border-bottom: 1px solid #E2E2E1;}
+
+.GuanzhuPopup .ewmbox{
+    padding:20px 20px 15px 20px;
+}
+.GuanzhuPopup .ewmbox img {
+    width:100%;
+}
+.GuanzhuPopup p{
+    color:#666;
+    line-height:26px;
+    padding-bottom:20px;
+}

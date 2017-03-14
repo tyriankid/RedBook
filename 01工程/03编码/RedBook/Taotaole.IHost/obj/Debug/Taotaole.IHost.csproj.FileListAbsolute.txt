@@ -1,0 +1,5 @@
+C:\project\RedBook\01工程\03编码\RedBook\Taotaole.IHost\bin\Debug\Taotaole.IHost.dll
+C:\project\RedBook\01工程\03编码\RedBook\Taotaole.IHost\bin\Debug\Taotaole.IHost.pdb
+C:\project\RedBook\01工程\03编码\RedBook\Taotaole.IHost\obj\Debug\Taotaole.IHost.csprojResolveAssemblyReference.cache
+C:\project\RedBook\01工程\03编码\RedBook\Taotaole.IHost\obj\Debug\Taotaole.IHost.dll
+C:\project\RedBook\01工程\03编码\RedBook\Taotaole.IHost\obj\Debug\Taotaole.IHost.pdb

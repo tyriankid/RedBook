@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   otherfpartakewin (别人的中奖记录)</th>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://api.ewaywin.com</div>
+                            <div>domain/ilerrorder?action=otherfpartakewin&uid=用户ID&p=页码</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>uid</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>用户ID</td>
+                                </tr>
+                                <tr>
+                                    <td>p</td>
+                                    <td>STRING</td>
+                                    <td>false</td>
+                                    <td>页码，默认为1</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>返回结果</legend>
+                            <div>
+                                {<br/>
+                                    state:"0",              //个人私有数据凭证状态，0验证通过 1缺少签名参数 2未知的签名参数<br/>
+                                    code："0",              //获取数据状态，0成功获取 1未获取到数据或数据已加载完毕<br/>
+                                    page:"3",                       //当前第几页<br/>
+                                    sum:"20",                       //总页数<br/>
+                                    count:"163",                    //总记录数<br/>
+                                    imgroot:"G_UPLOAD_PATH",        //图片根目录<br/>
+                                    username:"小明",                     //中奖人名称<br/>
+                                    data:$shaidan //晒单记录实体(仅公开部分属性)<br/>
+                                    <div style="padding-left:60px">{</div>
+                                    <div style="padding-left:80px">yid:'1',//一元购商品ID</div>
+                                    <div style="padding-left:80px">uid:'4',//用户ID</div>
+                                    <div style="padding-left:80px">orderid:'Y160805145814001',//订单ID</div>
+                                    <div style="padding-left:80px">time:'2016-5-6 12:12:12',//参入时间</div>
+                                    <div style="padding-left:80px">title:'20元话费',//商品名称</div>
+                                    <div style="padding-left:80px">thumb:'1.jpg',//商品缩略图</div>
+                                    <div style="padding-left:80px">typeid:'',//商品类型ID     0:实体,1:卡密,2:游戏</div>
+                                    <div style="padding-left:80px">q_code:'163',//幸运码</div>
+                                    <div style="padding-left:80px">quantity:'3',//参与次数</div>
+                                    <div style="padding-left:80px">isreplay:'1',//是否已晒单，1已晒 2未晒</div>
+                                    <div style="padding-left:80px">sd_id:'1',//晒单ID</div>
+                                }<br/>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   listreply (获取某晒单评论列表)</th>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://888.ewaywin.com</div>
+                            <div>domain/?/api/taotaoleshareorder/listreply/晒单ID</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>segment(4)</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>晒单ID</td>
+                                </tr>
+                                <tr>
+                                    <td>segment(5)</td>
+                                    <td>STRING</td>
+                                    <td>false</td>
+                                    <td>页码，默认为1</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>返回结果</legend>
+                            <div>
+                                {<br/>
+                                    code："0",                      //获取数据状态，0成功获取 1未获取到数据或数据已加载完毕<br/>
+                                    page:"3",                       //当前第几页<br/>
+                                    sum:"20",                       //总页数<br/>
+                                    count:"163",                    //总记录数<br/>
+                                    imgroot:"G_UPLOAD_PATH",        //图片根目录<br/>
+                                    data:$shaidan //晒单记录实体(仅公开部分属性)<br/>
+                                    <div style="padding-left:60px">{</div>
+                                    <div style="padding-left:80px">id:'1',//晒单回复ID</div>
+                                    <div style="padding-left:80px">sdhf_id:'1',//晒单ID</div>
+                                    <div style="padding-left:80px">sdhf_userid:'163',//晒单回复会员ID</div>
+                                    <div style="padding-left:80px">sdhf_content:'历害的三石哥',//晒单回复内容</div>
+                                    <div style="padding-left:80px">sdhf_time:'',//晒单回复时间，精确到秒</div>
+                                    <div style="padding-left:80px">sdhf_username:'JHB',//晒单回复人</div>
+                                    <div style="padding-left:80px">sdhf_img:'',//晒单回复人头像，若用户未传默认为photo/member.jpg</div>
+                                }<br/>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

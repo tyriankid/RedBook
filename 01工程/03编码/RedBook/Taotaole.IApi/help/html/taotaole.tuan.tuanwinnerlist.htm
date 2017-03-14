@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   tuanlist (团购商品列表)</th>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://api.ewaywin.com</div>
+                            <div>domain/ilerrtuan?action=tuanwinnerinfo&tid=17&type=1&p=1</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>该团类型0为及时开奖 1为限时开奖</td>
+                                </tr>
+                                <tr>
+                                    <td>tid</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>当类型为及时开奖时传businessId 为限时开奖时传tuanId</td>
+                                </tr>
+                                <tr>
+                                    <td>p</td>
+                                    <td>STRING</td>
+                                    <td>false</td>
+                                    <td>页码，默认为1</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>返回结果</legend>
+                             <div>
+                                {<br/>
+                                    "state"：0,                      //获取数据状态，0成功获取 1未获取到数据或数据已加载完毕 2参数错误<br/>
+                                   "count":12,                      //总条数，总数量<br/>
+                                   "pageCount":2,                   //总共页数<br/>
+                                   "nextPage":2,                    //下一页页码<br/>
+                                    data:                           //返回数据值<br/>
+                                    <div style="padding-left:60px">{</div>
+                                 <div style="padding-left:80px">rid:1,//数据ID 非数据库主键</div>
+                                    <div style="padding-left:80px">orderId:"1",//订单ID</div>
+                                    <div style="padding-left:80px">uid:1,//用户ID</div>
+                                    <div style="padding-left:80px">goucode:'10000002',//中奖码</div>
+                                    <div style="padding-left:80px">username:"靳华斌",//成团数量</div>
+                                    <div style="padding-left:80px">mobile:"138****9392"/null,//电话</div>
+                                    <div style="padding-left:80px">img:"shopimg/20160722/81403872149394.jpg"/null,//头像</div>
+                                    <div style="padding-left:60px">}</div>
+                                }<br/>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

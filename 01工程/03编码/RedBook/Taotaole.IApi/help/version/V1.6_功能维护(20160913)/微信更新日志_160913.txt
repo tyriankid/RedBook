@@ -1,0 +1,15 @@
+
+更新人：闭婷婷
+更新时间：2016.09.13
+更新标识：更新
+更新备注：
+  1、修改拼团的专题页面
+  /WxZhuanti/pintuan.aspx，/WxZhuanti/css/zhuanti.css，/WxZhuanti/images/pintuan
+
+  2、商品详情页增加局部刷新进度条
+  /index.item.aspx，/css/goods.css
+
+  3、即时揭晓详情页增加局部刷新进度条
+  /index.lottery.aspx，/css/lottery.css
+
+--------------------------------

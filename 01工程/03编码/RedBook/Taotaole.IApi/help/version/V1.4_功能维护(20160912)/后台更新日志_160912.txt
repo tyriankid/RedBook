@@ -1,0 +1,14 @@
+更新人：刘冬
+更新时间：2016.09.08
+更新标识：增加操作日志页面
+更新备注：
+ 增加了 操作日志页面
+  channel/activityDetailList.aspx
+--------------------------------
+更新人：魏红亮
+更新时间：2016.09.12
+更新标识：维护
+更新备注：
+  1.网吧渠道商新增终止网吧活动状态
+  channel/addDistributor.aspx
+  channel/ distributorList.aspx

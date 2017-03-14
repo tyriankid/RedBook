@@ -1,0 +1,79 @@
+﻿
+微信地址：http://wx.ewaywin.com
+平台地址：http://platform.ewaywin.com
+代理地址：http://agent.ewaywin.com
+
+团购计划任务配置:团失败五分钟内退款、团成功两分钟内开奖
+切换支付时，需要清除用户表的字段值(go_member.band)  2.更改三个应用的SiteSettings.config 3.检查微信支付对应公众号的配置(支付目录、授权回调页面域名)
+微信支付框不出现,可能是证书密码或其它配置问题；微信支付框一出现就消息,可以打开前端JS调试(jsapi缺少参数),可能原因是openid不匹配,清除cookie。
+充值卡是否足够、码表是否正常
+
+网吧活动地址：http://wx.ewaywin.com/WxZhuanti/Wangba.aspx
+    领取资格判断地址：http://domain/ilerrarticle?action=ispass    接口返回值{ state："0" //获取数据状态， 0有资格 2未知的签名参数 3已经参与过 4已兑换 5没有资格}
+	立即参与地址：http://" + window.location.host + "/WxPay/wx_Submit.aspx?businessType=yuan&money=1&productid=1&quantity=1&paytype=2&redpaper=0
+
+	冲20送118元红包
+	资格判断地址：http://api.ewaywin.com/ilerrredpack?action=valactivityqualification&sign=MW_B5ECA031A5D9F85F2972E648AA8FA648&uid=2BD59896A291D2F9&aid=17
+	资格判断地址返回结果
+	{
+	state:"0", //个人私有数据凭证状态，0无资格 1有资格 2未知的签名参数 
+	}
+	领取资格地址：http://api.ewaywin.com/ilerrredpack?action=activityqualification&sign=MW_B5ECA031A5D9F85F2972E648AA8FA648&uid=2BD59896A291D2F9&aid=17
+	领取资格地址返回结果
+	{
+	state:"0", //个人私有数据凭证状态，0领取成功 1领取失败 2未知的签名参数 3已有该活动资格 
+	}
+
+
+	新ID首次支付5元不中包赔
+	资格判断地址：http://api.ewaywin.com/ilerrredpack?action=valactivityqualification&sign=MW_B5ECA031A5D9F85F2972E648AA8FA648&uid=2BD59896A291D2F9&aid=23
+	资格判断地址返回结果
+	{
+	state:"0", //个人私有数据凭证状态，0无资格 1有资格 2未知的签名参数 
+	}
+	领取资格地址：http://api.ewaywin.com/ilerrredpack?action=activityqualification&sign=MW_B5ECA031A5D9F85F2972E648AA8FA648&uid=2BD59896A291D2F9&aid=23
+	领取资格地址返回结果
+	{
+	state:"0", //个人私有数据凭证状态，0领取成功 1领取失败 2未知的签名参数 3已有该活动资格 
+	}
+
+
+	五折大狂欢
+	资格判断地址：http://api.ewaywin.com/ilerrredpack?action=valactivityqualification&sign=MW_B5ECA031A5D9F85F2972E648AA8FA648&uid=2BD59896A291D2F9&aid=18
+	资格判断地址返回结果
+	{
+	state:"0", //个人私有数据凭证状态，0无资格 1有资格 2未知的签名参数 
+	}
+	领取资格地址：http://api.ewaywin.com/ilerrredpack?action=activityqualification&sign=MW_B5ECA031A5D9F85F2972E648AA8FA648&uid=2BD59896A291D2F9&aid=18
+	领取资格地址返回结果
+	{
+	state:"0", //个人私有数据凭证状态，0领取成功 1领取失败 2未知的签名参数 3已有该活动资格 
+	}
+
+
+	0元购活动
+	资格判断地址：http://api.ewaywin.com/ilerrredpack?action=valactivityqualification&sign=MW_B5ECA031A5D9F85F2972E648AA8FA648&uid=2BD59896A291D2F9&aid=19
+	资格判断地址返回结果
+	{
+	state:"0", //个人私有数据凭证状态，0无资格 1有资格 2未知的签名参数 
+	}
+	领取资格地址：http://api.ewaywin.com/ilerrredpack?action=activityqualification&sign=MW_B5ECA031A5D9F85F2972E648AA8FA648&uid=2BD59896A291D2F9&aid=19
+	领取资格地址返回结果
+	{
+	state:"0", //个人私有数据凭证状态，0领取成功 1领取失败 2未知的签名参数 3已有该活动资格 
+	}
+
+
+	买爆款不中包赔
+	资格判断地址：http://api.ewaywin.com/ilerrredpack?action=valactivityqualification&sign=MW_B5ECA031A5D9F85F2972E648AA8FA648&uid=2BD59896A291D2F9&aid=20
+	资格判断地址返回结果
+	{
+	state:"0", //个人私有数据凭证状态，0无资格 1有资格 2未知的签名参数 
+	}
+	领取资格地址：http://api.ewaywin.com/ilerrredpack?action=activityqualification&sign=MW_B5ECA031A5D9F85F2972E648AA8FA648&uid=2BD59896A291D2F9&aid=20
+	领取资格地址返回结果
+	{
+	state:"0", //个人私有数据凭证状态，0领取成功 1领取失败 2未知的签名参数 3已有该活动资格 
+	}
+	
+	

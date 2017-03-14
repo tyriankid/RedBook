@@ -1,0 +1,4 @@
+C:\project\RedBook\01工程\03编码\RedBook\YH.Plugin\bin\Debug\YH.Plugin.dll
+C:\project\RedBook\01工程\03编码\RedBook\YH.Plugin\bin\Debug\YH.Plugin.pdb
+C:\project\RedBook\01工程\03编码\RedBook\YH.Plugin\obj\Debug\YH.Plugin.dll
+C:\project\RedBook\01工程\03编码\RedBook\YH.Plugin\obj\Debug\YH.Plugin.pdb

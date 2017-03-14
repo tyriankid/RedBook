@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   useraddresslist (用户人收货地址列表)</th>
+                </tr>
+                                <tr>
+                    <th class="tablestyle_title">方法名称:   usergameaddresslist (获取游戏收货地址列表)（游戏）</th>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://api.ewaywin.com</div>
+                            <div>domain/ilerruser?action=useraddresslist&sign=用户ID随机签名</div>
+                        </fieldset><br/>
+                        <fieldset style="height: 100%;">
+                            <legend>请求示例（游戏）</legend>
+                            <div style="color:grey">domain测试地址为：http://api.ewaywin.com</div>
+                            <div>domain/ilerruser?action=usergameaddresslist&sign=用户ID随机签名</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>sign</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>用户ID随机签名，不接收未知的签名，微信不用传此参数</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                                               <fieldset style="height: 100%;">
+                            <legend>参数说明（游戏）</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>sign</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>用户ID随机签名，不接收未知的签名，微信不用传此参数</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>返回结果</legend>
+                            <div>
+                                {<br/>
+                                    state:"0",              //获取用户收货地址，0获取成功  //2未知的签名参数  //3你还没有地址，去添加收货地址吧 <br/>
+                                    default:"Y"               //Y 有默认地址   N没有默认地址<br/>
+                                    data:                            //返回数据<br/>
+                                    <div style="padding-left:60px">{</div>
+                                    <div style="padding-left:80px">id:'001',//用户地址唯一ID</div>
+                                    <div style="padding-left:80px">username:'小明',//用户名</div>
+                                    <div style="padding-left:80px">sheng:'天津市',//省</div>
+                                    <div style="padding-left:80px">shi:'天津市',//市</div>
+                                    <div style="padding-left:80px">xian:'和平县',//县</div>
+                                    <div style="padding-left:80px">tell:'123456',//收货人座机</div>
+                                    <div style="padding-left:80px">jiedao:'sdfsdf',//街道</div>
+                                    <div style="padding-left:80px">youbian:'123321',//邮编</div>
+                                    <div style="padding-left:80px">shouhuoren:'测试一',//收货人</div>
+                                    <div style="padding-left:80px">mobile:'18971164445',//收货人手机号</div>
+                                    <div style="padding-left:80px">qq:'99424922',//QQ号</div>
+                                    <div style="padding-left:80px">isdefault:'Y',//是否为默认地址，Y默认 N非默认</div>
+                                    <div style="padding-left:60px">}</div>
+                                }<br/>
+                                （游戏）：
+                                {<br/>
+                                    state:"0",              //获取用户收货地址（游戏），0获取成功  //2未知的签名参数  //3你还没有地址，去添加收货地址吧 <br/>
+                                    default:"Y"               //Y 有默认地址   N没有默认地址<br/>
+                                    data:                            //返回数据<br/>
+                                    <div style="padding-left:60px">{</div>
+                                    <div style="padding-left:80px">username:'小明',//用户名</div>
+                                    <div style="padding-left:80px">gamename:'英雄联盟',//省</div>
+                                    <div style="padding-left:80px">id:'1',//游戏地址唯一ID</div>
+                                    <div style="padding-left:80px">gamearea:'电信',//游戏服务器</div>
+                                    <div style="padding-left:80px">gameserver:'祖安',//游戏大区</div>
+                                    <div style="padding-left:80px">gameusercode:'tyrian',//游戏账号</div>
+                                    <div style="padding-left:80px">shouhuoren:'张三',//收货人</div>
+                                    <div style="padding-left:80px">mobile:'13477755522',//收货人手机号</div>
+                                    <div style="padding-left:80px">isdefault:'Y',//是否为默认地址，Y默认 N非默认</div>
+                                    <div style="padding-left:60px">}</div>
+                                }<br/>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

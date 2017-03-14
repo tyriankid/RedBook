@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   detail (获取商品详情)</th>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://api.ewaywin.com</div>
+                            <div>domain/ilerrshop?action=detail&shopid=商品ID&productid=商品基本信息ID</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>shopid</td>
+                                    <td>STRING</td>
+                                    <td>false</td>
+                                    <td>一元购商品ID。与productid参数二选一</td>
+                                </tr>
+                                <tr>
+                                    <td>productid</td>
+                                    <td>STRING</td>
+                                    <td>false</td>
+                                    <td>商品基本信息ID。与shopid参数二选一</td>
+                                </tr>
+                                <tr>
+                                    <td>uid</td>
+                                    <td>STRING</td>
+                                    <td>false</td>
+                                    <td>用户ID</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>返回结果</legend>
+                            <div style="float:left">
+                                {<br/>
+                                    state:"0",              //验证状态，0验证通过 2商品不存在<br/>
+                                    Q_showstate:'1',        //揭晓状态 1进行中，2正在揭晓，3已揭晓<br/>
+                                    ismybuy:'0',            //0代表未参入，1代表参入<br/>
+                                    ismywon:'0',            //0是别人中奖，1是自己中奖<br/>
+                                    q_username:'张三',      //中奖人昵称<br/>
+                                    q_img:'1.png',          //中奖人头像<br/>
+                                    q_sumquantity:'10',     //中奖人购买的总数<br/>
+                                    yId:'1',                //1元购商品ID<br/>
+                                    Productid:'1',          //商品基本信息ID<br/>
+                                    Title:'surface pro 4',  //商品名称<br/>
+                                    ......                  //商品属性，具体以最终数据库为准(go_yiyuan、go_products)<br/>
+                                }<br/>
+                            </div>
+                           <div style="float:left"><img src="../images/go_yiyuan.png" /><img src="../images/go_product.png" /></div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

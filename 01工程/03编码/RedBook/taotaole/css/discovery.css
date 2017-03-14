@@ -1,0 +1,96 @@
+@charset "utf-8";
+* {
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+
+
+body,
+button,
+input,
+select,
+textarea {
+    font-size: 12px;
+    font-family: arial, 微软雅黑;
+    background-color: #f4f4f4;
+}
+
+:focus {
+    outline: 0;
+}
+
+img {
+    border: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+div,
+ul,
+li,
+dl,
+dt,
+dd,
+table,
+td,
+input {
+    font-size: 12px;
+}
+
+select,
+textarea {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+    border: 0;
+    border-radius: 0;
+}
+.hanggao{
+    height: 40px;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+
+
+.discover-box { padding:0; width: 100%; }
+.discover-box ul{ padding:0; width: 100%;margin-bottom: 15px;}
+.discover-box li{display: block; background: #FFF; position: relative; border-top: 1px solid #F3F3F3;width: 100%;}
+.discover-box li:first-child{border-top:0;}
+.discover-box li a{ display: block;background-repeat: no-repeat;background-size: 60px;background-position: 10px center;}
+.discover-box li h1{font-size: 14px;color: #303239; padding: 10px;border-bottom: 1px solid #F5F5F4;}
+.discover-box li h1 b{ display: inline-block; width: 100px;}
+
+.discover-box li.iconNew a{ background-image: url(../images/discover/discoverIconNew.png);background-size: 50px;background-position-x: 15px;}
+.discover-box li.icon20 a{ background-image: url(../images/discover/discoverIcon20.png);background-size: 50px;background-position-x: 15px;}
+.discover-box li.iconIphone a{ background-image: url(../images/discover/discoverIconIphone.png);}
+.discover-box li.iconTuan a{ background-image: url(../images/discover/discoverIconTuan.png);}
+.discover-box li.iconShare a{ background-image: url(../images/discover/discoverIconShare.png);}
+.discover-box li.icon0 a{ background-image: url(../images/discover/discoverIcon0.png);}
+.discover-box li.iconHelp a{ background-image: url(../images/discover/discoverIconHelp.png);}
+
+
+
+
+.discover-box img { position: absolute; width: 70px; height: 70px; top: 0; left: 10px;}
+.discover-box p em { font-style: normal; padding-right: 5px; }
+.discover-box .info { margin-left: 80px; min-height: 50px;  font-size: 12px; padding: 10px 0; line-height: 24px; color: #B9B9B9; box-shadow: 0 1px 2px #F5F5F4;}
+.discover-box .info .name{ color: #383838;  font-size: 18px; font-weight: 400;}
+.discover-box .info .name b {  color:#5594CF; }
+.discover-box li .z-arrow { border-width: 1.5px 1.5px 0 0; z-index: 5; width: 10px;  height: 10px; vertical-align: middle; top: 28px;  position: absolute; right: 15px;}

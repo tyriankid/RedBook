@@ -1,0 +1,20 @@
+﻿
+更新人：葛壮
+更新时间：2016-09-20
+更新标识：更新
+更新备注：更新SiteSettings.config
+	影响文件：
+	config/SiteSettings.config
+--------------------------------
+更新人：闭婷婷
+更新时间：2016-09-20
+更新标识：更新
+更新备注：
+
+1、更新网吧转盘专题
+	影响文件：
+	/WxZhuanti/WangbaV2.aspx，/WxZhuanti/css，/WxZhuanti/css
+
+	2、修复没有记录时js报错
+	/index.userindex.aspx，/community.index.aspx，/css/community.css,/images/icon/icon-wangba.png
+--------------------------------

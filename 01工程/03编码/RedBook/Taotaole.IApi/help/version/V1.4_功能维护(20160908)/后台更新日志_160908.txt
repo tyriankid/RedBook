@@ -1,0 +1,24 @@
+
+
+--------------------------------
+更新人：刘冬
+更新时间：2016.09.08
+更新标识：增加操作日志页面
+更新备注：
+ 增加了 操作日志页面
+   admin/operationLogs.aspx
+ 会员兑换记录页面 汇总人数 改成 金钱
+ channel/activityDetailList.aspx
+ 隐藏了会员列表页面的 修改和删除功能
+  member/ memberlist.aspx
+
+--------------------------------
+更新人：魏红亮
+更新时间：2016.09.08
+更新标识：维护
+更新备注：
+ 1.网吧活动记录和会员兑换记录添加导出数据功能
+ 2.新增线下批量结算
+ 3.修改申请结算和普通结算
+  channel/activityDetailList.aspx
+  channel/ activityList.aspx

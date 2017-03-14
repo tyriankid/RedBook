@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63F752A9-C4E7-46BC-84CE-7042B51AD50A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Taotaole.IApi</RootNamespace>
+    <AssemblyName>Taotaole.IApi</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Calls\XMLFile1.xml" />
+    <Content Include="error.htm" />
+    <Content Include="help\css\common1.css" />
+    <Content Include="help\css\control.css" />
+    <Content Include="help\css\css.css" />
+    <Content Include="help\css\head.css" />
+    <Content Include="help\css\style.css" />
+    <Content Include="help\css\style0.css" />
+    <Content Include="help\css\tab.js" />
+    <Content Include="help\html\taotaole.pay.myconsumehuizong.htm" />
+    <Content Include="help\html\taotaole.shop.detailrenovate.htm" />
+    <Content Include="help\html\taotaole.user.countingo.htm" />
+    <Content Include="help\html\taotaolesgo_channel_activitydetailexchange.html" />
+    <Content Include="help\html\taotaole.order.affirminfo.htm" />
+    <Content Include="help\html\taotaole.order.partakewin.htm" />
+    <Content Include="help\html\taotaole.order.productaffirm.htm" />
+    <Content Include="help\html\taotaole.pay.mycharge.htm" />
+    <Content Include="help\html\taotaole.pay.myconsume.htm" />
+    <Content Include="help\html\taotaole.shop.algorithmwon.htm" />
+    <Content Include="help\html\left.html" />
+    <Content Include="help\html\mainfra.html" />
+    <Content Include="help\html\taotaole.buy.listinfo.htm" />
+    <Content Include="help\html\taotaole.buy.listwill.htm" />
+    <Content Include="help\html\taotaole.order.listbyuid.htm" />
+    <Content Include="help\html\taotaole.order.mylist.htm" />
+    <Content Include="help\html\taotaole.order.myshareorderlist.htm" />
+    <Content Include="help\html\taotaole.order.mywinninglist.htm" />
+    <Content Include="help\html\taotaole.order.shareorderlistbyuid.htm" />
+    <Content Include="help\html\taotaole.order.winninglistbyuid.htm" />
+    <Content Include="help\html\taotaole.pay.userpayment.htm" />
+    <Content Include="help\html\taotaole.pay.userpaymentsubmit.htm" />
+    <Content Include="help\html\taotaole.shareorder.detail.htm" />
+    <Content Include="help\html\taotaole.shareorder.insert.htm" />
+    <Content Include="help\html\taotaole.shareorder.insertreply.htm" />
+    <Content Include="help\html\taotaole.shareorder.listinfo.htm" />
+    <Content Include="help\html\taotaole.shareorder.listreply.htm" />
+    <Content Include="help\html\taotaole.shareorder.praise.htm" />
+    <Content Include="help\html\taotaole.shop.buyrecord.htm" />
+    <Content Include="help\html\taotaole.shop.detail.htm" />
+    <Content Include="help\html\taotaole.shop.getshopcategory.htm" />
+    <Content Include="help\html\taotaole.shop.history.htm" />
+    <Content Include="help\html\taotaole.shop.listinfo.htm" />
+    <Content Include="help\html\taotaole.sms.checkvercode.htm" />
+    <Content Include="help\html\taotaole.sms.sendvercode.htm" />
+    <Content Include="help\html\taotaole.user.adduseraddress.htm" />
+    <Content Include="help\html\taotaole.user.checkname.htm" />
+    <Content Include="help\html\taotaole.user.defauleuseraddress.htm" />
+    <Content Include="help\html\taotaole.user.deleteuseraddress.htm" />
+    <Content Include="help\html\taotaole.user.login.htm" />
+    <Content Include="help\html\taotaole.user.register.htm" />
+    <Content Include="help\html\taotaole.user.showinfobyuid.htm" />
+    <Content Include="help\html\taotaole.user.updatepwd.htm" />
+    <Content Include="help\html\taotaole.user.updateuserinfo.htm" />
+    <Content Include="help\html\taotaole.user.useraddresslist.htm" />
+    <Content Include="help\html\taotaolearticle.list.html" />
+    <Content Include="help\html\taotaolego_channel_activitydetailpass.html" />
+    <Content Include="help\html\taotaolerefund.refund.html" />
+    <Content Include="help\html\taotaolerepack.getlist.html" />
+    <Content Include="help\html\taotaolerepack.list.html" />
+    <Content Include="help\html\taotaolerepack.num.html" />
+    <Content Include="help\html\taotaoleslides.detail.html" />
+    <Content Include="help\html\userpayment.htm" />
+    <Content Include="help\html\taotaole.pay.wxrechange.htm" />
+    <Content Include="help\html\taotaolerepack.netgetlist.html" />
+    <Content Include="help\html\taotaolerepack.netlist.html" />
+    <Content Include="help\html\taotaolerepack.netnum.html" />
+    <Content Include="help\html\taotaole.shop.shopidbyqishu.htm" />
+    <Content Include="help\html\taotaolerepack.netpullactivity.html" />
+    <Content Include="help\html\taotaolerepack.netstayactivity.html" />
+    <Content Include="help\html\taotaolerepack.netqualification.html" />
+    <Content Include="help\html\taotaole.buy.refreshLoterry.htm" />
+    <Content Include="help\html\taotaole.order.winningremind.htm" />
+    <Content Include="help\html\taotaole.tuan.tuanlist.htm" />
+    <Content Include="help\html\taotaole.pay.userpaymenttuansubmit.htm" />
+    <Content Include="help\html\taotaole.pay.userpaymenttuan.htm" />
+    <Content Include="help\html\taotaole.tuan.tuanlistdetail.htm" />
+    <Content Include="help\html\taotaole.tuan.tuanmylist.htm" />
+    <Content Include="help\html\taotaolerepack.netvalqualification.html" />
+    <Content Include="help\html\taotaole.tuan.tuanwinnerlist.htm" />
+    <Content Include="help\html\taotaole.tuan.tuankeeplist.htm" />
+    <Content Include="help\html\taotaole.tuan.tuankeep.htm" />
+    <Content Include="help\images\bu01.gif" />
+    <Content Include="help\images\bu02.gif" />
+    <Content Include="help\images\bu03.gif" />
+    <Content Include="help\images\bu04.gif" />
+    <Content Include="help\images\bu05.gif" />
+    <Content Include="help\images\bu06.gif" />
+    <Content Include="help\images\bu07.gif" />
+    <Content Include="help\images\bu08.gif" />
+    <Content Include="help\images\bu09.gif" />
+    <Content Include="help\images\bu10.gif" />
+    <Content Include="help\images\bu11.gif" />
+    <Content Include="help\images\bu12.gif" />
+    <Content Include="help\images\bu13.gif" />
+    <Content Include="help\images\button03.gif" />
+    <Content Include="help\images\button04.gif" />
+    <Content Include="help\images\button05.gif" />
+    <Content Include="help\images\button06.gif" />
+    <Content Include="help\images\button07.gif" />
+    <Content Include="help\images\button08.gif" />
+    <Content Include="help\images\button09.gif" />
+    <Content Include="help\images\button10.gif" />
+    <Content Include="help\images\dhbutton01.gif" />
+    <Content Include="help\images\dhbutton02.gif" />
+    <Content Include="help\images\dhbutton03.gif" />
+    <Content Include="help\images\dhbutton04.gif" />
+    <Content Include="help\images\dhbutton05.gif" />
+    <Content Include="help\images\go_product.png" />
+    <Content Include="help\images\go_yiyuan.png" />
+    <Content Include="help\images\ico01.gif" />
+    <Content Include="help\images\ico02.gif" />
+    <Content Include="help\images\ico03.gif" />
+    <Content Include="help\images\ico04.gif" />
+    <Content Include="help\images\ico05.gif" />
+    <Content Include="help\images\ico06.gif" />
+    <Content Include="help\images\ico07.gif" />
+    <Content Include="help\images\ico11.gif" />
+    <Content Include="help\images\ico12.gif" />
+    <Content Include="help\images\ico13.gif" />
+    <Content Include="help\images\ico14.gif" />
+    <Content Include="help\images\ico15.gif" />
+    <Content Include="help\images\ico16.gif" />
+    <Content Include="help\images\ico24.gif" />
+    <Content Include="help\images\left.gif" />
+    <Content Include="help\images\line01.gif" />
+    <Content Include="help\images\loadon.gif" />
+    <Content Include="help\images\logo.gif" />
+    <Content Include="help\images\mode.jpg" />
+    <Content Include="help\images\nav01.gif" />
+    <Content Include="help\images\nav02.gif" />
+    <Content Include="help\images\nav03.gif" />
+    <Content Include="help\images\nav04.gif" />
+    <Content Include="help\images\nav05.gif" />
+    <Content Include="help\images\nav06.gif" />
+    <Content Include="help\images\nav07.gif" />
+    <Content Include="help\images\navbutton01.gif" />
+    <Content Include="help\images\navbutton02.gif" />
+    <Content Include="help\images\navbutton03.gif" />
+    <Content Include="help\images\navbutton04.gif" />
+    <Content Include="help\images\navend.gif" />
+    <Content Include="help\images\newline.gif" />
+    <Content Include="help\images\newling.gif" />
+    <Content Include="help\images\pic05.gif" />
+    <Content Include="help\images\shape01.gif" />
+    <Content Include="help\images\spacer.gif" />
+    <Content Include="help\images\top.gif" />
+    <Content Include="help\images\top02.gif" />
+    <Content Include="help\images\top03.gif" />
+    <Content Include="help\images\welcome.gif" />
+    <Content Include="help\index.html" />
+    <Content Include="help\js\typem.js" />
+    <Content Include="help\js\xiangmu.js" />
+    <Content Include="help\version\V1.0_基线版本%2820160904%29\后台更新日志_160904.txt" />
+    <Content Include="help\version\V1.0_基线版本%2820160904%29\微信更新日志__160904.txt" />
+    <Content Include="help\version\V1.0_基线版本%2820160904%29\接口更新日志__160904.txt" />
+    <Content Include="help\version\V1.0_基线版本%2820160904%29\账号密码.txt" />
+    <Content Include="help\version\V1.1_功能维护%2820160905%29\后台更新日志_160905.txt" />
+    <Content Include="help\version\V1.1_功能维护%2820160905%29\微信更新日志__160905.txt" />
+    <Content Include="help\version\V1.1_功能维护%2820160905%29\接口更新日志__160905.txt" />
+    <Content Include="help\version\V1.2_功能维护%2820160906%29\后台更新日志_160906.txt" />
+    <Content Include="help\version\V1.2_功能维护%2820160906%29\微信更新日志__160906.txt" />
+    <Content Include="help\version\V1.2_功能维护%2820160906%29\接口更新日志__160906.txt" />
+    <Content Include="help\version\V1.3_功能维护%2820160907%29\后台更新日志_160907.txt" />
+    <Content Include="help\version\V1.3_功能维护%2820160907%29\微信更新日志__160907.txt" />
+    <Content Include="help\version\V1.3_功能维护%2820160907%29\接口更新日志__160907.txt" />
+    <Content Include="help\version\V1.4_功能维护%2820160908%29\后台更新日志_160908.txt" />
+    <Content Include="help\version\V1.4_功能维护%2820160908%29\微信更新日志__160908.txt" />
+    <Content Include="help\version\V1.4_功能维护%2820160908%29\接口更新日志__160908.txt" />
+    <Content Include="help\version\V1.5_功能维护%2820160912%29\微信更新日志_160912.txt" />
+    <Content Include="help\version\V1.5_功能维护%2820160912%29\接口更新日志_160912.txt" />
+    <Content Include="help\version\V1.5_功能维护%2820160912%29\后台更新日志_160912.txt" />
+    <Content Include="help\version\V1.6_功能维护%2820160913%29\后台更新日志_160913.txt" />
+    <Content Include="help\version\V1.6_功能维护%2820160913%29\微信更新日志_160913.txt" />
+    <Content Include="help\version\V1.6_功能维护%2820160913%29\接口更新日志_160913.txt" />
+    <Content Include="help\version\V1.7_功能维护%2820160914%29\后台更新日志_160914.txt" />
+    <Content Include="help\version\V1.7_功能维护%2820160914%29\微信更新日志_160914.txt" />
+    <Content Include="help\version\V1.7_功能维护%2820160914%29\接口更新日志_160914.txt" />
+    <Content Include="help\version\V1.8_功能维护%2820160919%29\后台更新日志_160919.txt" />
+    <Content Include="help\version\V1.8_功能维护%2820160919%29\微信更新日志_160919.txt" />
+    <Content Include="help\version\V1.8_功能维护%2820160919%29\接口更新日志_160919.txt" />
+    <Content Include="help\version\V1.9_功能维护%2820160921%29\后台更新日志_160921.txt" />
+    <Content Include="help\version\V1.9_功能维护%2820160921%29\微信更新日志_160921.txt" />
+    <Content Include="help\version\V1.9_功能维护%2820160921%29\接口更新日志_160921.txt" />
+    <Content Include="help\活动地址.txt" />
+    <Content Include="index.html" />
+    <Content Include="lib\Newtonsoft.Json.dll" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calls\call_yolly.ashx.cs">
+      <DependentUpon>call_yolly.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="taotaolearticle.ashx.cs">
+      <DependentUpon>taotaolearticle.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="taotaolebuy.ashx.cs">
+      <DependentUpon>taotaolebuy.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="taotaoleinterfaceapi.ashx.cs">
+      <DependentUpon>taotaoleinterfaceapi.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="taotaoleorder.ashx.cs">
+      <DependentUpon>taotaoleorder.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="taotaolepay.ashx.cs">
+      <DependentUpon>taotaolepay.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="taotaolepush.ashx.cs">
+      <DependentUpon>taotaolepush.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="taotaoleredpack.ashx.cs">
+      <DependentUpon>taotaoleredpack.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="taotaolerefund.ashx.cs">
+      <DependentUpon>taotaolerefund.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="taotaoleshareorder.ashx.cs">
+      <DependentUpon>taotaoleshareorder.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="taotaoleshop.ashx.cs">
+      <DependentUpon>taotaoleshop.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="taotaolesms.ashx.cs">
+      <DependentUpon>taotaolesms.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="taotaoletuan.ashx.cs">
+      <DependentUpon>taotaoletuan.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="taotaoleuser.ashx.cs">
+      <DependentUpon>taotaoleuser.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="taotaolegift.ashx.cs">
+      <DependentUpon>taotaolegift.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Taotaole.Bll\Taotaole.Bll.csproj">
+      <Project>{57e6cf31-867f-4c84-b59c-d7f2432a9e39}</Project>
+      <Name>Taotaole.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Taotaole.Cache\Taotaole.Cache.csproj">
+      <Project>{ba648799-1a56-4c28-990c-33dfe36710c1}</Project>
+      <Name>Taotaole.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Taotaole.Common\Taotaole.Common.csproj">
+      <Project>{76acfd5f-45aa-4c31-b4a7-ded7f89a1a71}</Project>
+      <Name>Taotaole.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Taotaole.Model\Taotaole.Model.csproj">
+      <Project>{951b3bd2-2779-40d3-8fb3-d1397a82c175}</Project>
+      <Name>Taotaole.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YH.DataAccess\YH.DataAccess.csproj">
+      <Project>{1380dd8f-95d3-45ed-9e78-00f1d9528f48}</Project>
+      <Name>YH.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YH.Utility\YH.Utility.csproj">
+      <Project>{bf2cde81-2953-4d6e-ae67-b6f255e43baa}</Project>
+      <Name>YH.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YH.Weixin.MP\YH.Weixin.MP.csproj">
+      <Project>{7addb3dd-95b6-4129-9de4-8af7753ed78d}</Project>
+      <Name>YH.Weixin.MP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YH.Weixin.Pay\YH.Weixin.Pay.csproj">
+      <Project>{36d67c6e-7fb4-4c21-955a-c3f39c250a60}</Project>
+      <Name>YH.Weixin.Pay</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="taotaoleuser.ashx" />
+    <Content Include="taotaolebuy.ashx" />
+    <Content Include="taotaoleorder.ashx" />
+    <Content Include="taotaolepay.ashx" />
+    <Content Include="taotaolepush.ashx" />
+    <Content Include="taotaolerefund.ashx" />
+    <Content Include="taotaoleshareorder.ashx" />
+    <Content Include="taotaoleshop.ashx" />
+    <Content Include="taotaolesms.ashx" />
+    <Content Include="taotaoleredpack.ashx" />
+    <Content Include="taotaoletuan.ashx" />
+    <Content Include="taotaolearticle.ashx" />
+    <Content Include="help\html\taotaolearticledetail.detail.html" />
+    <Content Include="help\html\taotaoleslides.list.html" />
+    <Content Include="config\SiteSettings.config" />
+    <Content Include="Calls\call_yolly.ashx" />
+    <Content Include="taotaoleinterfaceapi.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="taotaolegift.ashx" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>27350</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4944/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

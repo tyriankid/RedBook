@@ -1,0 +1,12 @@
+
+更新人：余跃
+更新时间：2016.09.12
+更新标识：维护
+更新备注：
+   1、修改根据业务ID发包方法，将判断从判断productid改为originalid:（9.08修改12日上传）
+   2、调整0元购活动 验证时间从开奖时间改为购买时间（12日修改）
+   3、修改红包来源需要修改活动表 增加字段usercodeinfo
+   Taotaole.Bll/go_activity_codeBusiness.cs
+   Taotaole.Dal/go_activityManager.cs
+   Taotaole.Model/go_activityEntity.cs
+   --------------------------------

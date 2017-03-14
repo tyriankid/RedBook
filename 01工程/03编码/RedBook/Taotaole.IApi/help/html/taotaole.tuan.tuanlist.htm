@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   tuanlist (团购商品列表)</th>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://api.ewaywin.com</div>
+                            <div>domain/ilerrtuan?action=tuanlist&p=页码</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>p</td>
+                                    <td>STRING</td>
+                                    <td>false</td>
+                                    <td>页码，默认为1</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>返回结果</legend>
+                             <div>
+                                {<br/>
+                                    state："0",                      //获取数据状态，0成功获取 1未获取到数据或数据已加载完毕 2团购商品ID错误<br/>
+                                   "count":12,                      //总条数，总数量<br/>
+                                   "pageCount":2,                   //总共页数<br/>
+                                   "nextPage":2,                    //下一页页码<br/>
+                                    imgroot:"G_UPLOAD_PATH",        //图片根目录<br/>
+                                    data:                           //返回数据值<br/>
+                                    <div style="padding-left:60px">{</div>
+                                    <div style="padding-left:80px">tId:'1',//团购商品ID</div>
+                                    <div style="padding-left:80px">productid:'1',//商品基本信息ID</div>
+                                    <div style="padding-left:80px">title:'华为P8',//商品名称</div>
+                                    <div style="padding-left:80px">total_num:'20',//成团数量</div>
+                                    <div style="padding-left:80px">per_price:'0.5',//每人团购价格</div>
+                                    <div style="padding-left:80px">thumb:'shopimg/20160722/81403872149394.jpg',//缩略图</div>
+                                    <div style="padding-left:60px">}</div>
+                                }<br/>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   oneselfpartake (我的一元购订单(云购记录))</th>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://api.ewaywin.com</div>
+                            <div>domain/ilerrorder?action=mylist&sign=用户ID随机签名&typeid=类别码&p=页码</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>sign</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>用户ID随机签名，不接收未知的签名，微信不用传此参数</td>
+                                </tr>
+                                <tr>
+                                    <td>typeid</td>
+                                    <td>int</td>
+                                    <td>false</td>
+                                    <td>类别码，默认为0。0表示参与云购的商品_全部，1表示参与云购的商品_进行中，2表示_参与云购的商品已揭晓</td>
+                                </tr>
+                                <tr>
+                                    <td>p</td>
+                                    <td>int</td>
+                                    <td>false</td>
+                                    <td>页码，默认为1</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>返回结果</legend>
+                            <div>
+                                {<br/>
+                                    state:"0",              //个人私有数据凭证状态，0验证通过 1超过翻页或无数据 2签名参数错误<br/>
+                                    count："0",              //数据总条数<br/>
+                                    pageCount:"3",                       //总页数<br/>
+                                    nextPage:"2",                         //下一页
+                                    imgroot:"G_UPLOAD_PATH",        //图片根目录<br/>
+                                    data:                                            //返回数据列<br/>
+                                    <div style="padding-left:60px">{</div>
+                                    <div style="padding-left:80px">orderid:'A1321546545',//订单ID</div>
+                                    <div style="padding-left:80px">yid:'1',//一元购id</div>
+                                    <div style="padding-left:80px">productid:'1',//商品ID</div>
+                                    <div style="padding-left:80px">q_showtime:'0',//是否在进行中，0已揭晓，1正在揭晓</div>
+                                    <div style="padding-left:80px">shopname:'surface pro 4',//商品名称</div>
+                                    <div style="padding-left:80px">thumb:'1.jpg',//商品缩略图</div>
+                                    <div style="padding-left:80px">typeid:'',//商品类型ID</div>
+                                    <div style="padding-left:80px">qishu:'3',//当前期数</div>
+                                    <div style="padding-left:80px">quantity:'3',//当前用户参与次数</div>
+                                    <div style="padding-left:80px">zongrenshu:'100',//总人数</div>
+                                    <div style="padding-left:80px">shengyurenshu:'30',//剩余人数</div>
+                                    <div style="padding-left:80px">canyurenshu:'70',//参与人数</div>
+                                    <div style="padding-left:80px">q_uid:'3',//中奖人ID</div>
+                                    <div style="padding-left:80px">username:'三石哥',//中奖人</div>
+                                    <div style="padding-left:80px">headimg:'touxiang.jpg',//中奖人头像</div>
+                                    <div style="padding-left:80px">q_sumquantity:'3',//中奖人参与次数</div>
+                                    <div style="padding-left:80px">q_user_code:'163',//幸运码</div>
+                                    <div style="padding-left:80px">q_end_time:'2016-07-01 12:16:30',//揭晓时间，精确到秒</div>
+                                    <div style="padding-left:80px">yungouState:'3',//揭晓状态，1进行中 2商品购买次数已满 3商品已揭晓</div>
+                                    <div style="padding-left:80px">haomiao:'null',//若果正在揭晓，则返回距离开奖的毫秒数，已揭晓为null</div>
+                                }<br/>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

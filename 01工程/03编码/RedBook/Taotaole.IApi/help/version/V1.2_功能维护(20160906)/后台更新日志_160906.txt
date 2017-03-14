@@ -1,0 +1,21 @@
+更新人：葛壮
+更新时间：2016-09-06
+更新标识：维护
+更新备注：维护订单相关页面，增加功能
+   影响的文件
+   /OrderClass/orderdetail.aspx
+   /OrderClass/orderList.aspx
+   /OrderClass/orderLucky.aspx
+--------------------------------
+更新人：靳华斌
+更新时间：2016-09-06
+更新标识：维护
+更新备注：修复上架一元购商BUG（codetype写成了tuan）
+   影响的文件
+   /OrderClass/orderdetail.aspx
+   /OrderClass/orderList.aspx
+   /OrderClass/orderLucky.aspx
+--------------------------------
+
+
+

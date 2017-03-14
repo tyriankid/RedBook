@@ -1,0 +1,119 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: arial,"Î¢ÈíÑÅºÚ" ;
+}
+
+html {
+  line-height: 1;
+}
+html,body{
+  background: #ff5242;
+}
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+img{
+  width:100%;
+  vertical-align: middle;
+}
+.play{
+  position:relative;
+  padding: 10%;
+}
+.turntable-bg {
+  position: relative;
+  width: 100%;
+  margin-top: -30%;
+}
+.turntable-bg .imgBg{
+  width:100%;
+}
+.turntable-bg .pointer {
+  position: absolute;
+  padding: 30px;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  z-index: 8;
+}
+.turntable-bg .rotate {
+  position: absolute;
+  padding: 15%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.rule{
+  padding: 30px;
+}
+.rule div{
+  padding:10px;
+  /* background:#de4739; */
+  /* border-radius: 5px; */
+  color:#fff;
+}
+.rule div h3{
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+.rule div p{
+  font-size: 12px;
+  line-height: 26px;
+}
+#WbInfoPopup .PopupLayer .po-nrbox {
+    padding:0 ;
+}
+.PopupLayer h3 img {
+    width:100px;
+    height:auto;
+    margin:0 auto 10px auto;
+}

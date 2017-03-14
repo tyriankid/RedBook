@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>API</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
+
+    <script language="JavaScript" type="text/javascript">
+
+
+    </script>
+    <style type="text/css">
+        <!--
+        .atten
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #F00;
+        }
+        -->
+    </style>
+</head>
+
+<body class="ContentBody">
+    <form action="" method="post" enctype="multipart/form-data" name="fom" id="fom" target="sypost">
+        <div class="MainDiv">
+            <table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+                <tr>
+                    <th class="tablestyle_title">方法名称:   userpayment (用户付款)</th>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>请求示例</legend>
+                            <div style="color:grey">domain测试地址为：http://api.ewaywin.com</div>
+                           <div>domain/ilerrpay?action=userpayment&sign=用户ID随机签名&shopid=商品ID&quantity=购买数量</div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>参数说明</legend>
+                            <table style="border:1px solid black; width:100%">
+                                <tr style="font-weight:bold;">
+                                    <td style="width:200px">参数名称</td>
+                                    <td style="width:100px">类型</td>
+                                    <td style="width:100px">是否必须字段</td>
+                                    <td>说明</td>
+                                </tr>
+                                <tr>
+                                    <td>sign</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>用户ID随机签名，不接收未知的签名</td>
+                                </tr>
+                                <tr>
+                                    <td>shopid</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>商品ID</td>
+                                </tr>
+                                <tr>
+                                    <td>quantity</td>
+                                    <td>STRING</td>
+                                    <td>true</td>
+                                    <td>购买数量</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:10px;">
+                       <fieldset style="height: 100%;">
+                            <legend>返回结果</legend>
+                            <div>
+                                {<br/>
+                                    state:"0",              //个人私有数据凭证状态，0验证通过 1缺少签名参数 2未知的签名参数 3缺少参数 4商品不存在 5商品已售罄 6商品已过期<br/>
+                                    quantity："3",           //实际购买数量<br/>
+                                    paymoney:"3",         //实际待支付金额<br/>
+                                    APIsubmitcode:"163",     //支付唯一码<br/>
+                                    usemoney:"1",     //余额是否足够(1是 0否)<br/>
+                                    useredpaper:"0",     //是否有可用红包(是 0否)<br/>
+                                    money:"163",        //账户余额(元)<br/>
+                                     data:                           //可用红包列表<br/>
+                                    <div style="padding-left:60px">{</div>
+                                    <div style="padding-left:80px">id:'1',//红包ID</div>
+                                    <div style="padding-left:80px">codetitle:'满5减2红包',//红包标题</div>
+                                    <div style="padding-left:80px">amount:'5',//满足金额,为0时不限制</div>
+                                    <div style="padding-left:80px">discount:'2',//抵扣金额</div>
+                                    <div style="padding-left:60px">}</div>
+                                }<br/>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

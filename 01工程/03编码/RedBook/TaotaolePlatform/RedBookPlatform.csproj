@@ -1,0 +1,2690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDC2CE14-7A50-4E1C-8C0A-4A8481444CC3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RedBookPlatform</RootNamespace>
+    <AssemblyName>RedBookPlatform</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\taotaole\lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\addadmin.aspx" />
+    <Content Include="admin\adminlist.aspx" />
+    <Content Include="admin\Configs.aspx" />
+    <Content Include="admin\modifymenujson.aspx" />
+    <Content Include="admin\operationLogs.aspx" />
+    <Content Include="admin\ResettingPass.aspx" />
+    <Content Include="Article\addArticle.aspx" />
+    <Content Include="Article\ArticleList.aspx" />
+    <Content Include="baidu\addbaiducfglist.aspx" />
+    <Content Include="baidu\baiducfglist.aspx" />
+    <Content Include="CardRecharge\AddCardRecharge.aspx" />
+    <Content Include="CardRecharge\CardRechargeList.aspx" />
+    <Content Include="Channel.aspx" />
+    <Content Include="channel\activityDetailList.aspx" />
+    <Content Include="channel\activityList.aspx" />
+    <Content Include="channel\addChannel.aspx" />
+    <Content Include="channel\addDistributor.aspx" />
+    <Content Include="channel\agentCashout.aspx" />
+    <Content Include="channel\applyCash.aspx" />
+    <Content Include="channel\baseInformation.aspx" />
+    <Content Include="channel\brokerageSet.aspx" />
+    <Content Include="channel\ChangePassword.aspx" />
+    <Content Include="channel\channelCashout.aspx" />
+    <Content Include="channel\channelList.aspx" />
+    <Content Include="channel\channelRecodes.aspx" />
+    <Content Include="channel\distributorList.aspx" />
+    <Content Include="channel\distributorRecodes.aspx" />
+    <Content Include="channel\inviteMemberList.aspx" />
+    <Content Include="channel\spreadLink.aspx" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="member\addmember.aspx" />
+    <Content Include="member\memberDetail.aspx" />
+    <Content Include="member\memberlist.aspx" />
+    <Content Include="member\rechargerecord.aspx" />
+    <Content Include="member\shoppingrecord.aspx" />
+    <Content Include="member\ZenPointDetail.aspx" />
+    <Content Include="operative\buyHotCake.aspx" />
+    <Content Include="operative\firstFiveYuan.aspx" />
+    <Content Include="operative\halfoffCarnival.aspx" />
+    <Content Include="operative\newUserRecharge.aspx" />
+    <Content Include="operative\redpackadd.aspx" />
+    <Content Include="operative\redpacklist.aspx" />
+    <Content Include="operative\saleProduct.aspx" />
+    <Content Include="operative\shaidan.aspx" />
+    <Content Include="operative\tuanbuy.aspx" />
+    <Content Include="operative\updateNewUserRecharge.aspx" />
+    <Content Include="operative\userRedpackList.aspx" />
+    <Content Include="operative\zeroBuy.aspx" />
+    <Content Include="operative\sleepuser.aspx" />
+    <Content Include="OrderClass\orderDelivery.aspx" />
+    <Content Include="OrderClass\orderdetail.aspx" />
+    <Content Include="OrderClass\orderList.aspx" />
+    <Content Include="OrderClass\orderLucky.aspx" />
+    <Content Include="OrderClass\orderNotOut.aspx" />
+    <Content Include="OrderClass\orderSendGoods.aspx" />
+    <Content Include="OrderClass\ZhiGouOrder.aspx" />
+    <Content Include="pages\login.html" />
+    <Content Include="pages\products\addproduct.html" />
+    <Content Include="productClassify\addBrand.aspx" />
+    <Content Include="productClassify\addCategory.aspx" />
+    <Content Include="productClassify\brandList.aspx" />
+    <Content Include="productClassify\CategoryList.aspx" />
+    <Content Include="products\addGifts.aspx" />
+    <Content Include="products\addProduct.aspx" />
+    <Content Include="products\AddScope.aspx" />
+    <Content Include="products\addTuangou.aspx" />
+    <Content Include="products\addYuangou.aspx" />
+    <Content Include="products\AddZhiGou.aspx" />
+    <Content Include="products\gifts.aspx" />
+    <Content Include="products\productList.aspx" />
+    <Content Include="Base.aspx" />
+    <Content Include="products\tuangouList.aspx" />
+    <Content Include="products\tuangouRecover.aspx" />
+    <Content Include="products\yuangouList.aspx" />
+    <Content Include="products\yuangouRecover.aspx" />
+    <Content Include="products\zhiProduct.aspx" />
+    <Content Include="Resources\403.html" />
+    <Content Include="Resources\css\comm.css" />
+    <Content Include="Resources\css\flashupload.css" />
+    <Content Include="Resources\css\index.css" />
+    <Content Include="Resources\css\MutiArticle.css" />
+    <Content Include="Resources\iconfont\iconfont.css" />
+    <Content Include="Resources\iconfont\iconfont.svg" />
+    <Content Include="Resources\images\arrow-spr265437.png" />
+    <Content Include="Resources\images\big_search.png" />
+    <Content Include="Resources\images\body_line.png" />
+    <Content Include="Resources\images\checkboxes.png" />
+    <Content Include="Resources\images\common.jpg" />
+    <Content Include="Resources\images\crumbs_arrow.png" />
+    <Content Include="Resources\images\crumbs_home.png" />
+    <Content Include="Resources\images\dark.png" />
+    <Content Include="Resources\images\flash_up_ico.png" />
+    <Content Include="Resources\images\goodsthumb.jpg" />
+    <Content Include="Resources\images\login_top.png" />
+    <Content Include="Resources\images\login_password.png" />
+    <Content Include="Resources\images\login_username.png" />
+    <Content Include="Resources\images\logo.png" />
+    <Content Include="Resources\images\main.png" />
+    <Content Include="Resources\images\plus.png" />
+    <Content Include="index.html" />
+    <Content Include="Resources\images\radios.png" />
+    <Content Include="Resources\images\sel.gif" />
+    <Content Include="Resources\images\upload.jpg" />
+    <Content Include="Resources\images\upload.png" />
+    <Content Include="Resources\js\calendar.js" />
+    <Content Include="Resources\js\channel.js" />
+    <Content Include="Resources\js\city.min.js" />
+    <Content Include="Resources\js\clipboard.min.js" />
+    <Content Include="Resources\js\comm.js" />
+    <Content Include="Resources\js\flashupload.js" />
+    <Content Include="Resources\js\highcharts.js" />
+    <Content Include="Resources\js\home.js" />
+    <Content Include="Resources\js\index.js" />
+    <Content Include="Resources\js\jquery-3.0.0.js" />
+    <Content Include="Resources\js\jquery-json-2.4.js" />
+    <Content Include="Resources\js\jquery.cityselect.js" />
+    <Content Include="Resources\js\jquery.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="pages\system\admin\addadmin.html" />
+    <Content Include="pages\system\admin\adminlist.html" />
+    <Content Include="pages\system\seo.html" />
+    <Content Include="pages\system\weixin\wxInterface.html" />
+    <Content Include="Resources\js\js.KinerCode.js" />
+    <Content Include="Resources\js\MultiBox.js" />
+    <Content Include="Resources\js\ProvCity.js" />
+    <Content Include="Resources\js\swfupload\handlers.js" />
+    <Content Include="Resources\js\swfupload\swfupload.js" />
+    <Content Include="Resources\js\swfupload\swfupload.swf" />
+    <Content Include="Resources\js\swfupload\swfuploadbutton.swf" />
+    <Content Include="Resources\js\swfupload\upload.js" />
+    <Content Include="Resources\js\swfupload\uploadMult.js" />
+    <Content Include="Resources\js\zTree\bootstrap.min.css" />
+    <Content Include="Resources\js\zTree\img\diy\1_close.png" />
+    <Content Include="Resources\js\zTree\img\diy\1_open.png" />
+    <Content Include="Resources\js\zTree\img\diy\2.png" />
+    <Content Include="Resources\js\zTree\img\diy\3.png" />
+    <Content Include="Resources\js\zTree\img\diy\4.png" />
+    <Content Include="Resources\js\zTree\img\diy\5.png" />
+    <Content Include="Resources\js\zTree\img\diy\6.png" />
+    <Content Include="Resources\js\zTree\img\diy\7.png" />
+    <Content Include="Resources\js\zTree\img\diy\8.png" />
+    <Content Include="Resources\js\zTree\img\diy\9.png" />
+    <Content Include="Resources\js\zTree\img\line_conn.gif" />
+    <Content Include="Resources\js\zTree\img\loading.gif" />
+    <Content Include="Resources\js\zTree\img\zTreeStandard.gif" />
+    <Content Include="Resources\js\zTree\img\zTreeStandard.png" />
+    <Content Include="Resources\js\zTree\jquery-1.4.4.min.js" />
+    <Content Include="Resources\js\zTree\jquery.ztree.all-3.5.js" />
+    <Content Include="Resources\js\zTree\jquery.ztree.all-3.5.min.js" />
+    <Content Include="Resources\js\zTree\jquery.ztree.core-3.5.js" />
+    <Content Include="Resources\js\zTree\jquery.ztree.core-3.5.min.js" />
+    <Content Include="Resources\js\zTree\jquery.ztree.excheck-3.5.js" />
+    <Content Include="Resources\js\zTree\jquery.ztree.excheck-3.5.min.js" />
+    <Content Include="Resources\js\zTree\jquery.ztree.exedit-3.5.js" />
+    <Content Include="Resources\js\zTree\jquery.ztree.exedit-3.5.min.js" />
+    <Content Include="Resources\js\zTree\jquery.ztree.exhide-3.5.js" />
+    <Content Include="Resources\js\zTree\jquery.ztree.exhide-3.5.min.js" />
+    <Content Include="Resources\js\zTree\zTreeStyle.css" />
+    <Content Include="Resources\laydate\need\laydate.css" />
+    <Content Include="Resources\laydate\laydate.dev.js" />
+    <Content Include="Resources\laydate\laydate.js" />
+    <Content Include="Resources\laydate\skins\dahong\icon.png" />
+    <Content Include="Resources\laydate\skins\dahong\laydate.css" />
+    <Content Include="Resources\laydate\skins\danlan\icon.png" />
+    <Content Include="Resources\laydate\skins\danlan\laydate.css" />
+    <Content Include="Resources\laydate\skins\default\icon.png" />
+    <Content Include="Resources\laydate\skins\default\laydate.css" />
+    <Content Include="Resources\laydate\skins\molv\icon.png" />
+    <Content Include="Resources\laydate\skins\molv\laydate.css" />
+    <Content Include="Resources\laydate\skins\qianhuang\icon.png" />
+    <Content Include="Resources\laydate\skins\qianhuang\laydate.css" />
+    <Content Include="Resources\laydate\skins\yahui\icon.png" />
+    <Content Include="Resources\laydate\skins\yahui\laydate.css" />
+    <Content Include="Resources\laydate\skins\yalan\icon.png" />
+    <Content Include="Resources\laydate\skins\yalan\laydate.css" />
+    <Content Include="Resources\layer\layer.js" />
+    <Content Include="Resources\layer\skin\default\icon-ext.png" />
+    <Content Include="Resources\layer\skin\default\icon.png" />
+    <Content Include="Resources\layer\skin\default\loading-0.gif" />
+    <Content Include="Resources\layer\skin\default\loading-1.gif" />
+    <Content Include="Resources\layer\skin\default\loading-2.gif" />
+    <Content Include="Resources\layer\skin\layer.css" />
+    <Content Include="Resources\swf\swfupload.swf" />
+    <Content Include="Resources\uploads\article\goodsthumb.jpg" />
+    <Content Include="Resources\uploads\member\20160802\product_032905.jpg" />
+    <Content Include="Resources\uploads\member\goodsthumb.jpg" />
+    <Content Include="Resources\uploads\shopimg1000040425.png" />
+    <Content Include="Resources\uploads\shopimg200040425.jpg" />
+    <Content Include="Resources\uploads\shopimg500040425.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_102357.096.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_102357.0962.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_103618.624.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_103618.6242.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_103632.426.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_103632.4262.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_103933.808.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_103933.8082.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_103952.237.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_103952.2372.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_104056.431.png" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_104056.4312.png" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_105036.967.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_105036.9672.png" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_TB1ZZzzMXXXXXb0XFXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_TB237TNsVXXXXciXpXXXXXXXXXX_!!2074856256.jpg_430x430q90.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160809\category_TB2fkNwpVXXXXbjXXXXXXXXXXXX_!!294733241.jpg_400x400.jpg" />
+    <Content Include="Resources\uploads\shopimg\goodsthumb.jpg" />
+    <Content Include="Resources\uploads\slides\goodsthumb.jpg" />
+    <Content Include="agent.aspx" />
+    <Content Include="seo.html" />
+    <Content Include="Slides\AddSlidesAPP.aspx" />
+    <Content Include="Slides\AddSlidesMarket.aspx" />
+    <Content Include="Slides\AddSlidesWechat.aspx" />
+    <Content Include="Slides\SlidesAPP.aspx" />
+    <Content Include="Slides\SlidesMarket.aspx" />
+    <Content Include="Slides\SlidesWechat.aspx" />
+    <Content Include="statistics\BriskStatistics.aspx" />
+    <Content Include="statistics\ConsumeStatistics.aspx" />
+    <Content Include="statistics\OrdersMonthStatistics.aspx" />
+    <Content Include="statistics\OrdersStatistics.aspx" />
+    <Content Include="statistics\RechargeStatistics.aspx" />
+    <Content Include="statistics\UserStatistics.aspx" />
+    <Content Include="ueditor\dialogs\anchor\anchor.html" />
+    <Content Include="ueditor\dialogs\attachment\attachment.css" />
+    <Content Include="ueditor\dialogs\attachment\attachment.html" />
+    <Content Include="ueditor\dialogs\attachment\attachment.js" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_chm.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_default.png" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_doc.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_exe.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_jpg.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_mp3.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_mv.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_pdf.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_ppt.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_psd.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_rar.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_txt.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_xls.gif" />
+    <Content Include="ueditor\dialogs\attachment\images\alignicon.gif" />
+    <Content Include="ueditor\dialogs\attachment\images\alignicon.png" />
+    <Content Include="ueditor\dialogs\attachment\images\bg.png" />
+    <Content Include="ueditor\dialogs\attachment\images\file-icons.gif" />
+    <Content Include="ueditor\dialogs\attachment\images\file-icons.png" />
+    <Content Include="ueditor\dialogs\attachment\images\icons.gif" />
+    <Content Include="ueditor\dialogs\attachment\images\icons.png" />
+    <Content Include="ueditor\dialogs\attachment\images\image.png" />
+    <Content Include="ueditor\dialogs\attachment\images\progress.png" />
+    <Content Include="ueditor\dialogs\attachment\images\success.gif" />
+    <Content Include="ueditor\dialogs\attachment\images\success.png" />
+    <Content Include="ueditor\dialogs\background\background.css" />
+    <Content Include="ueditor\dialogs\background\background.html" />
+    <Content Include="ueditor\dialogs\background\background.js" />
+    <Content Include="ueditor\dialogs\background\images\bg.png" />
+    <Content Include="ueditor\dialogs\background\images\success.png" />
+    <Content Include="ueditor\dialogs\charts\chart.config.js" />
+    <Content Include="ueditor\dialogs\charts\charts.css" />
+    <Content Include="ueditor\dialogs\charts\charts.html" />
+    <Content Include="ueditor\dialogs\charts\charts.js" />
+    <Content Include="ueditor\dialogs\charts\images\charts0.png" />
+    <Content Include="ueditor\dialogs\charts\images\charts1.png" />
+    <Content Include="ueditor\dialogs\charts\images\charts2.png" />
+    <Content Include="ueditor\dialogs\charts\images\charts3.png" />
+    <Content Include="ueditor\dialogs\charts\images\charts4.png" />
+    <Content Include="ueditor\dialogs\charts\images\charts5.png" />
+    <Content Include="ueditor\dialogs\emotion\emotion.css" />
+    <Content Include="ueditor\dialogs\emotion\emotion.html" />
+    <Content Include="ueditor\dialogs\emotion\emotion.js" />
+    <Content Include="ueditor\dialogs\emotion\images\0.gif" />
+    <Content Include="ueditor\dialogs\emotion\images\bface.gif" />
+    <Content Include="ueditor\dialogs\emotion\images\cface.gif" />
+    <Content Include="ueditor\dialogs\emotion\images\fface.gif" />
+    <Content Include="ueditor\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="ueditor\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="ueditor\dialogs\emotion\images\tface.gif" />
+    <Content Include="ueditor\dialogs\emotion\images\wface.gif" />
+    <Content Include="ueditor\dialogs\emotion\images\yface.gif" />
+    <Content Include="ueditor\dialogs\gmap\gmap.html" />
+    <Content Include="ueditor\dialogs\help\help.css" />
+    <Content Include="ueditor\dialogs\help\help.html" />
+    <Content Include="ueditor\dialogs\help\help.js" />
+    <Content Include="ueditor\dialogs\image\image.css" />
+    <Content Include="ueditor\dialogs\image\image.html" />
+    <Content Include="ueditor\dialogs\image\image.js" />
+    <Content Include="ueditor\dialogs\image\images\alignicon.jpg" />
+    <Content Include="ueditor\dialogs\image\images\bg.png" />
+    <Content Include="ueditor\dialogs\image\images\icons.gif" />
+    <Content Include="ueditor\dialogs\image\images\icons.png" />
+    <Content Include="ueditor\dialogs\image\images\image.png" />
+    <Content Include="ueditor\dialogs\image\images\progress.png" />
+    <Content Include="ueditor\dialogs\image\images\success.gif" />
+    <Content Include="ueditor\dialogs\image\images\success.png" />
+    <Content Include="ueditor\dialogs\insertframe\insertframe.html" />
+    <Content Include="ueditor\dialogs\internal.js" />
+    <Content Include="ueditor\dialogs\link\link.html" />
+    <Content Include="ueditor\dialogs\map\map.html" />
+    <Content Include="ueditor\dialogs\map\show.html" />
+    <Content Include="ueditor\dialogs\music\music.css" />
+    <Content Include="ueditor\dialogs\music\music.html" />
+    <Content Include="ueditor\dialogs\music\music.js" />
+    <Content Include="ueditor\dialogs\preview\preview.html" />
+    <Content Include="ueditor\dialogs\scrawl\images\addimg.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\brush.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\delimg.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\delimgH.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\empty.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\emptyH.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\eraser.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\redo.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\redoH.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\scale.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\scaleH.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\size.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\undo.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\undoH.png" />
+    <Content Include="ueditor\dialogs\scrawl\scrawl.css" />
+    <Content Include="ueditor\dialogs\scrawl\scrawl.html" />
+    <Content Include="ueditor\dialogs\scrawl\scrawl.js" />
+    <Content Include="ueditor\dialogs\searchreplace\searchreplace.html" />
+    <Content Include="ueditor\dialogs\searchreplace\searchreplace.js" />
+    <Content Include="ueditor\dialogs\snapscreen\snapscreen.html" />
+    <Content Include="ueditor\dialogs\spechars\spechars.html" />
+    <Content Include="ueditor\dialogs\spechars\spechars.js" />
+    <Content Include="ueditor\dialogs\table\dragicon.png" />
+    <Content Include="ueditor\dialogs\table\edittable.css" />
+    <Content Include="ueditor\dialogs\table\edittable.html" />
+    <Content Include="ueditor\dialogs\table\edittable.js" />
+    <Content Include="ueditor\dialogs\table\edittd.html" />
+    <Content Include="ueditor\dialogs\table\edittip.html" />
+    <Content Include="ueditor\dialogs\template\config.js" />
+    <Content Include="ueditor\dialogs\template\images\bg.gif" />
+    <Content Include="ueditor\dialogs\template\images\pre0.png" />
+    <Content Include="ueditor\dialogs\template\images\pre1.png" />
+    <Content Include="ueditor\dialogs\template\images\pre2.png" />
+    <Content Include="ueditor\dialogs\template\images\pre3.png" />
+    <Content Include="ueditor\dialogs\template\images\pre4.png" />
+    <Content Include="ueditor\dialogs\template\template.css" />
+    <Content Include="ueditor\dialogs\template\template.html" />
+    <Content Include="ueditor\dialogs\template\template.js" />
+    <Content Include="ueditor\dialogs\video\images\bg.png" />
+    <Content Include="ueditor\dialogs\video\images\center_focus.jpg" />
+    <Content Include="ueditor\dialogs\video\images\file-icons.gif" />
+    <Content Include="ueditor\dialogs\video\images\file-icons.png" />
+    <Content Include="ueditor\dialogs\video\images\icons.gif" />
+    <Content Include="ueditor\dialogs\video\images\icons.png" />
+    <Content Include="ueditor\dialogs\video\images\image.png" />
+    <Content Include="ueditor\dialogs\video\images\left_focus.jpg" />
+    <Content Include="ueditor\dialogs\video\images\none_focus.jpg" />
+    <Content Include="ueditor\dialogs\video\images\progress.png" />
+    <Content Include="ueditor\dialogs\video\images\right_focus.jpg" />
+    <Content Include="ueditor\dialogs\video\images\success.gif" />
+    <Content Include="ueditor\dialogs\video\images\success.png" />
+    <Content Include="ueditor\dialogs\video\video.css" />
+    <Content Include="ueditor\dialogs\video\video.html" />
+    <Content Include="ueditor\dialogs\video\video.js" />
+    <Content Include="ueditor\dialogs\webapp\webapp.html" />
+    <Content Include="ueditor\dialogs\wordimage\fClipboard_ueditor.swf" />
+    <Content Include="ueditor\dialogs\wordimage\imageUploader.swf" />
+    <Content Include="ueditor\dialogs\wordimage\tangram.js" />
+    <Content Include="ueditor\dialogs\wordimage\wordimage.html" />
+    <Content Include="ueditor\dialogs\wordimage\wordimage.js" />
+    <Content Include="ueditor\index.html" />
+    <Content Include="ueditor\lang\en\en.js" />
+    <Content Include="ueditor\lang\en\images\addimage.png" />
+    <Content Include="ueditor\lang\en\images\alldeletebtnhoverskin.png" />
+    <Content Include="ueditor\lang\en\images\alldeletebtnupskin.png" />
+    <Content Include="ueditor\lang\en\images\background.png" />
+    <Content Include="ueditor\lang\en\images\button.png" />
+    <Content Include="ueditor\lang\en\images\copy.png" />
+    <Content Include="ueditor\lang\en\images\deletedisable.png" />
+    <Content Include="ueditor\lang\en\images\deleteenable.png" />
+    <Content Include="ueditor\lang\en\images\listbackground.png" />
+    <Content Include="ueditor\lang\en\images\localimage.png" />
+    <Content Include="ueditor\lang\en\images\music.png" />
+    <Content Include="ueditor\lang\en\images\rotateleftdisable.png" />
+    <Content Include="ueditor\lang\en\images\rotateleftenable.png" />
+    <Content Include="ueditor\lang\en\images\rotaterightdisable.png" />
+    <Content Include="ueditor\lang\en\images\rotaterightenable.png" />
+    <Content Include="ueditor\lang\en\images\upload.png" />
+    <Content Include="ueditor\lang\zh-cn\images\copy.png" />
+    <Content Include="ueditor\lang\zh-cn\images\localimage.png" />
+    <Content Include="ueditor\lang\zh-cn\images\music.png" />
+    <Content Include="ueditor\lang\zh-cn\images\upload.png" />
+    <Content Include="ueditor\lang\zh-cn\zh-cn.js" />
+    <Content Include="ueditor\net\Bin\Newtonsoft.Json.dll" />
+    <Content Include="ueditor\net\Bin\Newtonsoft.Json.pdb" />
+    <Content Include="ueditor\net\Bin\Newtonsoft.Json.xml" />
+    <Content Include="ueditor\net\net.sln" />
+    <Content Include="ueditor\themes\default\css\ueditor.css" />
+    <Content Include="ueditor\themes\default\css\ueditor.min.css" />
+    <Content Include="ueditor\themes\default\dialogbase.css" />
+    <Content Include="ueditor\themes\default\images\anchor.gif" />
+    <Content Include="ueditor\themes\default\images\arrow.png" />
+    <Content Include="ueditor\themes\default\images\arrow_down.png" />
+    <Content Include="ueditor\themes\default\images\arrow_up.png" />
+    <Content Include="ueditor\themes\default\images\button-bg.gif" />
+    <Content Include="ueditor\themes\default\images\cancelbutton.gif" />
+    <Content Include="ueditor\themes\default\images\charts.png" />
+    <Content Include="ueditor\themes\default\images\cursor_h.gif" />
+    <Content Include="ueditor\themes\default\images\cursor_h.png" />
+    <Content Include="ueditor\themes\default\images\cursor_v.gif" />
+    <Content Include="ueditor\themes\default\images\cursor_v.png" />
+    <Content Include="ueditor\themes\default\images\dialog-title-bg.png" />
+    <Content Include="ueditor\themes\default\images\filescan.png" />
+    <Content Include="ueditor\themes\default\images\highlighted.gif" />
+    <Content Include="ueditor\themes\default\images\icons-all.gif" />
+    <Content Include="ueditor\themes\default\images\icons.gif" />
+    <Content Include="ueditor\themes\default\images\icons.png" />
+    <Content Include="ueditor\themes\default\images\loaderror.png" />
+    <Content Include="ueditor\themes\default\images\loading.gif" />
+    <Content Include="ueditor\themes\default\images\lock.gif" />
+    <Content Include="ueditor\themes\default\images\neweditor-tab-bg.png" />
+    <Content Include="ueditor\themes\default\images\pagebreak.gif" />
+    <Content Include="ueditor\themes\default\images\scale.png" />
+    <Content Include="ueditor\themes\default\images\sortable.png" />
+    <Content Include="ueditor\themes\default\images\spacer.gif" />
+    <Content Include="ueditor\themes\default\images\sparator_v.png" />
+    <Content Include="ueditor\themes\default\images\table-cell-align.png" />
+    <Content Include="ueditor\themes\default\images\tangram-colorpicker.png" />
+    <Content Include="ueditor\themes\default\images\toolbar_bg.png" />
+    <Content Include="ueditor\themes\default\images\unhighlighted.gif" />
+    <Content Include="ueditor\themes\default\images\upload.png" />
+    <Content Include="ueditor\themes\default\images\videologo.gif" />
+    <Content Include="ueditor\themes\default\images\word.gif" />
+    <Content Include="ueditor\themes\default\images\wordpaste.png" />
+    <Content Include="ueditor\themes\iframe.css" />
+    <Content Include="ueditor\third-party\codemirror\codemirror.css" />
+    <Content Include="ueditor\third-party\codemirror\codemirror.js" />
+    <Content Include="ueditor\third-party\highcharts\adapters\mootools-adapter.js" />
+    <Content Include="ueditor\third-party\highcharts\adapters\mootools-adapter.src.js" />
+    <Content Include="ueditor\third-party\highcharts\adapters\prototype-adapter.js" />
+    <Content Include="ueditor\third-party\highcharts\adapters\prototype-adapter.src.js" />
+    <Content Include="ueditor\third-party\highcharts\adapters\standalone-framework.js" />
+    <Content Include="ueditor\third-party\highcharts\adapters\standalone-framework.src.js" />
+    <Content Include="ueditor\third-party\highcharts\highcharts-more.js" />
+    <Content Include="ueditor\third-party\highcharts\highcharts-more.src.js" />
+    <Content Include="ueditor\third-party\highcharts\highcharts.js" />
+    <Content Include="ueditor\third-party\highcharts\highcharts.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\annotations.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\annotations.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\canvas-tools.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\canvas-tools.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\data.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\data.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\drilldown.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\drilldown.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\exporting.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\exporting.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\funnel.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\funnel.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\heatmap.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\heatmap.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\map.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\map.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\no-data-to-display.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\no-data-to-display.src.js" />
+    <Content Include="ueditor\third-party\highcharts\themes\dark-blue.js" />
+    <Content Include="ueditor\third-party\highcharts\themes\dark-green.js" />
+    <Content Include="ueditor\third-party\highcharts\themes\gray.js" />
+    <Content Include="ueditor\third-party\highcharts\themes\grid.js" />
+    <Content Include="ueditor\third-party\highcharts\themes\skies.js" />
+    <Content Include="ueditor\third-party\jquery-1.10.2.js" />
+    <Content Include="ueditor\third-party\jquery-1.10.2.min.js" />
+    <Content Include="ueditor\third-party\snapscreen\UEditorSnapscreen.exe" />
+    <Content Include="ueditor\third-party\SyntaxHighlighter\shCore.js" />
+    <Content Include="ueditor\third-party\SyntaxHighlighter\shCoreDefault.css" />
+    <Content Include="ueditor\third-party\video-js\font\vjs.svg" />
+    <Content Include="ueditor\third-party\video-js\video-js.css" />
+    <Content Include="ueditor\third-party\video-js\video-js.min.css" />
+    <Content Include="ueditor\third-party\video-js\video-js.swf" />
+    <Content Include="ueditor\third-party\video-js\video.dev.js" />
+    <Content Include="ueditor\third-party\video-js\video.js" />
+    <Content Include="ueditor\third-party\webuploader\Uploader.swf" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.css" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.custom.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.custom.min.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.flashonly.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.flashonly.min.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.html5only.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.html5only.min.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.min.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.withoutimage.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.withoutimage.min.js" />
+    <Content Include="ueditor\third-party\xss.min.js" />
+    <Content Include="ueditor\third-party\zeroclipboard\ZeroClipboard.js" />
+    <Content Include="ueditor\third-party\zeroclipboard\ZeroClipboard.min.js" />
+    <Content Include="ueditor\third-party\zeroclipboard\ZeroClipboard.swf" />
+    <Content Include="ueditor\ueditor.all.js" />
+    <Content Include="ueditor\ueditor.all.min.js" />
+    <Content Include="ueditor\ueditor.config.js" />
+    <Content Include="ueditor\ueditor.parse.js" />
+    <Content Include="ueditor\ueditor.parse.min.js" />
+    <Content Include="Resources\uploads\shopimg\20140227\26471696502600.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140227\43371497502700.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140227\96361399502513.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\10980840009188.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\17641501011412.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\22553965007423.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\32247498012356.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\36553130011402.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\42996125983006.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\49239377982996.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\51349123012347.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\54215253983006.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\54229904011853.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\54412144009188.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\62833121012355.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\73212003009189.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\74690904012068.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\76799394004865.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\77388358004894.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\81068274009181.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\92936197009189.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140305\99089635011412.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140306\13342906120864.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140306\35249309121037.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140306\91167720121039.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140306\97413072120862.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140327\12638105919134.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140327\13906946918730.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140327\38669044919314.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140327\43497315918925.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140327\52559606919566.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140327\54731938919055.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140327\61216227919726.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140327\62856744919225.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140327\64143260919398.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140327\67059488919635.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140327\67903434919482.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140327\79372427919111.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140327\84106649918902.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140327\84466993918701.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140327\92404226919842.jpg" />
+    <Content Include="Resources\uploads\shopimg\20140327\96059993919792.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150822\16000221176436.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150822\20372275211186.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150822\55902823211180.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150822\63302326211192.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150822\64888420211169.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150822\73353976175420.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150824\38400556430736.png" />
+    <Content Include="Resources\uploads\shopimg\20150827\52531622645752.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150905\38494174421289.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150905\70958499428837.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150905\84788095421280.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150920\45943040724770.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150920\66458805678728.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150920\95244137727804.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\10038665333055.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\16731675333733.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\17837117334034.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\20804504334218.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\22447163333839.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\29466391333474.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\31467587333386.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\34109945334347.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\35531515333659.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\45552606333944.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\58095686333175.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\60168759332931.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\62127005333543.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\78166377333182.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\80948987332994.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\88889497333288.jpg" />
+    <Content Include="Resources\uploads\shopimg\20150927\95993130333283.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\10610491299183.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\10745186304570.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\10839142304908.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\11960180299185.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\12275260299722.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\12639799303975.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\13730190305021.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\13827375304715.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\13897027305208.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\15508777299185.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\16270168297566.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\16271285304651.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\16911053304650.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\17819474303974.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\18529371304781.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\18909488303600.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\19165280299185.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\19258037305370.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\19321374305209.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\19605659299158.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\20368488303601.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\20830869299182.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\21539558304109.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\21933784299180.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\23474193305014.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\23775784299185.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\23858081299731.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\24207082304181.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\24225896299183.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\24235388299181.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\24622835299731.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\24705182305378.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\25554216297606.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\26283019304311.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\28651110304311.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\29574476297530.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\31414612304715.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\32912442299181.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\33202524304830.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\33289239304641.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\34369493303897.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\34436734304650.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\34483191299181.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\34585580304973.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\34769140304304.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\34854917299184.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\34881863305021.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\35146911304168.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\35491075305379.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\36530368305161.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\38159127304973.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\39033691304244.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\40061490305022.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\41271202304715.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\41331483304365.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\42528734304252.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\43136358299731.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\43359059304571.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\44176966304087.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\44977145303974.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\45228524304252.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\45749242299158.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\46829810304108.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\46988982305160.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\49442041304378.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\49497888299184.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\49506867304914.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\49677336299180.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\50183029299182.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\50386130304973.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\51016366305300.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\51849202304251.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\53000666299148.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\53289728304650.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\54932326297565.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\55130702299159.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\55292052304825.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\55426759305378.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\55675808304963.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\56102587305209.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\56494972304707.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\57181076304773.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\59046958304109.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\59330691305161.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\59403991298862.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\59556518304175.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\59673716305379.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\60105698304781.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\60323312299184.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\60989147304829.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\62882743297580.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\63108454297566.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\63185448305161.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\63552304304715.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\64135493299186.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\64187554304312.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\64611843305289.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\65127937303505.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\66095091304715.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\66217007303886.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\66265700305065.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\66456664304651.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\66534026303897.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\66655353304378.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\66922670299183.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\67292779303505.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\67476029299731.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\68072753303601.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\68542952304312.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\69352666304570.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\69681774304650.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\69730314305155.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\71154595303967.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\71952112304972.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\72078787305070.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\72833495304311.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\73715927305203.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\74770399304780.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\75756433303897.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\76930923305378.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\77228245303897.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\77526518305070.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\77557870303600.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\78425486297566.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\80171111304571.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\80381089304181.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\80495120303975.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\80935234303592.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\83008305304312.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\83873847305299.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\83918711304252.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\84137253304570.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\84440067299182.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\84457922303974.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\84643606304914.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\84853070304378.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\84891887303504.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\85055707304379.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\85348549305300.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\87411094303493.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\87735864303600.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\88229166304379.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\88509720305209.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\89644404303974.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\90541169304570.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\91247364299158.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\92160903305300.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\92258442304109.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\93042410304252.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\93262179305070.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\93986104303447.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\94109039304110.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\94982978304780.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\95284024304378.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\95693227304470.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\95910780304562.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\96521502303505.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\96715552303505.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\96735399304252.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\96899493304109.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\97114453304820.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\98504650303601.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\99012444303505.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151205\99864185305069.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151207\16949746492264.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151215\24464773161210.jpg" />
+    <Content Include="Resources\uploads\shopimg\20151215\57211503160387.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160221\30041439038927.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\11264920523691.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\11450592524302.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\12950170528377.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\15080971528070.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\17929301523043.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\18468716528814.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\21536704523027.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\22852504523044.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\22899953524312.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\27301916528033.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\28522914523045.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\29305026529305.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\30062907528377.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\30707703528821.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\32713890523238.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\32715634521330.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\34099589528154.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\34465172544973.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\40518057529646.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\43059642521473.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\48612498528039.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\50086301529296.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\56474113522648.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\61094997529454.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\66981912528133.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\67334667521472.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\67428140522588.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\68390049523681.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\68712350528140.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\70106397529453.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\73633441522639.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\76613118523248.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\77299027528597.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\80219095528605.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\85349312528604.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\88824597524324.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\89353767522624.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\90686143522614.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\93992064529444.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\96120336528351.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\96365650523229.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\96783051529658.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\97173262529306.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160321\98134337523046.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160518\20807617552182.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160518\22349609551911.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160518\31165039552181.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160518\39141601552178.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160518\44747070551913.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160518\59602539552179.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160518\79160156551912.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160518\89959960551912.png" />
+    <Content Include="Resources\uploads\shopimg\20160606\16872794203353.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160606\44058779203406.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160606\54804790203353.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160606\78145693203317.png" />
+    <Content Include="Resources\uploads\shopimg\20160606\84207787203406.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160629\10575251182368.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160629\18312107182368.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160629\31701463182369.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160629\37923964182346.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160629\79705481182370.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160629\90959124181497.png" />
+    <Content Include="Resources\uploads\shopimg\20160630\14095448280003.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160630\22586508279366.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160630\38167412279366.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160630\43479886279366.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160630\52934704280008.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160630\65270857279354.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160630\73752264279366.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160630\93855553279366.png" />
+    <Content Include="Resources\uploads\shopimg\20160630\95279606279366.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160701\11265194339227.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160701\72398361339227.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160701\81525222339227.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160701\93331603339227.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160705\35192234708162.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160707\16469906863747.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\11946539466156.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\12218172477397.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\13020979466947.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\15455195465392.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\16427057467019.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\17661144467686.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\17742292477522.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\20756863465373.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\20829348486698.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\21300518467682.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\22208385467770.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\22491195464599.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\24586669464455.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\24755675465562.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\25277313467073.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\26522573477439.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\27611382465377.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\29356776463078.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\35972689477827.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\36494105477480.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\43099512463336.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\43927185466951.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\44853606468223.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\45321439468219.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\46213256477393.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\47448776466340.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\47562877477486.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\47731440477212.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\50230080463858.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\53742475477320.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\55310925464779.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\55881778486683.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\56637665466344.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\57145078477559.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\57233249465397.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\58064233465286.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\58855211477131.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\59026005466161.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\61707020465328.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\62234002463088.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\64216257467133.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\64996165467183.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\66059926477527.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\66570503467774.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\67152725463231.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\67242870477757.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\67965404467729.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\69446952465341.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\73027675467013.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\73627805467128.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\74575039477731.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\76113021467734.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\76976552467178.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\80306300464206.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\82620445467007.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\82774489467068.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\86518382477137.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\86748715477554.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\88068259477762.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\90155584464293.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\92467538465569.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160714\99262837477446.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\12866456554480.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\14407118554860.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\14613189547903.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\17620885547850.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\17621468554479.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\17772836548249.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\17900959548199.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\21970633554480.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\23166019548200.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\23978994548199.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\24787828554857.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\25057190554481.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\26043293548571.png" />
+    <Content Include="Resources\uploads\shopimg\20160715\26921948554857.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\27418646548789.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\28188999554859.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\28249958547904.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\28523253571097.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\28992683554772.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\31903622554772.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\32249219547851.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\36608248548250.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\38934214547851.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\40212347549658.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\40484080554860.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\41061612548342.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\41085199554859.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\41745752554479.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\43220708554482.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\45720690554771.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\46142886554482.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\46973454548570.png" />
+    <Content Include="Resources\uploads\shopimg\20160715\49151649547850.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\51672678548249.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\52921572548249.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\54828765547486.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\55045620547903.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\55562959554860.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\56163340548570.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\56519694561243.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\57074888547850.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\57113160547903.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\58643582554860.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\61037680548250.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\61974070547849.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\62102913548342.png" />
+    <Content Include="Resources\uploads\shopimg\20160715\62853991547476.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\64047541547487.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\64798770554772.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\67375148554482.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\67892935547486.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\68154485554774.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\71309383554774.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\75270596554859.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\75604296548789.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\76231911554774.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\76461916561254.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\77783411548199.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\77850406547849.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\78295582554482.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\80074129554774.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\82266650571079.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\85583875554771.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\85666363548199.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\87048926548200.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\87103425548201.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\87691555548778.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\87859077547902.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\87962727549652.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\89724338547902.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\89963062547902.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\91533545548249.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\92848657548249.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\94690217554857.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\95478636554771.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\96530278547486.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160715\96987911548341.png" />
+    <Content Include="Resources\uploads\shopimg\20160715\97499450554479.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160718\34989087825554.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160718\62405813825553.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160718\72319243825553.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160718\84478885825553.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\11366358898161.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\13512339894338.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\17406916892924.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\17664557894055.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\18659927891036.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\19185721898929.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\19419138900368.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\21029779895157.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\21676159894392.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\22071995906324.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\22537219894434.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\22670866891038.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\23322067893667.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\23714912894739.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\24208367902071.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\25135568889805.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\25871864895000.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\25925830894055.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\26863215897778.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\27135673906370.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\27962718891932.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\27986524894433.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\28060509898520.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\30318633906366.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\30641712899722.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\32214375906367.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\32344650900751.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\32747992899175.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\33148165892088.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\34325740894997.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\35054673892089.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\36241390900368.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\36583220930673.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\36747926895000.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\36850271905648.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\37607936894338.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\38119971900987.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\39217176906322.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\39772157928099.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\42016480902083.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\42915269892090.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\44263800894211.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\46703582930678.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\47652563902368.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\48053975889805.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\48625122895000.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\49764715900731.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\50160504906323.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\50496507898786.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\50798615901259.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\50906908892917.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\51004361889805.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\51963137900986.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\53214935893888.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\53563557893972.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\53764660928103.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\54016151899940.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\56088007901260.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\56885393905658.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\57929863893812.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\60137361893813.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\60434562903249.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\61228806896751.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\61679808906647.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\62163023891175.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\63126953892090.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\63221750899952.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\63399969894338.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\63563002892917.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\63599098894433.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\68124841906325.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\69019653891175.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\69653800896354.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\69952446895000.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\70117334901135.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\70136548906398.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\70211203894999.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\72743810896682.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\72767119893812.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\74269744891175.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\75871977893776.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\76914987894998.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\77719348893813.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\78782396894433.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\79188537893752.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\79590206900181.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\79717117891035.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\80013795906371.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\80031810894202.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\83752093900635.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\84655428905658.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\85391321892088.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\86404669899664.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\86473516897054.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\86931264900357.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\87972712895878.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\89743882902082.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\90025654893756.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\90212330894056.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\90638543893812.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\90925730906409.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\92371395895000.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\93238197894995.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\93334917894995.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\93881249893759.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\94600423891037.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\95118578906368.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\95190457906369.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\96470305894433.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\96577926892770.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\97201652900975.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\97686282900986.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\97846245901421.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160719\98525370895000.png" />
+    <Content Include="Resources\uploads\shopimg\20160719\98858029901249.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\12211228997078.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\21140468982906.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\22267457983012.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\23474687982997.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\25661570996953.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\29181834017083.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\30487212983012.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\47088861012993.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\50799634982989.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\56354382982707.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\61257356017079.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\64599576996963.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\71239391997074.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\78626481996968.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\79370684983012.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\81675490982997.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\87258129982906.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\88350608012987.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\88397500982906.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\89196259982707.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\97406247997068.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160720\99469697982707.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\10369251069429.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\10457159064567.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\11052035071902.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\11232513085861.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\11773266065546.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\11891834069314.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\12414218092269.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\12441765064722.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\12953355085959.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\13088176090933.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\13114875085861.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\13179353091811.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\13221739069893.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\13249861090091.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\13899486072327.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\14153955086318.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\14213815070309.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\14664162074224.png" />
+    <Content Include="Resources\uploads\shopimg\20160721\14989253086525.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\15397102073715.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\15401123090365.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\15712767084663.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\15763681073878.png" />
+    <Content Include="Resources\uploads\shopimg\20160721\15952924091170.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\16440247082939.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\16698474091150.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\17313831080352.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\17655495092262.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\17867126072001.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\17905287069062.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\18231148091233.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\18328474069893.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\18652276068271.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\18772096072802.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\19149388066885.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\19612390073206.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\19633860086618.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\20771848069314.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\20855101083552.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\21043493091811.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\21125201091811.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\21204882071295.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\21644303072800.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\21802675070363.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\22338342081385.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\22548117089257.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\22742188069429.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\22809477080189.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\23141317066135.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\23165804080361.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\23181016068246.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\23397956071032.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\23495990088327.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\23502015071280.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\23618093066661.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\23630469092312.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\23876965070363.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\24538875073423.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\24855496067129.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\25326297085861.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\25446865079609.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\25557569073206.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\25942556071596.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\26043783066885.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\26174413064738.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\26321569073423.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\26951004070363.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\27240143091811.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\27455820073206.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\27937470067109.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\28038211071276.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\28063397085960.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\28450650072965.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\28492674069314.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\28515646079829.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\29002223090924.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\29207324072327.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\29652942074210.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\30203616082949.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\30580979069412.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\30846368071294.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\30962902082268.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\31224226091171.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\31380103071008.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\31848438079616.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\32092702072801.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\32378508086308.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\32613212088328.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\32842810066134.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\33200947079487.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\33313312072002.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\34041310073879.png" />
+    <Content Include="Resources\uploads\shopimg\20160721\34253858066135.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\34841070068525.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\35392449072002.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\36066381070363.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\36078976079938.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\36125572071295.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\36312944073715.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\36633608092359.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\36684204074201.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\36684481073879.png" />
+    <Content Include="Resources\uploads\shopimg\20160721\36713566084940.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\37131389082949.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\37256851080288.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\37289654079807.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\37366519082949.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\37659153090365.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\37778209079640.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\37815112072327.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\37852165091170.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\37855011080920.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\38136392069063.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\38534895072800.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\38603988079624.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\39172213079829.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\39640850080679.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\39881034071596.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\39940255092280.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\40316528070363.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\40348192079688.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\40454719092355.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\40465793090951.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\41061428073716.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\41519417090933.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\41599675073685.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\41663522072965.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\42058512072289.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\42291903082975.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\42561211072327.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\42837933085448.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\42950122070308.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\43124127081380.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\43444881085422.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\43567191085075.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\43961471073696.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\44220777090951.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\44227721073716.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\44392628073437.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\44517383070363.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\44534420083522.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\44735827082268.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\44945360069407.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\45016419081796.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\45034431083124.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\45195716072801.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\45302650091171.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\45467434089444.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\45487600091233.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\45497911091811.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\45598164069429.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\45721147083522.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\45755262073437.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\45838337090064.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\46085712069893.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\46314528080909.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\46775356086618.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\46801508080675.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\46859451081379.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\46983258071901.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\47047956073423.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\47226268072002.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\47345607079641.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\48337924091811.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\48356819071902.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\48544745090384.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\48726235073715.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\48748939072965.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\49191540073697.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\49337074074224.png" />
+    <Content Include="Resources\uploads\shopimg\20160721\49433739074225.png" />
+    <Content Include="Resources\uploads\shopimg\20160721\49591134080189.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\49983426064998.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\50082434091159.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\50148472085936.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\50357780079829.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\50947519066134.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\50990373067364.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\51729309068271.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\51733765070363.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\52084175067365.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\52166794089445.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\52247472092306.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\52328724085446.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\52368938072327.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\53125145092370.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\53650769064722.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\53702997086539.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\53893085073715.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\54034111070587.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\54133861066663.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\54169725092281.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\54283716090384.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\54347707068463.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\54357957080050.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\54445801080288.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\54627148083552.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\54650404073881.png" />
+    <Content Include="Resources\uploads\shopimg\20160721\54918840088327.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\55117115072002.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\55245032070363.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\55520590091630.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\56448473068463.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\56511956085395.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\56547536085447.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\56691150091247.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\56697276071275.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\56816624079507.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\56905154072965.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\57122714068526.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\57479143091624.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\57558613091830.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\57757000071901.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\58028958072003.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\58053403090091.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\58093505091171.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\58456416080190.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\58602319090071.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\58604111071017.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\58644842073715.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\58785363086609.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\58820799091810.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\58965191080054.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\59362724064576.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\59509341086317.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\59640483091817.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\59665812072001.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\59911231070362.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\59989756072327.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\59993393070362.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\60024835091171.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\60053415066135.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\60330409089249.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\60416339082935.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\60433361090384.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\60442452091830.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\60563093073715.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\60774769069273.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\60804904081795.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\60963536072001.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\61178636064713.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\61422584069429.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\61544244085448.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\61744976088327.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\61847123072965.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\62112349072964.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\62456008088247.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\62686719069429.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\62838673085959.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\62983735066884.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\63123508092269.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\63265325092313.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\63307140082949.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\63347426089331.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\63749357081125.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\63869011073437.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\64263944071873.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\64611821089331.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\64846238091247.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\65750501091629.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\65831407091807.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\66015775070304.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\66349604080361.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\66389474085861.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\66480124073715.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\66519401081779.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\66714630068525.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\66762519091170.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\66903329072926.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\66936546071294.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\66977339073715.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\67077600071265.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\67359188090951.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\67885716069429.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\68728753083552.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\68972893071902.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\69548578064722.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\69766018071596.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\69789975073185.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\69883003074224.png" />
+    <Content Include="Resources\uploads\shopimg\20160721\70020740085861.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\70192337081584.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\70516264080297.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\70876545072800.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\70951166092369.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\70982285072800.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\71058216083295.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\71703109085445.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\71808420069429.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\71910660091817.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\72004371069063.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\72032966079508.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\72061889092281.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\72616297073437.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\73036270072002.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\73402178092312.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\73561762079627.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\73791009092369.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\74121482080921.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\74215834089437.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\75370731090933.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\75447508086318.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\75456477079640.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\75737340085082.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\75741984072001.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\75995901069429.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\76375189079642.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\77207288085845.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\77207727079502.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\77391463083514.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\77463579091225.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\77483154089331.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\77500797073437.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\77756735091140.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\77889551066884.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\78052485073438.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\78152786090091.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\78576973079640.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\78884101074210.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\79398534069607.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\79601397068463.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\79640136072327.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\79658913085082.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\79725323072327.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\80090877091136.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\80474867090359.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\80535301081125.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\81058391085945.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\81720813085448.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\81749130072800.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\81974009068525.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\82043176066663.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\82081799085423.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\82440356064739.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\82741500071294.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\82816288066626.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\82891891092369.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\83152536071032.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\83262214083295.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\83344620085849.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\83366276073697.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\83473565072327.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\83601536072965.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\83622310071868.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\83963771091247.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\84451745081385.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\84804020073880.png" />
+    <Content Include="Resources\uploads\shopimg\20160721\85035752092370.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\85057347071032.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\85303104072327.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\85420110071571.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\85629415069033.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\86356624089257.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\86439820091811.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\86690418081366.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\86913952090071.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\87145666073716.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\87217111068463.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\87809122073715.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\88234928080045.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\88531215072965.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\88744628085444.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\88810772068271.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\89036598085448.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\89037155071295.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\89208342084902.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\89368088090384.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\89405581072800.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\89478177074224.png" />
+    <Content Include="Resources\uploads\shopimg\20160721\89507155069429.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\89548710082975.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\89615306071901.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\89673441079640.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\89957467091810.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\90249730064739.png" />
+    <Content Include="Resources\uploads\shopimg\20160721\90326336081801.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\90364111079640.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\90959459081583.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\91050824082949.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\91148037091171.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\91159145070363.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\91293072079640.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\91569794072637.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\91709038064749.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\91802744085944.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\91930034072802.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\92238459069063.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\92389871070363.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\92451266070562.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\92506910085082.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\92686270080667.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\93238732071877.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\93567239068271.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\93627408069314.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\93648078070363.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\94685691073414.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\94711618091830.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\94798524072001.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\94906870080180.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\95119424071902.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\95268473071902.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\95350203085409.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\95864983086317.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\96291789071032.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\96360778073206.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\96891225070586.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\96937130067129.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\97192944071902.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\97343964082081.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\97489473064576.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\97784958083123.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\97817650070362.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\98034385071903.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\98872312071901.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\99371909081584.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\99390760069893.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\99683382071901.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160721\99878246082979.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\10421576171741.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\10489779170177.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\11240736160910.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\11482703173238.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\11525208169455.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\11759183175299.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\12358271169444.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\12468697178308.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\13264637152013.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\14117146176041.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\14187624169455.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\14202852168204.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\14939034160760.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\15000709173270.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\15798037168596.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\15847610172239.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\16426255171450.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\16978324165879.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\17873579171296.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\18209554171450.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\18346735169455.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\18508962172781.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\18702286173346.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\18827220175300.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\19142309172481.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\19352364171450.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\19620334176040.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\20711001170177.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\20773038171404.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\20789911160903.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\21496430176025.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\21561963177933.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\21892966151240.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\22032404171450.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\22231360151241.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\22909994167285.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\23471102177933.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\23649599172415.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\23742791173272.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\24416881165889.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\24439542158108.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\24470709168596.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\24500951173236.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\24962359178833.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\25517650150999.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\25543065171401.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\25841337173236.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\25884692151119.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\26050578160199.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\26211516172288.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\26369591173346.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\26453856173237.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\27271712150988.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\27820836172240.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\27840529166670.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\28855204173346.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\28995807179454.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\29112529160145.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\29617220174002.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\29773406173346.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\30605958173346.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\30702876171402.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\31190294178318.png" />
+    <Content Include="Resources\uploads\shopimg\20160722\31480770177920.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\32313266177933.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\32697274167285.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\32905118179063.png" />
+    <Content Include="Resources\uploads\shopimg\20160722\33516506160199.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\33666860176040.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\33710317166670.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\33753034172239.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\34264404177933.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\34289628176041.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\34422136172481.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\34613212151119.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\34642760170628.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\34802435178833.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\34884487178833.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\34947830152012.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\35013496178319.png" />
+    <Content Include="Resources\uploads\shopimg\20160722\35379702176040.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\36222430178824.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\37027068152013.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\37050990178834.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\37239269176040.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\37362311168192.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\37700225178308.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\38166961167711.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\38824267173272.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\38947247166670.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\39792974170177.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\40408635168889.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\41133436178834.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\41367962173347.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\41395979176021.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\41623912160753.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\41706163178292.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\42042066169440.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\43195729173346.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\43340834170271.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\43485494176040.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\43970767166655.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\44207961152013.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\44221765178820.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\44305686176040.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\44829887149900.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\45452363150999.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\45795539175283.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\45906189175299.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\46200333170284.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\46227059169223.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\46519608168889.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\46793140171385.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\47718944150983.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\47830870173347.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\47964899160926.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\48214297176041.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\48270395173346.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\48775701179421.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\49061777179455.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\49266841171450.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\49729122179442.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\49789487172238.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\49835930174002.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\50129775172288.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\50581972171379.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\50759988166655.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\50898643175400.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\50900217152000.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\51074120173274.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\51141029160199.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\51444223171296.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\51542914176040.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\51602465151230.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\52518037174002.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\52829555179454.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\54126935178293.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\55167103151241.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\55212084173274.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\55872409152012.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\56137824179455.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\56344132172481.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\56443074169455.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\56659775168889.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\57423713167711.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\57562552171385.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\58261962170675.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\58269857169455.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\58346720150999.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\58368979169229.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\58738186177920.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\58833878149409.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\59008621172797.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\59063527151241.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\59377728172289.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\59745836172240.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\60264356160199.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\60385666168197.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\61273031172290.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\61303586179455.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\61353704174003.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\62677152171403.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\62819441160144.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\62881351178306.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\63075437160927.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\63205031170538.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\64508235172415.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\65533791170266.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\65897216168211.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\65927576158116.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\66886142173273.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\66930275173229.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\68200184177933.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\68511427173346.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\69213217172797.png" />
+    <Content Include="Resources\uploads\shopimg\20160722\69355333171725.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\69627083169229.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\70663100149900.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\71118570176040.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\71198189160761.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\71620840179056.png" />
+    <Content Include="Resources\uploads\shopimg\20160722\71687804165889.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\71748566178833.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\71873775170621.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\71980016151240.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\72345574178279.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\73007807168212.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\73106399152013.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\73677333172237.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\74221940172481.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\74503643149900.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\74506639171400.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\75108000170284.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\75390123160199.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\75448015167277.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\75985206178292.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\76045451168197.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\76305101172289.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\76716368179454.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\76728079151995.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\77016456173985.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\77144588173274.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\78699372151119.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\79805422151226.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\79976993173273.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\80120564168580.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\80372352178308.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\81216763172290.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\81331336167711.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\81403872149394.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\81547221178308.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\82035293149410.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\82523329160910.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\83154332158117.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\83390992177933.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\83429866174002.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\83784534151119.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\84237119167711.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\84615234170177.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\84622816178308.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\84950330168211.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\85449624175469.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\85466034174003.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\86448117173346.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\87178271150999.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\87794844168211.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\88745225174002.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\88921405175287.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\89216648179455.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\89307692172288.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\89622919177914.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\89908600173347.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\89990969160137.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\90232975173989.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\90915899171385.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\91266667150999.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\91787384178308.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\92420870171405.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\92748122171296.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\92903786175300.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\93405163170628.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\93764202149900.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\93893916178292.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\94112216169455.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\94225561171741.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\95005491170284.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\95604616149900.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\95877836160926.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\95891665179454.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\96156637158152.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\96171731166649.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\96377202170284.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\96432327170284.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\96830307175299.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\97543214171296.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\97556534172237.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\97654380171296.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\97895969173271.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\98063771166671.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\98128559151106.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\99132954171450.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\99263973170284.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\99642091177933.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\99941145168203.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160722\99944327151119.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160723\24463648240184.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160723\28250453240184.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160723\31149033240177.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160723\44360842236958.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160723\47644029236951.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160723\48399683240184.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160723\51014696245733.png" />
+    <Content Include="Resources\uploads\shopimg\20160723\55917701236945.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160723\60168082245725.png" />
+    <Content Include="Resources\uploads\shopimg\20160723\68250672245739.png" />
+    <Content Include="Resources\uploads\shopimg\20160723\74622801236955.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160725\24980766416691.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160725\34129806415817.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160725\58124064416692.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160725\58226795416389.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160725\63055558416692.jpg" />
+    <Content Include="Resources\uploads\shopimg\20160725\66708154416398.jpg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="wx\addMultiArticle.aspx" />
+    <Content Include="wx\addReplyOnKey.aspx" />
+    <Content Include="wx\addSingleArticle.aspx" />
+    <Content Include="wx\addWxMenu.aspx" />
+    <Content Include="wx\warning.aspx" />
+    <Content Include="wx\wxmenu.aspx" />
+    <Content Include="wx\wxreply.aspx" />
+    <Content Include="yolly\SystemBillList.aspx" />
+    <Content Include="yolly\yollybilllist.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\addadmin.aspx.cs">
+      <DependentUpon>addadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\addadmin.aspx.designer.cs">
+      <DependentUpon>addadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminlist.aspx.cs">
+      <DependentUpon>adminlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminlist.aspx.designer.cs">
+      <DependentUpon>adminlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Configs.aspx.cs">
+      <DependentUpon>Configs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Configs.aspx.designer.cs">
+      <DependentUpon>Configs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\modifymenujson.aspx.cs">
+      <DependentUpon>modifymenujson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\modifymenujson.aspx.designer.cs">
+      <DependentUpon>modifymenujson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\operationLogs.aspx.cs">
+      <DependentUpon>operationLogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\operationLogs.aspx.designer.cs">
+      <DependentUpon>operationLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ResettingPass.aspx.cs">
+      <DependentUpon>ResettingPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ResettingPass.aspx.designer.cs">
+      <DependentUpon>ResettingPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="API\wx.ashx.cs">
+      <DependentUpon>wx.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Article\addArticle.aspx.cs">
+      <DependentUpon>addArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Article\addArticle.aspx.designer.cs">
+      <DependentUpon>addArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Article\ArticleList.aspx.cs">
+      <DependentUpon>ArticleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Article\ArticleList.aspx.designer.cs">
+      <DependentUpon>ArticleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="baidu\addbaiducfglist.aspx.cs">
+      <DependentUpon>addbaiducfglist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="baidu\addbaiducfglist.aspx.designer.cs">
+      <DependentUpon>addbaiducfglist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="baidu\baiducfglist.aspx.cs">
+      <DependentUpon>baiducfglist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="baidu\baiducfglist.aspx.designer.cs">
+      <DependentUpon>baiducfglist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardRecharge\AddCardRecharge.aspx.cs">
+      <DependentUpon>AddCardRecharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardRecharge\AddCardRecharge.aspx.designer.cs">
+      <DependentUpon>AddCardRecharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardRecharge\CardRechargeList.aspx.cs">
+      <DependentUpon>CardRechargeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardRecharge\CardRechargeList.aspx.designer.cs">
+      <DependentUpon>CardRechargeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Channel.aspx.cs">
+      <DependentUpon>Channel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Channel.aspx.designer.cs">
+      <DependentUpon>Channel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\activityDetailList.aspx.cs">
+      <DependentUpon>activityDetailList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="channel\activityDetailList.aspx.designer.cs">
+      <DependentUpon>activityDetailList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\activityList.aspx.cs">
+      <DependentUpon>activityList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="channel\activityList.aspx.designer.cs">
+      <DependentUpon>activityList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\addChannel.aspx.cs">
+      <DependentUpon>addChannel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="channel\addChannel.aspx.designer.cs">
+      <DependentUpon>addChannel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\addDistributor.aspx.cs">
+      <DependentUpon>addDistributor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="channel\addDistributor.aspx.designer.cs">
+      <DependentUpon>addDistributor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\agentCashout.aspx.cs">
+      <DependentUpon>agentCashout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="channel\agentCashout.aspx.designer.cs">
+      <DependentUpon>agentCashout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\applyCash.aspx.cs">
+      <DependentUpon>applyCash.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="channel\applyCash.aspx.designer.cs">
+      <DependentUpon>applyCash.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\baseInformation.aspx.cs">
+      <DependentUpon>baseInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="channel\baseInformation.aspx.designer.cs">
+      <DependentUpon>baseInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\brokerageSet.aspx.cs">
+      <DependentUpon>brokerageSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="channel\brokerageSet.aspx.designer.cs">
+      <DependentUpon>brokerageSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="channel\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\channelCashout.aspx.cs">
+      <DependentUpon>channelCashout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="channel\channelCashout.aspx.designer.cs">
+      <DependentUpon>channelCashout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\channelList.aspx.cs">
+      <DependentUpon>channelList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="channel\channelList.aspx.designer.cs">
+      <DependentUpon>channelList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\channelRecodes.aspx.cs">
+      <DependentUpon>channelRecodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="channel\channelRecodes.aspx.designer.cs">
+      <DependentUpon>channelRecodes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\distributorList.aspx.cs">
+      <DependentUpon>distributorList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="channel\distributorList.aspx.designer.cs">
+      <DependentUpon>distributorList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\distributorRecodes.aspx.cs">
+      <DependentUpon>distributorRecodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="channel\distributorRecodes.aspx.designer.cs">
+      <DependentUpon>distributorRecodes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\inviteMemberList.aspx.cs">
+      <DependentUpon>inviteMemberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="channel\inviteMemberList.aspx.designer.cs">
+      <DependentUpon>inviteMemberList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\spreadLink.aspx.cs">
+      <DependentUpon>spreadLink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="channel\spreadLink.aspx.designer.cs">
+      <DependentUpon>spreadLink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="internalapi\taotaoleshareorder.ashx.cs">
+      <DependentUpon>taotaoleshareorder.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="member\addmember.aspx.cs">
+      <DependentUpon>addmember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="member\addmember.aspx.designer.cs">
+      <DependentUpon>addmember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="member\memberDetail.aspx.cs">
+      <DependentUpon>memberDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="member\memberDetail.aspx.designer.cs">
+      <DependentUpon>memberDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="member\memberlist.aspx.cs">
+      <DependentUpon>memberlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="member\memberlist.aspx.designer.cs">
+      <DependentUpon>memberlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="member\rechargerecord.aspx.cs">
+      <DependentUpon>rechargerecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="member\rechargerecord.aspx.designer.cs">
+      <DependentUpon>rechargerecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="member\shoppingrecord.aspx.cs">
+      <DependentUpon>shoppingrecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="member\shoppingrecord.aspx.designer.cs">
+      <DependentUpon>shoppingrecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="member\ZenPointDetail.aspx.cs">
+      <DependentUpon>ZenPointDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="member\ZenPointDetail.aspx.designer.cs">
+      <DependentUpon>ZenPointDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="operative\buyHotCake.aspx.cs">
+      <DependentUpon>buyHotCake.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="operative\buyHotCake.aspx.designer.cs">
+      <DependentUpon>buyHotCake.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="operative\firstFiveYuan.aspx.cs">
+      <DependentUpon>firstFiveYuan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="operative\firstFiveYuan.aspx.designer.cs">
+      <DependentUpon>firstFiveYuan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="operative\halfoffCarnival.aspx.cs">
+      <DependentUpon>halfoffCarnival.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="operative\halfoffCarnival.aspx.designer.cs">
+      <DependentUpon>halfoffCarnival.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="operative\newUserRecharge.aspx.cs">
+      <DependentUpon>newUserRecharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="operative\newUserRecharge.aspx.designer.cs">
+      <DependentUpon>newUserRecharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="operative\redpackadd.aspx.cs">
+      <DependentUpon>redpackadd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="operative\redpackadd.aspx.designer.cs">
+      <DependentUpon>redpackadd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="operative\redpacklist.aspx.cs">
+      <DependentUpon>redpacklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="operative\redpacklist.aspx.designer.cs">
+      <DependentUpon>redpacklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="operative\saleProduct.aspx.cs">
+      <DependentUpon>saleProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="operative\saleProduct.aspx.designer.cs">
+      <DependentUpon>saleProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="operative\shaidan.aspx.cs">
+      <DependentUpon>shaidan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="operative\shaidan.aspx.designer.cs">
+      <DependentUpon>shaidan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="operative\tuanbuy.aspx.cs">
+      <DependentUpon>tuanbuy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="operative\tuanbuy.aspx.designer.cs">
+      <DependentUpon>tuanbuy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="operative\updateNewUserRecharge.aspx.cs">
+      <DependentUpon>updateNewUserRecharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="operative\updateNewUserRecharge.aspx.designer.cs">
+      <DependentUpon>updateNewUserRecharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="operative\userRedpackList.aspx.cs">
+      <DependentUpon>userRedpackList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="operative\userRedpackList.aspx.designer.cs">
+      <DependentUpon>userRedpackList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="operative\zeroBuy.aspx.cs">
+      <DependentUpon>zeroBuy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="operative\zeroBuy.aspx.designer.cs">
+      <DependentUpon>zeroBuy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="operative\sleepuser.aspx.cs">
+      <DependentUpon>sleepuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="operative\sleepuser.aspx.designer.cs">
+      <DependentUpon>sleepuser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderClass\orderDelivery.aspx.cs">
+      <DependentUpon>orderDelivery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderClass\orderDelivery.aspx.designer.cs">
+      <DependentUpon>orderDelivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderClass\orderdetail.aspx.cs">
+      <DependentUpon>orderdetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderClass\orderdetail.aspx.designer.cs">
+      <DependentUpon>orderdetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderClass\orderList.aspx.cs">
+      <DependentUpon>orderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderClass\orderList.aspx.designer.cs">
+      <DependentUpon>orderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderClass\orderLucky.aspx.cs">
+      <DependentUpon>orderLucky.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderClass\orderLucky.aspx.designer.cs">
+      <DependentUpon>orderLucky.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderClass\orderNotOut.aspx.cs">
+      <DependentUpon>orderNotOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderClass\orderNotOut.aspx.designer.cs">
+      <DependentUpon>orderNotOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderClass\orderSendGoods.aspx.cs">
+      <DependentUpon>orderSendGoods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderClass\orderSendGoods.aspx.designer.cs">
+      <DependentUpon>orderSendGoods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderClass\ZhiGouOrder.aspx.cs">
+      <DependentUpon>ZhiGouOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderClass\ZhiGouOrder.aspx.designer.cs">
+      <DependentUpon>ZhiGouOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="productClassify\addBrand.aspx.cs">
+      <DependentUpon>addBrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="productClassify\addBrand.aspx.designer.cs">
+      <DependentUpon>addBrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="productClassify\addCategory.aspx.cs">
+      <DependentUpon>addCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="productClassify\addCategory.aspx.designer.cs">
+      <DependentUpon>addCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="productClassify\brandList.aspx.cs">
+      <DependentUpon>brandList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="productClassify\brandList.aspx.designer.cs">
+      <DependentUpon>brandList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="productClassify\CategoryList.aspx.cs">
+      <DependentUpon>CategoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="productClassify\CategoryList.aspx.designer.cs">
+      <DependentUpon>CategoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\addGifts.aspx.cs">
+      <DependentUpon>addGifts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products\addGifts.aspx.designer.cs">
+      <DependentUpon>addGifts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\addProduct.aspx.cs">
+      <DependentUpon>addProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products\addProduct.aspx.designer.cs">
+      <DependentUpon>addProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\AddScope.aspx.cs">
+      <DependentUpon>AddScope.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products\AddScope.aspx.designer.cs">
+      <DependentUpon>AddScope.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\addTuangou.aspx.cs">
+      <DependentUpon>addTuangou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products\addTuangou.aspx.designer.cs">
+      <DependentUpon>addTuangou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\addYuangou.aspx.cs">
+      <DependentUpon>addYuangou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products\addYuangou.aspx.designer.cs">
+      <DependentUpon>addYuangou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\AddZhiGou.aspx.cs">
+      <DependentUpon>AddZhiGou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products\AddZhiGou.aspx.designer.cs">
+      <DependentUpon>AddZhiGou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\gifts.aspx.cs">
+      <DependentUpon>gifts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products\gifts.aspx.designer.cs">
+      <DependentUpon>gifts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\productList.aspx.cs">
+      <DependentUpon>productList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products\productList.aspx.designer.cs">
+      <DependentUpon>productList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base.aspx.cs">
+      <DependentUpon>Base.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base.aspx.designer.cs">
+      <DependentUpon>Base.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\tuangouList.aspx.cs">
+      <DependentUpon>tuangouList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products\tuangouList.aspx.designer.cs">
+      <DependentUpon>tuangouList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\tuangouRecover.aspx.cs">
+      <DependentUpon>tuangouRecover.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products\tuangouRecover.aspx.designer.cs">
+      <DependentUpon>tuangouRecover.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\yuangouList.aspx.cs">
+      <DependentUpon>yuangouList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products\yuangouList.aspx.designer.cs">
+      <DependentUpon>yuangouList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\yuangouRecover.aspx.cs">
+      <DependentUpon>yuangouRecover.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products\yuangouRecover.aspx.designer.cs">
+      <DependentUpon>yuangouRecover.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\zhiProduct.aspx.cs">
+      <DependentUpon>zhiProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products\zhiProduct.aspx.designer.cs">
+      <DependentUpon>zhiProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ashx\FlashUpload.ashx.cs">
+      <DependentUpon>FlashUpload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\InfoQuery\baiducfgQuery.cs" />
+    <Compile Include="Resources\InfoQuery\go_activity.cs" />
+    <Compile Include="Resources\InfoQuery\go_adminQuery.cs" />
+    <Compile Include="Resources\InfoQuery\go_channellistQuery.cs" />
+    <Compile Include="Resources\InfoQuery\go_channel_activitydetailQuery.cs" />
+    <Compile Include="Resources\InfoQuery\go_memberQuery.cs" />
+    <Compile Include="Resources\InfoQuery\go_orderQuery.cs" />
+    <Compile Include="Resources\InfoQuery\go_shoplistQuery.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\InfoQuery\go_yolly_orderinfoQuery.cs" />
+    <Compile Include="Resources\InfoQuery\go_yolly_orderinfo_apiQuery.cs.cs" />
+    <Compile Include="Resources\InfoQuery\go_yuangouQuery.cs" />
+    <Compile Include="Resources\InfoQuery\go_tuangouQuery.cs" />
+    <Compile Include="agent.aspx.cs">
+      <DependentUpon>agent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="agent.aspx.designer.cs">
+      <DependentUpon>agent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\InfoQuery\go_zhigouQuery.cs" />
+    <Compile Include="Resources\InfoQuery\go_zengDetailQuery.cs" />
+    <Compile Include="Slides\AddSlidesAPP.aspx.cs">
+      <DependentUpon>AddSlidesAPP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slides\AddSlidesAPP.aspx.designer.cs">
+      <DependentUpon>AddSlidesAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Slides\AddSlidesMarket.aspx.cs">
+      <DependentUpon>AddSlidesMarket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slides\AddSlidesMarket.aspx.designer.cs">
+      <DependentUpon>AddSlidesMarket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Slides\AddSlidesWechat.aspx.cs">
+      <DependentUpon>AddSlidesWechat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slides\AddSlidesWechat.aspx.designer.cs">
+      <DependentUpon>AddSlidesWechat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Slides\SlidesAPP.aspx.cs">
+      <DependentUpon>SlidesAPP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slides\SlidesAPP.aspx.designer.cs">
+      <DependentUpon>SlidesAPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Slides\SlidesMarket.aspx.cs">
+      <DependentUpon>SlidesMarket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slides\SlidesMarket.aspx.designer.cs">
+      <DependentUpon>SlidesMarket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Slides\SlidesWechat.aspx.cs">
+      <DependentUpon>SlidesWechat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slides\SlidesWechat.aspx.designer.cs">
+      <DependentUpon>SlidesWechat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="statistics\BriskStatistics.aspx.cs">
+      <DependentUpon>BriskStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="statistics\BriskStatistics.aspx.designer.cs">
+      <DependentUpon>BriskStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="statistics\ConsumeStatistics.aspx.cs">
+      <DependentUpon>ConsumeStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="statistics\ConsumeStatistics.aspx.designer.cs">
+      <DependentUpon>ConsumeStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="statistics\OrdersMonthStatistics.aspx.cs">
+      <DependentUpon>OrdersMonthStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="statistics\OrdersMonthStatistics.aspx.designer.cs">
+      <DependentUpon>OrdersMonthStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="statistics\OrdersStatistics.aspx.cs">
+      <DependentUpon>OrdersStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="statistics\OrdersStatistics.aspx.designer.cs">
+      <DependentUpon>OrdersStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="statistics\RechargeStatistics.aspx.cs">
+      <DependentUpon>RechargeStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="statistics\RechargeStatistics.aspx.designer.cs">
+      <DependentUpon>RechargeStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="statistics\UserStatistics.aspx.cs">
+      <DependentUpon>UserStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="statistics\UserStatistics.aspx.designer.cs">
+      <DependentUpon>UserStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ueditor\net\App_Code\Config.cs" />
+    <Compile Include="ueditor\net\App_Code\ConfigHandler.cs" />
+    <Compile Include="ueditor\net\App_Code\CrawlerHandler.cs" />
+    <Compile Include="ueditor\net\App_Code\Handler.cs" />
+    <Compile Include="ueditor\net\App_Code\ListFileHandler.cs" />
+    <Compile Include="ueditor\net\App_Code\NotSupportedHandler.cs" />
+    <Compile Include="ueditor\net\App_Code\PathFormater.cs" />
+    <Compile Include="ueditor\net\App_Code\UploadHandler.cs" />
+    <Compile Include="wx\addMultiArticle.aspx.cs">
+      <DependentUpon>addMultiArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wx\addMultiArticle.aspx.designer.cs">
+      <DependentUpon>addMultiArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wx\addReplyOnKey.aspx.cs">
+      <DependentUpon>addReplyOnKey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wx\addReplyOnKey.aspx.designer.cs">
+      <DependentUpon>addReplyOnKey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wx\addSingleArticle.aspx.cs">
+      <DependentUpon>addSingleArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wx\addSingleArticle.aspx.designer.cs">
+      <DependentUpon>addSingleArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wx\addWxMenu.aspx.cs">
+      <DependentUpon>addWxMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wx\addWxMenu.aspx.designer.cs">
+      <DependentUpon>addWxMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wx\warning.aspx.cs">
+      <DependentUpon>warning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wx\warning.aspx.designer.cs">
+      <DependentUpon>warning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wx\wxmenu.aspx.cs">
+      <DependentUpon>wxmenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wx\wxmenu.aspx.designer.cs">
+      <DependentUpon>wxmenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wx\wxreply.aspx.cs">
+      <DependentUpon>wxreply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wx\wxreply.aspx.designer.cs">
+      <DependentUpon>wxreply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yolly\SystemBillList.aspx.cs">
+      <DependentUpon>SystemBillList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yolly\SystemBillList.aspx.designer.cs">
+      <DependentUpon>SystemBillList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yolly\yollybilllist.aspx.cs">
+      <DependentUpon>yollybilllist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yolly\yollybilllist.aspx.designer.cs">
+      <DependentUpon>yollybilllist.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ASPNET.WebControls\ASPNET.WebControls.csproj">
+      <Project>{20966e1c-e2bc-4d8d-88d6-2b46421e2cf2}</Project>
+      <Name>ASPNET.WebControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Taotaole.Bll\Taotaole.Bll.csproj">
+      <Project>{57e6cf31-867f-4c84-b59c-d7f2432a9e39}</Project>
+      <Name>Taotaole.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Taotaole.Common\Taotaole.Common.csproj">
+      <Project>{76acfd5f-45aa-4c31-b4a7-ded7f89a1a71}</Project>
+      <Name>Taotaole.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Taotaole.Model\Taotaole.Model.csproj">
+      <Project>{951b3bd2-2779-40d3-8fb3-d1397a82c175}</Project>
+      <Name>Taotaole.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YH.Utility\YH.Utility.csproj">
+      <Project>{bf2cde81-2953-4d6e-ae67-b6f255e43baa}</Project>
+      <Name>YH.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YH.Weixin.MP\YH.Weixin.MP.csproj">
+      <Project>{7addb3dd-95b6-4129-9de4-8af7753ed78d}</Project>
+      <Name>YH.Weixin.MP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\SiteSettings.config" />
+    <Content Include="Resources\iconfont\iconfont.eot" />
+    <Content Include="Resources\iconfont\iconfont.ttf" />
+    <Content Include="Resources\iconfont\iconfont.woff" />
+    <Content Include="ueditor\net\config.json" />
+    <Content Include="ueditor\net\controller.ashx" />
+    <Content Include="ueditor\net\README.md" />
+    <Content Include="ueditor\net\Web.config" />
+    <Content Include="ueditor\third-party\jquery-1.10.2.min.map" />
+    <Content Include="ueditor\third-party\video-js\font\vjs.eot" />
+    <Content Include="ueditor\third-party\video-js\font\vjs.ttf" />
+    <Content Include="ueditor\third-party\video-js\font\vjs.woff" />
+    <Content Include="Resources\ashx\FlashUpload.ashx" />
+    <Content Include="packages.config" />
+    <Content Include="internalapi\taotaoleshareorder.ashx" />
+    <Content Include="API\wx.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Resources\channelxls\" />
+    <Folder Include="Resources\downloadstemp\" />
+    <Folder Include="Resources\orderxls\oederlist\" />
+    <Folder Include="Resources\orderxls\orderlucky\" />
+    <Folder Include="Resources\templates\" />
+    <Folder Include="Resources\TicketImage\" />
+    <Folder Include="Resources\uploads\shaidan\" />
+    <Folder Include="Resources\uploads\wxarticle\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8865/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

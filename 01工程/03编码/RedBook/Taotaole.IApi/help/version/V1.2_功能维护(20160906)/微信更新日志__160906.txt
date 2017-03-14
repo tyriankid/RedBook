@@ -1,0 +1,37 @@
+更新人：btt
+更新时间：20160906
+更新标识：维护
+更新备注：个人购买记录进度条，首充5专题,支付弹出层
+   影响的文件
+   /community.index.aspx，community.css
+   /WxZhuanti/shouchong5.aspx
+   /WxPay/wx_Submit.aspx
+--------------------------------
+更新人：hj
+更新时间：20160906
+更新标识：维护
+更新备注：
+	分享跳转错误:index.item.aspx页面的分享跳转错误,错误跳转到了userindex页面
+		修改处:index.item.aspx
+	测试服的关注回复无效
+		原因:关注事件内的获取用户unionid时没有做非空判断,导致异常
+		修改处:CustomMsgHandler.cs
+	首页加号部分错误
+		原因:role=renshuleft 后面被加上了productid,之前修复此问题的时候我加上了yid,并不对,改为productid即可
+		修改处:index.aspx
+	分享相关
+		屏蔽右上角分享菜单的页面:
+			user.recharge.aspx  index.wangqi.aspx  user.userbalance.aspx redpack.index.aspx
+			User.index.aspx  tuan.mylist.aspx tuan.collection.aspx user.address.aspx user.gameaddress.aspx user.service.aspx
+		打开右上角分享菜单的页面:
+			Index.aspx   index.item.aspx tuan.join.aspx  Tuan.item.aspx
+		新增分享文案并打开了菜单的页面
+	Tuan.index.aspx(增加了分享文案)  community.index.aspx(默认状态,没有中奖弹框之前的分享文案)
+--------------------------------
+更新人：葛壮
+更新时间：2016-09-06
+更新标识：维护
+更新备注：更新游戏地址列表显示收货人信息，以及商品确认收货页面
+	影响的文件
+		user.gameaddress.aspx
+		user.winningconfirm.aspx
