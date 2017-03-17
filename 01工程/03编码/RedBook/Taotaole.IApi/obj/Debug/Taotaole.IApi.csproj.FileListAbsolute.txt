@@ -25,3 +25,5 @@ C:\project\RedBook\01工程\03编码\RedBook\Taotaole.IApi\bin\YH.Weixin.Pay.pdb
 C:\project\RedBook\01工程\03编码\RedBook\Taotaole.IApi\bin\Taotaole.Dal.pdb
 C:\project\RedBook\01工程\03编码\RedBook\Taotaole.IApi\obj\Debug\Taotaole.IApi.dll
 C:\project\RedBook\01工程\03编码\RedBook\Taotaole.IApi\obj\Debug\Taotaole.IApi.pdb
+C:\project\RedBook\01工程\03编码\RedBook\Taotaole.IApi\bin\Taotaole.IApi.dll.config
+C:\project\RedBook\01工程\03编码\RedBook\Taotaole.IApi\bin\Newtonsoft.Json.dll

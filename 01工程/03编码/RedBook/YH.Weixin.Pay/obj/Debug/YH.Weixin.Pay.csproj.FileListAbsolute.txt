@@ -1,8 +1,6 @@
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.Pay\obj\Debug\YH.Weixin.Pay.csprojResolveAssemblyReference.cache
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.Pay\bin\Debug\YH.Weixin.Pay.dll
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.Pay\bin\Debug\YH.Weixin.Pay.pdb
-C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.Pay\bin\Debug\LitJson.dll
-C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.Pay\bin\Debug\Newtonsoft.Json.dll
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.Pay\bin\Debug\Taotaole.Bll.dll
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.Pay\bin\Debug\Taotaole.Common.dll
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.Pay\bin\Debug\Taotaole.Model.dll

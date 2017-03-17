@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedBook", "taotaole\RedBook.csproj", "{2A0B07FB-BA27-4EEE-988F-7FD27E3F6496}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedBook", "RedBook\RedBook.csproj", "{2A0B07FB-BA27-4EEE-988F-7FD27E3F6496}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taotaole.Bll", "Taotaole.Bll\Taotaole.Bll.csproj", "{57E6CF31-867F-4C84-B59C-D7F2432A9E39}"
 EndProject
@@ -120,20 +122,91 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{57E6CF31-867F-4C84-B59C-D7F2432A9E39} = {E9F77810-5E27-4DBC-AE6C-4BC867EB22F5}
 		{BA648799-1A56-4C28-990C-33DFE36710C1} = {E9F77810-5E27-4DBC-AE6C-4BC867EB22F5}
 		{76ACFD5F-45AA-4C31-B4A7-DED7F89A1A71} = {E9F77810-5E27-4DBC-AE6C-4BC867EB22F5}
 		{8AC707E8-096C-4564-AAD7-7944B9B67400} = {E9F77810-5E27-4DBC-AE6C-4BC867EB22F5}
 		{2FD38F6A-9E40-46D1-AD75-A417B863091F} = {E9F77810-5E27-4DBC-AE6C-4BC867EB22F5}
 		{16F9056C-EFCB-4B54-BC7C-D667179702F3} = {E9F77810-5E27-4DBC-AE6C-4BC867EB22F5}
-		{57E6CF31-867F-4C84-B59C-D7F2432A9E39} = {E9F77810-5E27-4DBC-AE6C-4BC867EB22F5}
-		{951B3BD2-2779-40D3-8FB3-D1397A82C175} = {E9F77810-5E27-4DBC-AE6C-4BC867EB22F5}
-		{20966E1C-E2BC-4D8D-88D6-2B46421E2CF2} = {E9F77810-5E27-4DBC-AE6C-4BC867EB22F5}
-		{63F752A9-C4E7-46BC-84CE-7042B51AD50A} = {E9F77810-5E27-4DBC-AE6C-4BC867EB22F5}
 		{7ADDB3DD-95B6-4129-9DE4-8AF7753ED78D} = {420CC4AC-2900-4334-9860-6F78835CD865}
 		{36D67C6E-7FB4-4C21-955A-C3F39C250A60} = {420CC4AC-2900-4334-9860-6F78835CD865}
 		{1380DD8F-95D3-45ED-9E78-00F1D9528F48} = {F35DC303-B862-4C2E-93ED-C2E0C41655AE}
 		{1F7D6D67-8DA6-4163-B50E-A499BBB09646} = {F35DC303-B862-4C2E-93ED-C2E0C41655AE}
 		{5DAC0C0B-26D9-48C1-BAED-CA6AA4601A2E} = {F35DC303-B862-4C2E-93ED-C2E0C41655AE}
 		{BF2CDE81-2953-4D6E-AE67-B6F255E43BAA} = {F35DC303-B862-4C2E-93ED-C2E0C41655AE}
+		{951B3BD2-2779-40D3-8FB3-D1397A82C175} = {E9F77810-5E27-4DBC-AE6C-4BC867EB22F5}
+		{20966E1C-E2BC-4D8D-88D6-2B46421E2CF2} = {E9F77810-5E27-4DBC-AE6C-4BC867EB22F5}
+		{63F752A9-C4E7-46BC-84CE-7042B51AD50A} = {E9F77810-5E27-4DBC-AE6C-4BC867EB22F5}
+	EndGlobalSection
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 18
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SccProjectUniqueName1 = RedBook\\RedBook.csproj
+		SccProjectName1 = $/01工程/03编码/RedBook/RedBook
+		SccLocalPath1 = RedBook
+		SccProjectUniqueName2 = Taotaole.Bll\\Taotaole.Bll.csproj
+		SccProjectTopLevelParentUniqueName2 = RedBook.sln
+		SccProjectName2 = $/01工程/03编码/RedBook/Taotaole.Bll
+		SccLocalPath2 = Taotaole.Bll
+		SccProjectUniqueName3 = Taotaole.Cache\\Taotaole.Cache.csproj
+		SccProjectTopLevelParentUniqueName3 = RedBook.sln
+		SccProjectName3 = $/01工程/03编码/RedBook/Taotaole.Cache
+		SccLocalPath3 = Taotaole.Cache
+		SccProjectUniqueName4 = Taotaole.Common\\Taotaole.Common.csproj
+		SccProjectTopLevelParentUniqueName4 = RedBook.sln
+		SccProjectName4 = $/01工程/03编码/RedBook/Taotaole.Common
+		SccLocalPath4 = Taotaole.Common
+		SccProjectUniqueName5 = Taotaole.Dal\\Taotaole.Dal.csproj
+		SccProjectTopLevelParentUniqueName5 = RedBook.sln
+		SccProjectName5 = $/01工程/03编码/RedBook/Taotaole.Dal
+		SccLocalPath5 = Taotaole.Dal
+		SccProjectUniqueName6 = Taotaole.IBll\\Taotaole.IBll.csproj
+		SccProjectTopLevelParentUniqueName6 = RedBook.sln
+		SccProjectName6 = $/01工程/03编码/RedBook/Taotaole.IBll
+		SccLocalPath6 = Taotaole.IBll
+		SccProjectUniqueName7 = Taotaole.IHost\\Taotaole.IHost.csproj
+		SccProjectTopLevelParentUniqueName7 = RedBook.sln
+		SccProjectName7 = $/01工程/03编码/RedBook/Taotaole.IHost
+		SccLocalPath7 = Taotaole.IHost
+		SccProjectUniqueName8 = YH.Weixin.MP\\YH.Weixin.MP.csproj
+		SccProjectTopLevelParentUniqueName8 = RedBook.sln
+		SccProjectName8 = $/01工程/03编码/RedBook/YH.Weixin.MP
+		SccLocalPath8 = YH.Weixin.MP
+		SccProjectUniqueName9 = YH.Weixin.Pay\\YH.Weixin.Pay.csproj
+		SccProjectTopLevelParentUniqueName9 = RedBook.sln
+		SccProjectName9 = $/01工程/03编码/RedBook/YH.Weixin.Pay
+		SccLocalPath9 = YH.Weixin.Pay
+		SccProjectUniqueName10 = YH.DataAccess\\YH.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName10 = RedBook.sln
+		SccProjectName10 = $/01工程/03编码/RedBook/YH.DataAccess
+		SccLocalPath10 = YH.DataAccess
+		SccProjectUniqueName11 = YH.DataSetHelper\\YH.DataSetHelper.csproj
+		SccProjectTopLevelParentUniqueName11 = RedBook.sln
+		SccProjectName11 = $/01工程/03编码/RedBook/YH.DataSetHelper
+		SccLocalPath11 = YH.DataSetHelper
+		SccProjectUniqueName12 = YH.Plugin\\YH.Plugin.csproj
+		SccProjectTopLevelParentUniqueName12 = RedBook.sln
+		SccProjectName12 = $/01工程/03编码/RedBook/YH.Plugin
+		SccLocalPath12 = YH.Plugin
+		SccProjectUniqueName13 = YH.Utility\\YH.Utility.csproj
+		SccProjectTopLevelParentUniqueName13 = RedBook.sln
+		SccProjectName13 = $/01工程/03编码/RedBook/YH.Utility
+		SccLocalPath13 = YH.Utility
+		SccProjectUniqueName14 = Taotaole.Model\\Taotaole.Model.csproj
+		SccProjectTopLevelParentUniqueName14 = RedBook.sln
+		SccProjectName14 = $/01工程/03编码/RedBook/Taotaole.Model
+		SccLocalPath14 = Taotaole.Model
+		SccProjectUniqueName15 = ASPNET.WebControls\\ASPNET.WebControls.csproj
+		SccProjectTopLevelParentUniqueName15 = RedBook.sln
+		SccProjectName15 = $/01工程/03编码/RedBook/ASPNET.WebControls
+		SccLocalPath15 = ASPNET.WebControls
+		SccProjectUniqueName16 = TaotaolePlatform\\RedBookPlatform.csproj
+		SccProjectName16 = $/01工程/03编码/RedBook/TaotaolePlatform
+		SccLocalPath16 = TaotaolePlatform
+		SccProjectUniqueName17 = Taotaole.IApi\\Taotaole.IApi.csproj
+		SccProjectTopLevelParentUniqueName17 = RedBook.sln
+		SccProjectName17 = $/01工程/03编码/RedBook/Taotaole.IApi
+		SccLocalPath17 = Taotaole.IApi
 	EndGlobalSection
 EndGlobal

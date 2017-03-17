@@ -1,7 +1,6 @@
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.MP\obj\Debug\YH.Weixin.MP.csprojResolveAssemblyReference.cache
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.MP\bin\Debug\YH.Weixin.MP.dll
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.MP\bin\Debug\YH.Weixin.MP.pdb
-C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.MP\bin\Debug\Newtonsoft.Json.dll
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.MP\bin\Debug\Taotaole.Bll.dll
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.MP\bin\Debug\Taotaole.Common.dll
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.MP\bin\Debug\Taotaole.Model.dll

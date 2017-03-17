@@ -19,14 +19,11 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
-    <SccProjectName>
-    </SccProjectName>
-    <SccLocalPath>
-    </SccLocalPath>
-    <SccAuxPath>
-    </SccAuxPath>
-    <SccProvider>
-    </SccProvider>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -256,6 +253,12 @@
       <DependentUpon>call_yolly.ashx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedbookCommon.ashx.cs">
+      <DependentUpon>RedbookCommon.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="RedbookUser.ashx.cs">
+      <DependentUpon>RedbookUser.ashx</DependentUpon>
+    </Compile>
     <Compile Include="taotaolearticle.ashx.cs">
       <DependentUpon>taotaolearticle.ashx</DependentUpon>
     </Compile>
@@ -351,6 +354,8 @@
     <Content Include="config\SiteSettings.config" />
     <Content Include="Calls\call_yolly.ashx" />
     <Content Include="taotaoleinterfaceapi.ashx" />
+    <Content Include="RedbookCommon.ashx" />
+    <Content Include="RedbookUser.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

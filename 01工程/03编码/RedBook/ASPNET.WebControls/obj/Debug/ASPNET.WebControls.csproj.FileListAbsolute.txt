@@ -1,7 +1,6 @@
 C:\project\RedBook\01工程\03编码\RedBook\ASPNET.WebControls\obj\Debug\ASPNET.WebControls.csprojResolveAssemblyReference.cache
 C:\project\RedBook\01工程\03编码\RedBook\ASPNET.WebControls\bin\Debug\ASPNET.WebControls.dll
 C:\project\RedBook\01工程\03编码\RedBook\ASPNET.WebControls\bin\Debug\ASPNET.WebControls.pdb
-C:\project\RedBook\01工程\03编码\RedBook\ASPNET.WebControls\bin\Debug\Newtonsoft.Json.dll
 C:\project\RedBook\01工程\03编码\RedBook\ASPNET.WebControls\bin\Debug\Taotaole.Common.dll
 C:\project\RedBook\01工程\03编码\RedBook\ASPNET.WebControls\bin\Debug\Taotaole.Model.dll
 C:\project\RedBook\01工程\03编码\RedBook\ASPNET.WebControls\bin\Debug\YH.Weixin.MP.dll

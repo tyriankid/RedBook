@@ -1,0 +1,30 @@
+﻿
+2017.03.17 16:05:36
+.客户信息：
+	Ip:::1
+	浏览器:Safari
+	浏览器版本:9
+	操作系统:Unknown
+.错误信息：
+	页面：http://localhost:8095/internalapi/taotaolearticle.ashx?action=slides&slidetype=1
+	错误信息：未将对象引用设置到对象的实例。
+	错误源：RedBook
+	异常方法：Void slidesList(System.Web.HttpContext)
+	堆栈信息：   在 RedBook.internalapi.taotaolearticle.slidesList(HttpContext context) 位置 C:\project\RedBook\01工程\03编码\RedBook\RedBook\internalapi\taotaolearticle.ashx.cs:行号 64
+   在 RedBook.internalapi.taotaolearticle.ProcessRequest(HttpContext context) 位置 C:\project\RedBook\01工程\03编码\RedBook\RedBook\internalapi\taotaolearticle.ashx.cs:行号 29
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--------------------------------------------------------------------------------------------------
+2017.03.17 16:09:48
+.客户信息：
+	Ip:::1
+	浏览器:Safari
+	浏览器版本:9
+	操作系统:Unknown
+.错误信息：
+	页面：http://localhost:8095/index.aspx
+	错误信息：用户名或密码不正确。
+	错误源：
+	异常方法：
+	堆栈信息：
+--------------------------------------------------------------------------------------------------

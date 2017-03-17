@@ -1,0 +1,1406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A0B07FB-BA27-4EEE-988F-7FD27E3F6496}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RedBook</RootNamespace>
+    <AssemblyName>RedBook</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="403.html" />
+    <Content Include="404.html" />
+    <Content Include="Controls\ucFoot.ascx" />
+    <Content Include="css\aui-slide.css" />
+    <Content Include="css\all.goods.css" />
+    <Content Include="css\export.index.css" />
+    <Content Include="dist\css\export.css" />
+    <Content Include="dist\img\1.png" />
+    <Content Include="dist\img\2.png" />
+    <Content Include="dist\img\banner.jpg" />
+    <Content Include="dist\img\banner1.png" />
+    <Content Include="dist\img\banner2.png" />
+    <Content Include="dist\img\congratulation.jpg" />
+    <Content Include="dist\img\dazhuanpan.png" />
+    <Content Include="dist\img\ggl.png" />
+    <Content Include="dist\img\guaguale.png" />
+    <Content Include="dist\img\guize.png" />
+    <Content Include="dist\img\intergral-bg.png" />
+    <Content Include="dist\img\lottery_01.jpg" />
+    <Content Include="dist\img\lottery_02.jpg" />
+    <Content Include="dist\img\lucky_01.jpg" />
+    <Content Include="dist\img\lucky_02.jpg" />
+    <Content Include="dist\img\lucky_03.jpg" />
+    <Content Include="dist\img\lucky_04.jpg" />
+    <Content Include="dist\img\lucky_05.jpg" />
+    <Content Include="dist\img\lucky_06.jpg" />
+    <Content Include="dist\img\paomadeng.png" />
+    <Content Include="dist\img\pao_bg.png" />
+    <Content Include="dist\img\pao_no_img.png" />
+    <Content Include="dist\img\pao_play_button.png" />
+    <Content Include="dist\img\pao_td_bg.png" />
+    <Content Include="dist\img\pao_top_img.png" />
+    <Content Include="dist\img\pointer.png" />
+    <Content Include="dist\img\pop1.png" />
+    <Content Include="dist\img\pop2.png" />
+    <Content Include="dist\img\scrap_01.jpg" />
+    <Content Include="dist\img\scrap_02.jpg" />
+    <Content Include="dist\img\scrap_03.jpg" />
+    <Content Include="dist\img\share.png" />
+    <Content Include="dist\img\share1.png" />
+    <Content Include="dist\img\share2.png" />
+    <Content Include="dist\img\share3.png" />
+    <Content Include="dist\img\turnplate-bg.png" />
+    <Content Include="dist\img\turnplate-pointer.png" />
+    <Content Include="dist\img\turntable-bg2.png" />
+    <Content Include="dist\img\turntable2.png" />
+    <Content Include="dist\js\export.js" />
+    <Content Include="dist\lib\require.js" />
+    <Content Include="errPage.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\403.png" />
+    <Content Include="images\404.png" />
+    <Content Include="images\baozhu.png" />
+    <Content Include="images\baozhu1.jpg" />
+    <Content Include="images\baozhu2.jpg" />
+    <Content Include="images\baozhu3.jpg" />
+    <Content Include="images\discover\errpage.png" />
+    <Content Include="images\discover\icon-iuserchouj.png" />
+    <Content Include="images\discover\icon-iusergame.png" />
+    <Content Include="images\discover\icon-iuserjf.png" />
+    <Content Include="images\discover\icon-iuserjfjp.png" />
+    <Content Include="images\discover\icon-iuserxs.png" />
+    <Content Include="images\discover\icon-iuserxy.png" />
+    <Content Include="images\discover\payerror.png" />
+    <Content Include="images\discover\refreshIconGif.gif" />
+    <Content Include="images\fr-home.png" />
+    <Content Include="images\fr-Member.png" />
+    <Content Include="images\fr-shezhi.png" />
+    <Content Include="images\goBackTop.png" />
+    <Content Include="images\gonggaobg.JPG" />
+    <Content Include="images\icon-1.png" />
+    <Content Include="images\icon-2.png" />
+    <Content Include="images\icon-3.png" />
+    <Content Include="images\icon-4.png" />
+    <Content Include="images\icon-5.png" />
+    <Content Include="images\icon-erdj.png" />
+    <Content Include="images\icon-iuserxy.png" />
+    <Content Include="images\icon-Member.png" />
+    <Content Include="images\icon-pinhome.png" />
+    <Content Include="images\icon-shezhi.png" />
+    <Content Include="images\icon-yidj.png" />
+    <Content Include="images\icon\default_square.png" />
+    <Content Include="images\icon\icon-all.png" />
+    <Content Include="images\icon\icon-all_.png" />
+    <Content Include="images\icon\icon-daikaijiang.png" />
+    <Content Include="images\icon\icon-erdj.png" />
+    <Content Include="images\icon\icon-fail.png" />
+    <Content Include="images\icon\icon-kaijiang.png" />
+    <Content Include="images\icon\icon-select.png" />
+    <Content Include="images\icon\icon-select2.png" />
+    <Content Include="images\icon\icon-selected.png" />
+    <Content Include="images\icon\icon-selected2.png" />
+    <Content Include="images\icon\icon-success.png" />
+    <Content Include="images\icon\icon-sucess.png" />
+    <Content Include="images\icon\icon-wangba.png" />
+    <Content Include="images\icon\icon-yidj.png" />
+    <Content Include="images\icon\qrcode_taotaole.jpg" />
+    <Content Include="images\icon\taotaole.png" />
+    <Content Include="images\icon\touxiang.png" />
+    <Content Include="images\newUserGet_01.gif" />
+    <Content Include="images\newUserGet_02.gif" />
+    <Content Include="images\newUserGet_03.gif" />
+    <Content Include="images\newUserGet_04.gif" />
+    <Content Include="images\newUserGet_05.gif" />
+    <Content Include="images\newUserGet_06.gif" />
+    <Content Include="images\newUserGet_07.gif" />
+    <Content Include="images\newUserGet_08.png" />
+    <Content Include="images\payerror.png" />
+    <Content Include="images\refresh.png" />
+    <Content Include="images\shareWx.png" />
+    <Content Include="images\tuan_baokuan_icon.png" />
+    <Content Include="images\tuan_fenlei_icon.png" />
+    <Content Include="images\tuan_geren_icon.png" />
+    <Content Include="images\tuan_haiwai_icon.png" />
+    <Content Include="images\tuan_search_icon.png" />
+    <Content Include="images\tuan_shouji_icon.png" />
+    <Content Include="images\tuan_tejia_icon.png" />
+    <Content Include="images\tuan_xinshou_icon.png" />
+    <Content Include="images\tuan_youhui_icon.png" />
+    <Content Include="images\updateApp1.jpg" />
+    <Content Include="images\updateApp2.jpg" />
+    <Content Include="images\updateApp3.jpg" />
+    <Content Include="images\updateApp4.jpg" />
+    <Content Include="images\updateApp5.jpg" />
+    <Content Include="images\updateApp6.jpg" />
+    <Content Include="images\updateApp7.jpg" />
+    <Content Include="images\winning-top.gif" />
+    <Content Include="images\win\icon-phone.png" />
+    <Content Include="images\win\icon-winSJ.png" />
+    <Content Include="images\win\icon-winTLB.png" />
+    <Content Include="images\win\icon-winZFB.png" />
+    <Content Include="images\win\icon-zfb.png" />
+    <Content Include="images\win\sxbutton.png" />
+    <Content Include="images\wxShare.png" />
+    <Content Include="images\smaillogo2.png" />
+    <Content Include="index.AllGoods.aspx" />
+    <Content Include="index.zhifubaoAgreement.aspx" />
+    <Content Include="js\aui-slide.js" />
+    <Content Include="js\idangerous.swiper-2.1.min.js" />
+    <Content Include="js\jquery-1.10.1.min.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery.min2.js" />
+    <Content Include="js\jquery.rotate.js" />
+    <Content Include="js\jquery.slides.min.js" />
+    <Content Include="js\PackIscroll.js" />
+    <Content Include="js\userlocation.js" />
+    <Content Include="js\Validform_v5.3.2.js" />
+    <Content Include="js\vue-resource.min.js" />
+    <Content Include="js\vue.min.js" />
+    <Content Include="js\WinRemind.js" />
+    <Content Include="js\guanzhu.js" />
+    <Content Include="js\wxShare.js" />
+    <Content Include="js\AlertShare.js" />
+    <Content Include="js\AlertBox.js" />
+    <Content Include="js\yxMobileSlider.js" />
+    <Content Include="lib\Ionic.Zip.dll" />
+    <Content Include="lib\LitJson.dll" />
+    <Content Include="NewUserGet.aspx" />
+    <Content Include="quan.index.aspx" />
+    <Content Include="quan.item.aspx" />
+    <Content Include="secondsOpen.aspx" />
+    <Content Include="user.address.aspx" />
+    <Content Include="user.chongzhiInfo.aspx" />
+    <Content Include="user.gameaddress.aspx" />
+    <Content Include="user.giftlist.aspx" />
+    <Content Include="user.help.aspx" />
+    <Content Include="user.newcomer.aspx" />
+    <Content Include="user.index.aspx" />
+    <Content Include="user.quanconfirm.aspx" />
+    <Content Include="user.service.aspx" />
+    <Content Include="user.updateApp.aspx" />
+    <Content Include="user.winningconfirm.aspx" />
+    <Content Include="user.zengbi.aspx" />
+    <Content Include="user.zhigou.aspx" />
+    <Content Include="WxPay\app_Pay.aspx" />
+    <Content Include="WxPay\cart.paycancel.aspx" />
+    <Content Include="WxPay\cart.payError.aspx" />
+    <Content Include="WxPay\cart.payment.aspx" />
+    <Content Include="WxPay\cart.paysuccess.aspx" />
+    <Content Include="community.index.aspx" />
+    <Content Include="css\address.css" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\AutoLottery.css" />
+    <Content Include="css\cartList.css" />
+    <Content Include="css\choujiang.css" />
+    <Content Include="css\city.css" />
+    <Content Include="css\comm.css" />
+    <Content Include="css\common1.css" />
+    <Content Include="css\community.css" />
+    <Content Include="css\discovery.css" />
+    <Content Include="css\fonts.css" />
+    <Content Include="css\goods.css" />
+    <Content Include="css\helo.css" />
+    <Content Include="css\help.css" />
+    <Content Include="css\images\blank.gif" />
+    <Content Include="css\images\closedhand.cur" />
+    <Content Include="css\images\openhand.cur" />
+    <Content Include="css\index.css" />
+    <Content Include="css\index.nav.css" />
+    <Content Include="css\invite.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\lottery.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\member.css" />
+    <Content Include="css\motion.css" />
+    <Content Include="css\motion.mp3" />
+    <Content Include="css\password.css" />
+    <Content Include="css\pull-refresh.css" />
+    <Content Include="css\qiandao.css" />
+    <Content Include="css\redpack.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\shaidan.css" />
+    <Content Include="css\single.css" />
+    <Content Include="css\slider-pro.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\swiper.min.css" />
+    <Content Include="css\tuan.css" />
+    <Content Include="css\userindex.css" />
+    <Content Include="css\winning.css" />
+    <Content Include="css\zdy.css" />
+    <Content Include="default.aspx" />
+    <Content Include="images\post\postsorry.png" />
+    <Content Include="index.lottery.aspx" />
+    <Content Include="index.userindex.aspx" />
+    <Content Include="index.winning.aspx" />
+    <Content Include="internalapi\common.js" />
+    <Content Include="redpack.index.aspx" />
+    <Content Include="user.buyDetail.aspx" />
+    <Content Include="user.login.aspx" />
+    <Content Include="user.recharge.aspx" />
+    <Content Include="user.userbalance.aspx" />
+    <Content Include="WxPay\wx_Pay.aspx" />
+    <Content Include="WxPay\wx_Submit.aspx" />
+    <Content Include="WxPay\wx_SubmitV2.aspx" />
+    <Content Include="WxTuan\tuan.Collection.aspx" />
+    <Content Include="WxTuan\tuan.index.aspx" />
+    <Content Include="WxTuan\tuan.item.aspx" />
+    <Content Include="WxTuan\tuan.join.aspx" />
+    <Content Include="WxTuan\tuan.join.pay.aspx" />
+    <Content Include="WxTuan\tuan.lotterylist.aspx" />
+    <Content Include="WxTuan\tuan.mylist.aspx" />
+    <Content Include="WxTuan\tuan.orderInfo.aspx" />
+    <Content Include="WxTuan\tuan.WinDetail.aspx" />
+    <Content Include="WxZhuanti\20bian118.aspx" />
+    <Content Include="WxZhuanti\baokuan.aspx" />
+    <Content Include="WxZhuanti\css\demo.css" />
+    <Content Include="WxZhuanti\css\wangba.css" />
+    <Content Include="WxZhuanti\css\wxgonggao.css" />
+    <Content Include="WxZhuanti\css\zhuanti.css" />
+    <Content Include="WxZhuanti\images\20bian118\20_118_01.jpg" />
+    <Content Include="WxZhuanti\images\20bian118\20_118_02.gif" />
+    <Content Include="WxZhuanti\images\20bian118\20_118_03.gif" />
+    <Content Include="WxZhuanti\images\20bian118\20_118_04.gif" />
+    <Content Include="WxZhuanti\images\20bian118\20_118_05.gif" />
+    <Content Include="WxZhuanti\images\20bian118\20_118_06.gif" />
+    <Content Include="WxZhuanti\images\20bian118\20_118_07.gif" />
+    <Content Include="WxZhuanti\images\20bian118\20_118_08.gif" />
+    <Content Include="WxZhuanti\images\20bian118\20_118_09.gif" />
+    <Content Include="WxZhuanti\images\20bian118\20_118_10.gif" />
+    <Content Include="WxZhuanti\images\20bian118\20_118_11.gif" />
+    <Content Include="WxZhuanti\images\baokuan\baokuan_01.gif" />
+    <Content Include="WxZhuanti\images\baokuan\baokuan_02.gif" />
+    <Content Include="WxZhuanti\images\baokuan\baokuan_03.gif" />
+    <Content Include="WxZhuanti\images\baokuan\baokuan_04.gif" />
+    <Content Include="WxZhuanti\images\baokuan\baokuan_05.gif" />
+    <Content Include="WxZhuanti\images\baokuan\baokuan_06.gif" />
+    <Content Include="WxZhuanti\images\baokuan\baokuan_07.gif" />
+    <Content Include="WxZhuanti\images\baokuan\baokuan_08.gif" />
+    <Content Include="WxZhuanti\images\baokuan\btn-canyu.gif" />
+    <Content Include="WxZhuanti\images\baokuan\btn-canyued.gif" />
+    <Content Include="WxZhuanti\images\baokuan\btn-nozige.gif" />
+    <Content Include="WxZhuanti\images\miji\miji_01.gif" />
+    <Content Include="WxZhuanti\images\miji\miji_02.gif" />
+    <Content Include="WxZhuanti\images\miji\miji_03.gif" />
+    <Content Include="WxZhuanti\images\miji\miji_04.gif" />
+    <Content Include="WxZhuanti\images\miji\miji_05.gif" />
+    <Content Include="WxZhuanti\images\miji\miji_06.gif" />
+    <Content Include="WxZhuanti\images\miji\miji_07.gif" />
+    <Content Include="WxZhuanti\images\miji\miji_08.gif" />
+    <Content Include="WxZhuanti\images\miji\miji_09.gif" />
+    <Content Include="WxZhuanti\images\miji\miji_10.gif" />
+    <Content Include="WxZhuanti\images\miji\miji_11.gif" />
+    <Content Include="WxZhuanti\images\miji\miji_12.gif" />
+    <Content Include="WxZhuanti\images\miji\miji_13.gif" />
+    <Content Include="WxZhuanti\images\pintuan\pintuan_01.gif" />
+    <Content Include="WxZhuanti\images\pintuan\pintuan_02.gif" />
+    <Content Include="WxZhuanti\images\pintuan\pintuan_03.gif" />
+    <Content Include="WxZhuanti\images\pintuan\pintuan_04.gif" />
+    <Content Include="WxZhuanti\images\pintuan\pintuan_05.gif" />
+    <Content Include="WxZhuanti\images\shouchong5\shouchong5_01.jpg" />
+    <Content Include="WxZhuanti\images\shouchong5\shouchong5_02.jpg" />
+    <Content Include="WxZhuanti\images\shouchong5\shouchong5_03.gif" />
+    <Content Include="WxZhuanti\images\shouchong5\shouchong5_04.gif" />
+    <Content Include="WxZhuanti\images\shouchong5\shouchong5_05.gif" />
+    <Content Include="WxZhuanti\images\wangbav2\0.jpg" />
+    <Content Include="WxZhuanti\images\wangbav2\1.jpg" />
+    <Content Include="WxZhuanti\images\wangbav2\2.jpg" />
+    <Content Include="WxZhuanti\images\wangbav2\3.jpg" />
+    <Content Include="WxZhuanti\images\wangbav2\4.jpg" />
+    <Content Include="WxZhuanti\images\wangbav2\5.jpg" />
+    <Content Include="WxZhuanti\images\wangbav2\lucky_01.jpg" />
+    <Content Include="WxZhuanti\images\wangbav2\lucky_02.jpg" />
+    <Content Include="WxZhuanti\images\wangbav2\lucky_03.gif" />
+    <Content Include="WxZhuanti\images\wangbav2\lucky_03.jpg" />
+    <Content Include="WxZhuanti\images\wangbav2\lucky_04.gif" />
+    <Content Include="WxZhuanti\images\wangbav2\lucky_04.jpg" />
+    <Content Include="WxZhuanti\images\wangbav2\lucky_05.jpg" />
+    <Content Include="WxZhuanti\images\wangbav2\lucky_06.jpg" />
+    <Content Include="WxZhuanti\images\wangbav2\lucky_07.jpg" />
+    <Content Include="WxZhuanti\images\wangbav2\pointer.png" />
+    <Content Include="WxZhuanti\images\wangbav2\pointer2.png" />
+    <Content Include="WxZhuanti\images\wangbav2\turntable-bg2.png" />
+    <Content Include="WxZhuanti\images\wangbav2\turntable2.png" />
+    <Content Include="WxZhuanti\images\wangba\btn-canyu.gif" />
+    <Content Include="WxZhuanti\images\wangba\btn-canyued.gif" />
+    <Content Include="WxZhuanti\images\wangba\btn-canyunone.gif" />
+    <Content Include="WxZhuanti\images\wangba\btn-yiduihuan.gif" />
+    <Content Include="WxZhuanti\images\wangba\drank-img-1.png" />
+    <Content Include="WxZhuanti\images\wangba\drank-img-2.png" />
+    <Content Include="WxZhuanti\images\wangba\drank-img-3.png" />
+    <Content Include="WxZhuanti\images\wangba\drankbox-bg.gif" />
+    <Content Include="WxZhuanti\images\wangba\drank-img-bg.jpg" />
+    <Content Include="WxZhuanti\images\wangba\drank_1.gif" />
+    <Content Include="WxZhuanti\images\wangba\drank_2.gif" />
+    <Content Include="WxZhuanti\images\wangba\drank_3.gif" />
+    <Content Include="WxZhuanti\images\wangba\drank_4.gif" />
+    <Content Include="WxZhuanti\images\wangba\icon-dui.png" />
+    <Content Include="WxZhuanti\images\wangba\icon-jiang.png" />
+    <Content Include="WxZhuanti\images\wangba\icon-yi.png" />
+    <Content Include="WxZhuanti\images\wanzhuan\wanzhuan_02.gif" />
+    <Content Include="WxZhuanti\images\wanzhuan\wanzhuan_03.gif" />
+    <Content Include="WxZhuanti\images\wanzhuan\wanzhuan_04.gif" />
+    <Content Include="WxZhuanti\images\wuzhe\wuzhe_01.gif" />
+    <Content Include="WxZhuanti\images\wuzhe\wuzhe_02.gif" />
+    <Content Include="WxZhuanti\images\wuzhe\wuzhe_03.gif" />
+    <Content Include="WxZhuanti\images\wuzhe\wuzhe_04.gif" />
+    <Content Include="WxZhuanti\images\wuzhe\wuzhe_05.gif" />
+    <Content Include="WxZhuanti\images\wuzhe\wuzhe_06.gif" />
+    <Content Include="WxZhuanti\images\ZeroGou\img-0.gif" />
+    <Content Include="WxZhuanti\images\ZeroGou\img-100.gif" />
+    <Content Include="WxZhuanti\images\ZeroGou\img-200.gif" />
+    <Content Include="WxZhuanti\images\ZeroGou\img-50.gif" />
+    <Content Include="WxZhuanti\images\ZeroGou\img-500.gif" />
+    <Content Include="WxZhuanti\images\ZeroGou\ZeroGou_01.gif" />
+    <Content Include="WxZhuanti\images\ZeroGou\ZeroGou_02.png" />
+    <Content Include="WxZhuanti\images\ZeroGou\ZeroGou_03.gif" />
+    <Content Include="WxZhuanti\images\ZeroGou\ZeroGou_04.gif" />
+    <Content Include="WxZhuanti\images\ZeroGou\ZeroGou_05.gif" />
+    <Content Include="WxZhuanti\images\ZeroGou\ZeroGou_06.gif" />
+    <Content Include="WxZhuanti\js\awardRotate.js" />
+    <Content Include="WxZhuanti\js\jquery.min.js" />
+    <Content Include="WxZhuanti\pintuan.aspx" />
+    <Content Include="WxZhuanti\shouchong5.aspx" />
+    <Content Include="WxZhuanti\Wangba.aspx" />
+    <Content Include="WxZhuanti\wanzhuantaotaole.aspx" />
+    <Content Include="WxZhuanti\wuzhe.aspx" />
+    <Content Include="WxZhuanti\wxgonggao.aspx" />
+    <Content Include="WxZhuanti\ZeroGou.aspx" />
+    <Content Include="WxZhuanti\zhongjiangmiji.aspx" />
+    <Content Include="WxZhuanti\WangbaV2.aspx" />
+    <Content Include="xieyi1.aspx" />
+    <Content Include="xieyi2.aspx" />
+    <Content Include="gift.index.aspx" />
+    <Content Include="gift.gua.aspx" />
+    <Content Include="gift.pao.aspx" />
+    <Content Include="gift.zhuan.aspx" />
+    <Content Include="gift.list.aspx" />
+    <Content Include="user.giftconfirm.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="quan.category.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ucFoot.ascx.cs">
+      <DependentUpon>ucFoot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ucFoot.ascx.designer.cs">
+      <DependentUpon>ucFoot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="errPage.aspx.cs">
+      <DependentUpon>errPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="errPage.aspx.designer.cs">
+      <DependentUpon>errPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.AllGoods.aspx.cs">
+      <DependentUpon>index.AllGoods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.AllGoods.aspx.designer.cs">
+      <DependentUpon>index.AllGoods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.zhifubaoAgreement.aspx.cs">
+      <DependentUpon>index.zhifubaoAgreement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.zhifubaoAgreement.aspx.designer.cs">
+      <DependentUpon>index.zhifubaoAgreement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="internalapi\RedbookCommon.ashx.cs">
+      <DependentUpon>RedbookCommon.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="internalapi\RedbookUser.ashx.cs">
+      <DependentUpon>RedbookUser.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="internalapi\taotaolearticle.ashx.cs">
+      <DependentUpon>taotaolearticle.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="internalapi\taotaoletuan.ashx.cs">
+      <DependentUpon>taotaoletuan.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="internalapi\taotaolegift.ashx.cs">
+      <DependentUpon>taotaolegift.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="NewUserGet.aspx.cs">
+      <DependentUpon>NewUserGet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewUserGet.aspx.designer.cs">
+      <DependentUpon>NewUserGet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="quan.index.aspx.cs">
+      <DependentUpon>quan.index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="quan.index.aspx.designer.cs">
+      <DependentUpon>quan.index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="quan.item.aspx.cs">
+      <DependentUpon>quan.item.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="quan.item.aspx.designer.cs">
+      <DependentUpon>quan.item.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="secondsOpen.aspx.cs">
+      <DependentUpon>secondsOpen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="secondsOpen.aspx.designer.cs">
+      <DependentUpon>secondsOpen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.address.aspx.cs">
+      <DependentUpon>user.address.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.address.aspx.designer.cs">
+      <DependentUpon>user.address.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.chongzhiInfo.aspx.cs">
+      <DependentUpon>user.chongzhiInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.chongzhiInfo.aspx.designer.cs">
+      <DependentUpon>user.chongzhiInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.gameaddress.aspx.cs">
+      <DependentUpon>user.gameaddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.gameaddress.aspx.designer.cs">
+      <DependentUpon>user.gameaddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.giftlist.aspx.cs">
+      <DependentUpon>user.giftlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.giftlist.aspx.designer.cs">
+      <DependentUpon>user.giftlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.giftlist.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.giftlist.designer.cs">
+      <DependentUpon>user.giftlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user.help.aspx.cs">
+      <DependentUpon>user.help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.help.aspx.designer.cs">
+      <DependentUpon>user.help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.newcomer.aspx.cs">
+      <DependentUpon>user.newcomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.newcomer.aspx.designer.cs">
+      <DependentUpon>user.newcomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.index.aspx.cs">
+      <DependentUpon>user.index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.index.aspx.designer.cs">
+      <DependentUpon>user.index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.quanconfirm.aspx.cs">
+      <DependentUpon>user.quanconfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.quanconfirm.aspx.designer.cs">
+      <DependentUpon>user.quanconfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.service.aspx.cs">
+      <DependentUpon>user.service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.service.aspx.designer.cs">
+      <DependentUpon>user.service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.updateApp.aspx.cs">
+      <DependentUpon>user.updateApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.updateApp.aspx.designer.cs">
+      <DependentUpon>user.updateApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.winningconfirm.aspx.cs">
+      <DependentUpon>user.winningconfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.winningconfirm.aspx.designer.cs">
+      <DependentUpon>user.winningconfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.zengbi.aspx.cs">
+      <DependentUpon>user.zengbi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.zengbi.aspx.designer.cs">
+      <DependentUpon>user.zengbi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.zhigou.aspx.cs">
+      <DependentUpon>user.zhigou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.zhigou.aspx.designer.cs">
+      <DependentUpon>user.zhigou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxPay\app_Pay.aspx.cs">
+      <DependentUpon>app_Pay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxPay\app_Pay.aspx.designer.cs">
+      <DependentUpon>app_Pay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxPay\cart.paycancel.aspx.cs">
+      <DependentUpon>cart.paycancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxPay\cart.paycancel.aspx.designer.cs">
+      <DependentUpon>cart.paycancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxPay\cart.payError.aspx.cs">
+      <DependentUpon>cart.payError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxPay\cart.payError.aspx.designer.cs">
+      <DependentUpon>cart.payError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxPay\cart.payment.aspx.cs">
+      <DependentUpon>cart.payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxPay\cart.payment.aspx.designer.cs">
+      <DependentUpon>cart.payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxPay\cart.paysuccess.aspx.cs">
+      <DependentUpon>cart.paysuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxPay\cart.paysuccess.aspx.designer.cs">
+      <DependentUpon>cart.paysuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="community.index.aspx.cs">
+      <DependentUpon>community.index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="community.index.aspx.designer.cs">
+      <DependentUpon>community.index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index_old.aspx.cs">
+      <DependentUpon>index_old.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index_old.aspx.designer.cs">
+      <DependentUpon>index_old.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.calResult.aspx.cs">
+      <DependentUpon>index.calResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.calResult.aspx.designer.cs">
+      <DependentUpon>index.calResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.goodsdesc.aspx.cs">
+      <DependentUpon>index.goodsdesc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.goodsdesc.aspx.designer.cs">
+      <DependentUpon>index.goodsdesc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.goodspost.aspx.cs">
+      <DependentUpon>index.goodspost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.goodspost.aspx.designer.cs">
+      <DependentUpon>index.goodspost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.item.aspx.cs">
+      <DependentUpon>index.item.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.item.aspx.designer.cs">
+      <DependentUpon>index.item.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.lottery.aspx.cs">
+      <DependentUpon>index.lottery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.lottery.aspx.designer.cs">
+      <DependentUpon>index.lottery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.userindex.aspx.cs">
+      <DependentUpon>index.userindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.userindex.aspx.designer.cs">
+      <DependentUpon>index.userindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.wangqi.aspx.cs">
+      <DependentUpon>index.wangqi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.wangqi.aspx.designer.cs">
+      <DependentUpon>index.wangqi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.winning.aspx.cs">
+      <DependentUpon>index.winning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.winning.aspx.designer.cs">
+      <DependentUpon>index.winning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="internalapi\taotaolebuy.ashx.cs">
+      <DependentUpon>taotaolebuy.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="internalapi\taotaoleorder.ashx.cs">
+      <DependentUpon>taotaoleorder.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="internalapi\taotaolepay.ashx.cs">
+      <DependentUpon>taotaolepay.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="internalapi\taotaolepush.ashx.cs">
+      <DependentUpon>taotaolepush.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="internalapi\taotaoleredpack.ashx.cs">
+      <DependentUpon>taotaoleredpack.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="internalapi\taotaolerefund.ashx.cs">
+      <DependentUpon>taotaolerefund.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="internalapi\taotaoleshareorder.ashx.cs">
+      <DependentUpon>taotaoleshareorder.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="internalapi\taotaoleshop.ashx.cs">
+      <DependentUpon>taotaoleshop.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="internalapi\taotaolesms.ashx.cs">
+      <DependentUpon>taotaolesms.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="internalapi\taotaoleuser.ashx.cs">
+      <DependentUpon>taotaoleuser.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="redpack.index.aspx.cs">
+      <DependentUpon>redpack.index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="redpack.index.aspx.designer.cs">
+      <DependentUpon>redpack.index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.buyDetail.aspx.cs">
+      <DependentUpon>user.buyDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.buyDetail.aspx.designer.cs">
+      <DependentUpon>user.buyDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.login.aspx.cs">
+      <DependentUpon>user.login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.login.aspx.designer.cs">
+      <DependentUpon>user.login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.recharge.aspx.cs">
+      <DependentUpon>user.recharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.recharge.aspx.designer.cs">
+      <DependentUpon>user.recharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.userbalance.aspx.cs">
+      <DependentUpon>user.userbalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.userbalance.aspx.designer.cs">
+      <DependentUpon>user.userbalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxPay\wx_Pay.aspx.cs">
+      <DependentUpon>wx_Pay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxPay\wx_Pay.aspx.designer.cs">
+      <DependentUpon>wx_Pay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxPay\wx_Submit.aspx.cs">
+      <DependentUpon>wx_Submit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxPay\wx_Submit.aspx.designer.cs">
+      <DependentUpon>wx_Submit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxPay\wx_SubmitV2.aspx.cs">
+      <DependentUpon>wx_SubmitV2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxPay\wx_SubmitV2.aspx.designer.cs">
+      <DependentUpon>wx_SubmitV2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxTuan\tuan.Collection.aspx.cs">
+      <DependentUpon>tuan.Collection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxTuan\tuan.Collection.aspx.designer.cs">
+      <DependentUpon>tuan.Collection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxTuan\tuan.index.aspx.cs">
+      <DependentUpon>tuan.index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxTuan\tuan.index.aspx.designer.cs">
+      <DependentUpon>tuan.index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxTuan\tuan.item.aspx.cs">
+      <DependentUpon>tuan.item.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxTuan\tuan.item.aspx.designer.cs">
+      <DependentUpon>tuan.item.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxTuan\tuan.join.aspx.cs">
+      <DependentUpon>tuan.join.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxTuan\tuan.join.aspx.designer.cs">
+      <DependentUpon>tuan.join.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxTuan\tuan.join.pay.aspx.cs">
+      <DependentUpon>tuan.join.pay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxTuan\tuan.join.pay.aspx.designer.cs">
+      <DependentUpon>tuan.join.pay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxTuan\tuan.lotterylist.aspx.cs">
+      <DependentUpon>tuan.lotterylist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxTuan\tuan.lotterylist.aspx.designer.cs">
+      <DependentUpon>tuan.lotterylist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxTuan\tuan.mylist.aspx.cs">
+      <DependentUpon>tuan.mylist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxTuan\tuan.mylist.aspx.designer.cs">
+      <DependentUpon>tuan.mylist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxTuan\tuan.orderInfo.aspx.cs">
+      <DependentUpon>tuan.orderInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxTuan\tuan.orderInfo.aspx.designer.cs">
+      <DependentUpon>tuan.orderInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxTuan\tuan.WinDetail.aspx.cs">
+      <DependentUpon>tuan.WinDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxTuan\tuan.WinDetail.aspx.designer.cs">
+      <DependentUpon>tuan.WinDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxZhuanti\20bian118.aspx.cs">
+      <DependentUpon>20bian118.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxZhuanti\20bian118.aspx.designer.cs">
+      <DependentUpon>20bian118.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxZhuanti\baokuan.aspx.cs">
+      <DependentUpon>baokuan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxZhuanti\baokuan.aspx.designer.cs">
+      <DependentUpon>baokuan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxZhuanti\pintuan.aspx.cs">
+      <DependentUpon>pintuan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxZhuanti\pintuan.aspx.designer.cs">
+      <DependentUpon>pintuan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxZhuanti\shouchong5.aspx.cs">
+      <DependentUpon>shouchong5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxZhuanti\shouchong5.aspx.designer.cs">
+      <DependentUpon>shouchong5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxZhuanti\Wangba.aspx.cs">
+      <DependentUpon>Wangba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxZhuanti\Wangba.aspx.designer.cs">
+      <DependentUpon>Wangba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxZhuanti\wanzhuantaotaole.aspx.cs">
+      <DependentUpon>wanzhuantaotaole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxZhuanti\wanzhuantaotaole.aspx.designer.cs">
+      <DependentUpon>wanzhuantaotaole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxZhuanti\wuzhe.aspx.cs">
+      <DependentUpon>wuzhe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxZhuanti\wuzhe.aspx.designer.cs">
+      <DependentUpon>wuzhe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxZhuanti\wxgonggao.aspx.cs">
+      <DependentUpon>wxgonggao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxZhuanti\wxgonggao.aspx.designer.cs">
+      <DependentUpon>wxgonggao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxZhuanti\ZeroGou.aspx.cs">
+      <DependentUpon>ZeroGou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxZhuanti\ZeroGou.aspx.designer.cs">
+      <DependentUpon>ZeroGou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxZhuanti\zhongjiangmiji.aspx.cs">
+      <DependentUpon>zhongjiangmiji.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxZhuanti\zhongjiangmiji.aspx.designer.cs">
+      <DependentUpon>zhongjiangmiji.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WxZhuanti\WangbaV2.aspx.cs">
+      <DependentUpon>WangbaV2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WxZhuanti\WangbaV2.aspx.designer.cs">
+      <DependentUpon>WangbaV2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xieyi1.aspx.cs">
+      <DependentUpon>xieyi1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xieyi1.aspx.designer.cs">
+      <DependentUpon>xieyi1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xieyi2.aspx.cs">
+      <DependentUpon>xieyi2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xieyi2.aspx.designer.cs">
+      <DependentUpon>xieyi2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gift.index.aspx.cs">
+      <DependentUpon>gift.index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gift.index.aspx.designer.cs">
+      <DependentUpon>gift.index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gift.gua.aspx.cs">
+      <DependentUpon>gift.gua.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gift.gua.aspx.designer.cs">
+      <DependentUpon>gift.gua.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gift.pao.aspx.cs">
+      <DependentUpon>gift.pao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gift.pao.aspx.designer.cs">
+      <DependentUpon>gift.pao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gift.zhuan.aspx.cs">
+      <DependentUpon>gift.zhuan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gift.zhuan.aspx.designer.cs">
+      <DependentUpon>gift.zhuan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gift.list.aspx.cs">
+      <DependentUpon>gift.list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gift.list.aspx.designer.cs">
+      <DependentUpon>gift.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.giftconfirm.aspx.cs">
+      <DependentUpon>user.giftconfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.giftconfirm.aspx.designer.cs">
+      <DependentUpon>user.giftconfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="quan.category.aspx.cs">
+      <DependentUpon>quan.category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="quan.category.aspx.designer.cs">
+      <DependentUpon>quan.category.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="API\" />
+    <Folder Include="Logs\" />
+    <Folder Include="Template\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\account_icon.png" />
+    <Content Include="images\app.png" />
+    <Content Include="images\arrow.png" />
+    <Content Include="images\arrows.png" />
+    <Content Include="images\bg_v7-pay.png" />
+    <Content Include="images\bg_v7.png" />
+    <Content Include="images\buttons_01.png" />
+    <Content Include="images\card-jd5.jpg" />
+    <Content Include="images\card-yd100.jpg" />
+    <Content Include="images\card-yd1000.jpg" />
+    <Content Include="images\card-yd20.png" />
+    <Content Include="images\card-yd300.jpg" />
+    <Content Include="images\card-yd50.jpg" />
+    <Content Include="images\chong.png" />
+    <Content Include="images\clock.gif" />
+    <Content Include="images\cz.png" />
+    <Content Include="images\dhyy.png" />
+    <Content Include="images\disc-rotate.png" />
+    <Content Include="images\discover1.png" />
+    <Content Include="images\discover2.png" />
+    <Content Include="images\discover3.png" />
+    <Content Include="images\discover\applebanner.jpg" />
+    <Content Include="images\discover\applebanner1.jpg" />
+    <Content Include="images\discover\applebanner2.jpg" />
+    <Content Include="images\discover\applebanner3.jpg" />
+    <Content Include="images\discover\applehotpro1.jpg" />
+    <Content Include="images\discover\applehotpro2.jpg" />
+    <Content Include="images\discover\applehotpro3.jpg" />
+    <Content Include="images\discover\applehotpro4.jpg" />
+    <Content Include="images\discover\applehotpro5.jpg" />
+    <Content Include="images\discover\applehotpro6.jpg" />
+    <Content Include="images\discover\applehotsale.jpg" />
+    <Content Include="images\discover\applehotsale.png" />
+    <Content Include="images\discover\applehotsale1.png" />
+    <Content Include="images\discover\discoverIcon0.png" />
+    <Content Include="images\discover\discoverIcon20.png" />
+    <Content Include="images\discover\discoverIconHelp.png" />
+    <Content Include="images\discover\discoverIconIphone.png" />
+    <Content Include="images\discover\discoverIconNew.png" />
+    <Content Include="images\discover\discoverIconShare.png" />
+    <Content Include="images\discover\discoverIconTuan.png" />
+    <Content Include="images\discover\ewmcenter.png" />
+    <Content Include="images\discover\gamebanner.jpg" />
+    <Content Include="images\discover\gamehotpro1.jpg" />
+    <Content Include="images\discover\gamehotpro3.jpg" />
+    <Content Include="images\discover\gamehotpro4.jpg" />
+    <Content Include="images\discover\gamehotpro6.jpg" />
+    <Content Include="images\discover\gamehotsale.png" />
+    <Content Include="images\discover\icon-checked.jpg" />
+    <Content Include="images\discover\icon-checked.png" />
+    <Content Include="images\discover\icon-ichongzhi.jpg" />
+    <Content Include="images\discover\icon-ijxz.png" />
+    <Content Include="images\discover\icon-iuser0.png" />
+    <Content Include="images\discover\icon-iuserdz.png" />
+    <Content Include="images\discover\icon-iuserfx.png" />
+    <Content Include="images\discover\icon-iusergr.jpg" />
+    <Content Include="images\discover\icon-iusergr.png" />
+    <Content Include="images\discover\icon-iuserhb.png" />
+    <Content Include="images\discover\icon-iuserkf.png" />
+    <Content Include="images\discover\icon-iuserlg.png" />
+    <Content Include="images\discover\icon-iuserpt.png" />
+    <Content Include="images\discover\icon-iuserqd.png" />
+    <Content Include="images\discover\icon-iusersd.jpg" />
+    <Content Include="images\discover\icon-iusersd.png" />
+    <Content Include="images\discover\icon-iusertc.png" />
+    <Content Include="images\discover\icon-iuseryq.png" />
+    <Content Include="images\discover\icon-iuserzh.jpg" />
+    <Content Include="images\discover\icon-iuserzh.png" />
+    <Content Include="images\discover\icon-iweixin.jpg" />
+    <Content Include="images\discover\icon-iyjx.png" />
+    <Content Include="images\discover\icon-izhifubao.jpg" />
+    <Content Include="images\discover\icon-nocheck.jpg" />
+    <Content Include="images\discover\icon-nocheck.png" />
+    <Content Include="images\discover\paycancel.png" />
+    <Content Include="images\discover\paysuccess.png" />
+    <Content Include="images\discover\profile-bg.png" />
+    <Content Include="images\discover\redpackbg.png" />
+    <Content Include="images\discover\refreshbg.png" />
+    <Content Include="images\discover\refreshIcon.png" />
+    <Content Include="images\discover\sharelink.png" />
+    <Content Include="images\discover\tuan-icon.png" />
+    <Content Include="images\dq.png" />
+    <Content Include="images\duo.png" />
+    <Content Include="images\fanhui.png" />
+    <Content Include="images\fast-nav-new.png" />
+    <Content Include="images\fufen.jpg" />
+    <Content Include="images\f_set.png" />
+    <Content Include="images\glist\icon-12.png" />
+    <Content Include="images\glist\icon-12_.png" />
+    <Content Include="images\glist\icon-13.png" />
+    <Content Include="images\glist\icon-13_.png" />
+    <Content Include="images\glist\icon-14.png" />
+    <Content Include="images\glist\icon-14_.png" />
+    <Content Include="images\glist\icon-15.png" />
+    <Content Include="images\glist\icon-15_.png" />
+    <Content Include="images\glist\icon-17.png" />
+    <Content Include="images\glist\icon-17_.png" />
+    <Content Include="images\glist\icon-5.png" />
+    <Content Include="images\glist\icon-5_.png" />
+    <Content Include="images\glist\icon-6.png" />
+    <Content Include="images\glist\icon-6_.png" />
+    <Content Include="images\glist\icon-all.png" />
+    <Content Include="images\glist\icon-all_.png" />
+    <Content Include="images\glist\女性 %281%29.png" />
+    <Content Include="images\goodscheckbox.png" />
+    <Content Include="images\group_explain.png" />
+    <Content Include="images\head-banner.jpg" />
+    <Content Include="images\Hlimit-bg.png" />
+    <Content Include="images\hot-q-arrow.png" />
+    <Content Include="images\icon-1.jpg" />
+    <Content Include="images\icon-10.jpg" />
+    <Content Include="images\icon-2.jpg" />
+    <Content Include="images\icon-3.jpg" />
+    <Content Include="images\icon-4.jpg" />
+    <Content Include="images\icon-5.jpg" />
+    <Content Include="images\icon-6.jpg" />
+    <Content Include="images\icon-7.jpg" />
+    <Content Include="images\icon-8.jpg" />
+    <Content Include="images\icon-9.jpg" />
+    <Content Include="images\icon-addaddress.png" />
+    <Content Include="images\icon-addrclose.png" />
+    <Content Include="images\icon-clock.png" />
+    <Content Include="images\icon-czkdh.png" />
+    <Content Include="images\icon-dajiashequ.png" />
+    <Content Include="images\icon-dajiashequ2.png" />
+    <Content Include="images\icon-dec.png" />
+    <Content Include="images\icon-faxian.png" />
+    <Content Include="images\icon-faxian2.png" />
+    <Content Include="images\icon-geter.png" />
+    <Content Include="images\icon-gongxi.png" />
+    <Content Include="images\icon-gou.png" />
+    <Content Include="images\icon-gzgk.png" />
+    <Content Include="images\icon-help.png" />
+    <Content Include="images\icon-home.png" />
+    <Content Include="images\icon-home2.png" />
+    <Content Include="images\icon-messege.png" />
+    <Content Include="images\icon-nojilu.png" />
+    <Content Include="images\icon-post.png" />
+    <Content Include="images\icon-select.png" />
+    <Content Include="images\icon-share.png" />
+    <Content Include="images\icon-share1.png" />
+    <Content Include="images\icon-shareimg.png" />
+    <Content Include="images\icon-shequ.png" />
+    <Content Include="images\icon-shequ2.png" />
+    <Content Include="images\icon-shou.png" />
+    <Content Include="images\icon-spps.png" />
+    <Content Include="images\icon-tel.png" />
+    <Content Include="images\icon-tuaninfo.png" />
+    <Content Include="images\icon-unhappy.png" />
+    <Content Include="images\icon-user.png" />
+    <Content Include="images\icon-user2.png" />
+    <Content Include="images\icon-zan.png" />
+    <Content Include="images\icon-zan1.png" />
+    <Content Include="images\icon-zfbz.png" />
+    <Content Include="images\icon-zhan.png" />
+    <Content Include="images\icon-zhongjiang.png" />
+    <Content Include="images\icon-zpbz.png" />
+    <Content Include="images\icon-zut-fail.png" />
+    <Content Include="images\icon-zut-ing.png" />
+    <Content Include="images\icon-zut-success.png" />
+    <Content Include="images\iconfont-qiandao.png" />
+    <Content Include="images\iconfont-qiandaoed.png" />
+    <Content Include="images\icons_0ebec4ed.png" />
+    <Content Include="images\iphone6.jpg" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\loginSet.png" />
+    <Content Include="images\loginSet1.png" />
+    <Content Include="images\logo_top.png" />
+    <Content Include="images\lottery.png" />
+    <Content Include="images\ls.png" />
+    <Content Include="images\mainIcon.png" />
+    <Content Include="images\mammon_share.png" />
+    <Content Include="images\mam_txt_bg.png" />
+    <Content Include="images\mam_txt_start.png" />
+    <Content Include="images\member-icon.png" />
+    <Content Include="images\member_bg.jpg" />
+    <Content Include="images\member_bg.png" />
+    <Content Include="images\moren.png" />
+    <Content Include="images\motion_4s.gif" />
+    <Content Include="images\new.jpg" />
+    <Content Include="images\new.png" />
+    <Content Include="images\news-title.png" />
+    <Content Include="images\num_bg.png" />
+    <Content Include="images\pay_icon-zhifu.png" />
+    <Content Include="images\pg.png" />
+    <Content Include="images\preIcon.png" />
+    <Content Include="images\pull-icon%402x.png" />
+    <Content Include="images\qian.png" />
+    <Content Include="images\qq.png" />
+    <Content Include="images\qq_s.png" />
+    <Content Include="images\qt.png" />
+    <Content Include="images\quanbu.png" />
+    <Content Include="images\quit_button.png" />
+    <Content Include="images\redpack_bg.png" />
+    <Content Include="images\revealed_03.gif" />
+    <Content Include="images\revealed_07.gif" />
+    <Content Include="images\rItem.png" />
+    <Content Include="images\ry.png" />
+    <Content Include="images\select_bg.png" />
+    <Content Include="images\set.png" />
+    <Content Include="images\setIcon.png" />
+    <Content Include="images\shai.png" />
+    <Content Include="images\share-img.png" />
+    <Content Include="images\share2.png" />
+    <Content Include="images\share_01.jpg" />
+    <Content Include="images\share_02.png" />
+    <Content Include="images\signwap.png" />
+    <Content Include="images\sm.png" />
+    <Content Include="images\smaillogo.png" />
+    <Content Include="images\sort.png" />
+    <Content Include="images\sousuo.png" />
+    <Content Include="images\touch-icon.png" />
+    <Content Include="images\uploadifive-cancel.png" />
+    <Content Include="images\user-img-1.png" />
+    <Content Include="images\user-img-2.png" />
+    <Content Include="images\user-img-3.png" />
+    <Content Include="images\user-img-4.png" />
+    <Content Include="images\user-img-5.png" />
+    <Content Include="images\user-img-6.png" />
+    <Content Include="images\user-img-7.png" />
+    <Content Include="images\user-img-qq.png" />
+    <Content Include="images\weixin.png" />
+    <Content Include="images\Winning-hongbao.png" />
+    <Content Include="images\Winning-shine.png" />
+    <Content Include="images\Winning-shine2.png" />
+    <Content Include="images\winning-top.jpg" />
+    <Content Include="images\Winning.mp3" />
+    <Content Include="images\Winning.png" />
+    <Content Include="images\wx.png" />
+    <Content Include="images\wx_broswer.png" />
+    <Content Include="images\wx_s.png" />
+    <Content Include="images\xm.png" />
+    <Content Include="images\yinlian.png" />
+    <Content Include="images\zhifubao.png" />
+    <Content Include="index_old.aspx" />
+    <Content Include="index.calResult.aspx" />
+    <Content Include="index.goodsdesc.aspx" />
+    <Content Include="index.goodspost.aspx" />
+    <Content Include="index.item.aspx" />
+    <Content Include="index.wangqi.aspx" />
+    <Content Include="js\alert.js" />
+    <Content Include="js\area.js" />
+    <Content Include="js\city.min.js" />
+    <Content Include="js\Comm.js" />
+    <Content Include="js\common.js" />
+    <Content Include="js\common1.js" />
+    <Content Include="js\dropload.min.js" />
+    <Content Include="js\fastclick.js" />
+    <Content Include="js\Flexslider.js" />
+    <Content Include="js\gameArea.js" />
+    <Content Include="js\gameArea.xml" />
+    <Content Include="js\GoodsPicSlider.js" />
+    <Content Include="js\Index.js" />
+    <Content Include="js\index.nav.js" />
+    <Content Include="js\indexBanner.xml" />
+    <Content Include="js\iscroll-probe.js" />
+    <Content Include="js\iscroll.js" />
+    <Content Include="js\iscroll4.js" />
+    <Content Include="js\jquery-1.11.0.min.js" />
+    <Content Include="js\jquery-1.11.1.min.js" />
+    <Content Include="js\jquery-1.8.2.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.lazyload.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.sliderPro.min.js" />
+    <Content Include="js\jquery.SuperSlide.2.1.1.source.js" />
+    <Content Include="js\jquery.SuperSlide.2.1.js" />
+    <Content Include="js\jquery190.js" />
+    <Content Include="js\jQueryRotate.js" />
+    <Content Include="js\js.cookie.js" />
+    <Content Include="js\jsmobile.js" />
+    <Content Include="js\jweixin-1.0.0.js.js" />
+    <Content Include="js\jweixin.js" />
+    <Content Include="js\lodash.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\pageDialog.js" />
+    <Content Include="js\PeriodSlider.js" />
+    <Content Include="js\pull-refresh.js" />
+    <Content Include="js\QuickPay.js" />
+    <Content Include="js\response.js" />
+    <Content Include="js\simpop.min.js" />
+    <Content Include="js\swiper.min.js" />
+    <Content Include="js\weixinApi.js" />
+    <Content Include="js\zepto.1.1.4.min.js" />
+    <Content Include="js\zepto.js" />
+    <Content Include="js\zepto.min.js" />
+    <Content Include="lib\Newtonsoft.Json.dll" />
+    <Content Include="Web.config" />
+    <Content Include="config\SiteSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="images\fengkuang4.eot" />
+    <Content Include="internalapi\taotaolebuy.ashx" />
+    <Content Include="internalapi\taotaoleorder.ashx" />
+    <Content Include="internalapi\taotaolepay.ashx" />
+    <Content Include="internalapi\taotaolepush.ashx" />
+    <Content Include="internalapi\taotaolerefund.ashx" />
+    <Content Include="internalapi\taotaoleshareorder.ashx" />
+    <Content Include="internalapi\taotaoleshop.ashx" />
+    <Content Include="internalapi\taotaolesms.ashx" />
+    <Content Include="internalapi\taotaoleuser.ashx" />
+    <Content Include="internalapi\taotaoleredpack.ashx" />
+    <Content Include="internalapi\taotaoletuan.ashx" />
+    <Content Include="internalapi\taotaolearticle.ashx" />
+    <Content Include="internalapi\taotaolegift.ashx" />
+    <Content Include="internalapi\RedbookUser.ashx" />
+    <Content Include="internalapi\RedbookCommon.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="WxPay\cert\apiclient_cert.p12" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ASPNET.WebControls\ASPNET.WebControls.csproj">
+      <Project>{20966e1c-e2bc-4d8d-88d6-2b46421e2cf2}</Project>
+      <Name>ASPNET.WebControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Taotaole.Bll\Taotaole.Bll.csproj">
+      <Project>{57e6cf31-867f-4c84-b59c-d7f2432a9e39}</Project>
+      <Name>Taotaole.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Taotaole.Cache\Taotaole.Cache.csproj">
+      <Project>{ba648799-1a56-4c28-990c-33dfe36710c1}</Project>
+      <Name>Taotaole.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Taotaole.Common\Taotaole.Common.csproj">
+      <Project>{76acfd5f-45aa-4c31-b4a7-ded7f89a1a71}</Project>
+      <Name>Taotaole.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Taotaole.Model\Taotaole.Model.csproj">
+      <Project>{951b3bd2-2779-40d3-8fb3-d1397a82c175}</Project>
+      <Name>Taotaole.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YH.Utility\YH.Utility.csproj">
+      <Project>{bf2cde81-2953-4d6e-ae67-b6f255e43baa}</Project>
+      <Name>YH.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YH.Weixin.MP\YH.Weixin.MP.csproj">
+      <Project>{7addb3dd-95b6-4129-9de4-8af7753ed78d}</Project>
+      <Name>YH.Weixin.MP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YH.Weixin.Pay\YH.Weixin.Pay.csproj">
+      <Project>{36d67c6e-7fb4-4c21-955a-c3f39c250a60}</Project>
+      <Name>YH.Weixin.Pay</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20011</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8095/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

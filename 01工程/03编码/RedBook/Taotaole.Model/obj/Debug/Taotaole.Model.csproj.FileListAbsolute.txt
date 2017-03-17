@@ -1,6 +1,5 @@
 C:\project\RedBook\01工程\03编码\RedBook\Taotaole.Model\bin\Debug\Taotaole.Model.dll
 C:\project\RedBook\01工程\03编码\RedBook\Taotaole.Model\bin\Debug\Taotaole.Model.pdb
-C:\project\RedBook\01工程\03编码\RedBook\Taotaole.Model\bin\Debug\Newtonsoft.Json.dll
 C:\project\RedBook\01工程\03编码\RedBook\Taotaole.Model\obj\Debug\Taotaole.Model.csprojResolveAssemblyReference.cache
 C:\project\RedBook\01工程\03编码\RedBook\Taotaole.Model\obj\Debug\Taotaole.Model.dll
 C:\project\RedBook\01工程\03编码\RedBook\Taotaole.Model\obj\Debug\Taotaole.Model.pdb
