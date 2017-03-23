@@ -3,3 +3,7 @@ C:\project\RedBook\01工程\03编码\RedBook\Taotaole.Cache\bin\Debug\Taotaole.C
 C:\project\RedBook\01工程\03编码\RedBook\Taotaole.Cache\bin\Debug\Taotaole.Cache.pdb
 C:\project\RedBook\01工程\03编码\RedBook\Taotaole.Cache\obj\Debug\Taotaole.Cache.dll
 C:\project\RedBook\01工程\03编码\RedBook\Taotaole.Cache\obj\Debug\Taotaole.Cache.pdb
+C:\project\RedBook\01工程\03编码\RedBook\Taotaole.Cache\bin\Debug\Commons.dll
+C:\project\RedBook\01工程\03编码\RedBook\Taotaole.Cache\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\project\RedBook\01工程\03编码\RedBook\Taotaole.Cache\bin\Debug\log4net.dll
+C:\project\RedBook\01工程\03编码\RedBook\Taotaole.Cache\bin\Debug\Memcached.ClientLibrary.dll

@@ -20,3 +20,4 @@ C:\project\RedBook\01工程\03编码\RedBook\ASPNET.WebControls\bin\Debug\Taotao
 C:\project\RedBook\01工程\03编码\RedBook\ASPNET.WebControls\bin\Debug\YH.DataAccess.pdb
 C:\project\RedBook\01工程\03编码\RedBook\ASPNET.WebControls\obj\Debug\ASPNET.WebControls.dll
 C:\project\RedBook\01工程\03编码\RedBook\ASPNET.WebControls\obj\Debug\ASPNET.WebControls.pdb
+C:\project\RedBook\01工程\03编码\RedBook\ASPNET.WebControls\bin\Debug\Newtonsoft.Json.dll

@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using Taotaole.Bll;
 using Taotaole.Common;
-using Taotaole.Model;
 using YH.Utility;
 
 namespace RedBookPlatform
@@ -42,9 +36,6 @@ namespace RedBookPlatform
                 System.Web.HttpContext.Current.Response.Cookies.Add(cookies2);
                 base.Response.Redirect("Login.aspx", true);
             }
-
-         
-
         }
 
         /// <summary>
@@ -54,7 +45,6 @@ namespace RedBookPlatform
         [System.Web.Services.WebMethod]
         public static string GetSelect()
         {
-          
             return Globals.menujson;
         }
 

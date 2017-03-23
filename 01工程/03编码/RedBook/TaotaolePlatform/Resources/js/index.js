@@ -174,7 +174,8 @@ var jsonStr = {
             ]
         }
     ],
-    "6": [
+    "6":
+    [
             {
                 "name": "财务分析", "href": "a.html", "child":
                 [
@@ -205,6 +206,21 @@ var jsonStr = {
                     //{ "name": "月报表", "href": "a.html" }
                 ]
             },
+    ],
+    "7":
+    [
+        {
+            "name": "分类管理", "href": "a.html", "child":
+            [
+                { "name": "小红书分类列表", "href": "RedBook/BookCategoryList.aspx" },
+            ]
+        },
+        {
+            "name": "导购文章管理", "href": "a.html", "child":
+            [
+                { "name": "导购文章列表", "href": "RedBook/BookList.aspx" },
+            ]
+        },
     ]
 };
 

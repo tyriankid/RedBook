@@ -45,7 +45,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ionic.Zip">
-      <HintPath>..\taotaole\lib\Ionic.Zip.dll</HintPath>
+      <HintPath>..\RedBook\lib\Ionic.Zip.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -141,6 +141,11 @@
     <Content Include="products\yuangouList.aspx" />
     <Content Include="products\yuangouRecover.aspx" />
     <Content Include="products\zhiProduct.aspx" />
+    <Content Include="RedBook\AddBook.aspx" />
+    <Content Include="RedBook\addBookCategory.aspx" />
+    <Content Include="RedBook\BookCategoryList.aspx" />
+    <Content Include="RedBook\BookList.aspx" />
+    <Content Include="RedBook\BookProductList.aspx" />
     <Content Include="Resources\403.html" />
     <Content Include="Resources\css\comm.css" />
     <Content Include="Resources\css\flashupload.css" />
@@ -248,6 +253,12 @@
     <Content Include="Resources\layer\skin\default\loading-2.gif" />
     <Content Include="Resources\layer\skin\layer.css" />
     <Content Include="Resources\swf\swfupload.swf" />
+    <Content Include="Resources\tubiao\demo.css" />
+    <Content Include="Resources\tubiao\demo_fontclass.html" />
+    <Content Include="Resources\tubiao\demo_symbol.html" />
+    <Content Include="Resources\tubiao\demo_unicode.html" />
+    <Content Include="Resources\tubiao\iconfont.css" />
+    <Content Include="Resources\tubiao\iconfont.js" />
     <Content Include="Resources\uploads\article\goodsthumb.jpg" />
     <Content Include="Resources\uploads\member\20160802\product_032905.jpg" />
     <Content Include="Resources\uploads\member\goodsthumb.jpg" />
@@ -2403,6 +2414,41 @@
     <Compile Include="products\zhiProduct.aspx.designer.cs">
       <DependentUpon>zhiProduct.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RedBook\AddBook.aspx.cs">
+      <DependentUpon>AddBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RedBook\AddBook.aspx.designer.cs">
+      <DependentUpon>AddBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RedBook\addBookCategory.aspx.cs">
+      <DependentUpon>addBookCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RedBook\addBookCategory.aspx.designer.cs">
+      <DependentUpon>addBookCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RedBook\BookCategoryList.aspx.cs">
+      <DependentUpon>BookCategoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RedBook\BookCategoryList.aspx.designer.cs">
+      <DependentUpon>BookCategoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RedBook\BookList.aspx.cs">
+      <DependentUpon>BookList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RedBook\BookList.aspx.designer.cs">
+      <DependentUpon>BookList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RedBook\BookProductList.aspx.cs">
+      <DependentUpon>BookProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RedBook\BookProductList.aspx.designer.cs">
+      <DependentUpon>BookProductList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\ashx\FlashUpload.ashx.cs">
       <DependentUpon>FlashUpload.ashx</DependentUpon>
     </Compile>
@@ -2413,6 +2459,7 @@
     <Compile Include="Resources\InfoQuery\go_channel_activitydetailQuery.cs" />
     <Compile Include="Resources\InfoQuery\go_memberQuery.cs" />
     <Compile Include="Resources\InfoQuery\go_orderQuery.cs" />
+    <Compile Include="Resources\InfoQuery\go_redbookQuery.cs" />
     <Compile Include="Resources\InfoQuery\go_shoplistQuery.cs" />
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -2634,6 +2681,10 @@
     <Content Include="packages.config" />
     <Content Include="internalapi\taotaoleshareorder.ashx" />
     <Content Include="API\wx.ashx" />
+    <Content Include="Resources\tubiao\iconfont.eot" />
+    <Content Include="Resources\tubiao\iconfont.svg" />
+    <Content Include="Resources\tubiao\iconfont.ttf" />
+    <Content Include="Resources\tubiao\iconfont.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

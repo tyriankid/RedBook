@@ -35,7 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\taotaole\lib\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\RedBook\lib\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -98,6 +98,9 @@
     <Compile Include="NewsReplyInfo.cs" />
     <Compile Include="Pagination.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedBook\RB_BookEntity.cs" />
+    <Compile Include="RedBook\RB_Book_CategoryEntity.cs" />
+    <Compile Include="RedBook\RB_Book_ContentEntity.cs" />
     <Compile Include="SiteSettings.cs" />
     <Compile Include="SortAction.cs" />
     <Compile Include="wxArticleList.cs" />
@@ -105,6 +108,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

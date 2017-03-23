@@ -15,3 +15,5 @@ C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.Pay\bin\Debug\Taotaole.Da
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.Pay\bin\Debug\YH.DataAccess.pdb
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.Pay\obj\Debug\YH.Weixin.Pay.dll
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.Pay\obj\Debug\YH.Weixin.Pay.pdb
+C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.Pay\bin\Debug\LitJson.dll
+C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.Pay\bin\Debug\Newtonsoft.Json.dll

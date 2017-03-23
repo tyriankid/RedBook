@@ -15,3 +15,4 @@ C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.MP\bin\Debug\Taotaole.Dal
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.MP\bin\Debug\YH.DataAccess.pdb
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.MP\obj\Debug\YH.Weixin.MP.dll
 C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.MP\obj\Debug\YH.Weixin.MP.pdb
+C:\project\RedBook\01工程\03编码\RedBook\YH.Weixin.MP\bin\Debug\Newtonsoft.Json.dll

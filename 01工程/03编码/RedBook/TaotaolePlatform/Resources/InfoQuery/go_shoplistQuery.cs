@@ -41,8 +41,8 @@ namespace RedBookPlatform.Resources.InfoQuery
         public string keyword { get; set; }
         public string model { get; set; }
         public string order { get; set; }
-        
     }
+
     public class go_brandQuery : Pagination
     {
         public int id { get; set; }

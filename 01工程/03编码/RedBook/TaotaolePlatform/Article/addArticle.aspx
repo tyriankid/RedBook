@@ -15,7 +15,7 @@
         <script src="/Resources/js/flashupload.js"></script>
      
 	</head>
-	<body
+	<body>
         <div class="divr"></div>
 		<div class="wrapper">
 			<div class="crumbs">
@@ -145,7 +145,6 @@
                     $(this).attr("src", imgUrl);
                 });
             })
-                alert(imgUrl)
         </script>
 
 
