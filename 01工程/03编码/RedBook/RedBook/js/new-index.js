@@ -17,12 +17,13 @@ $(document).ready(function(){
 		    }
 		  );
 		  
-		$(".dibu_a").toggle(function(){
+		  $(".dibu_a").toggle(function () {
+              alert(3)
 		    $(this).css("color","red");},
 		    function(){
-		    $(this).css("color","#ffffff");}
+		        $(this).css("color", "#ffffff");
+		    }
 		  );
-		  
 
 		//////TAB切换
 		function bor(){

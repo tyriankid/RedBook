@@ -2,21 +2,23 @@
 img{width: 100%;}
 .tt{width: 100%; height: auto;}
 /*顶部*/
-.top{width: 100%; height: 1.5rem; background: #000; position: relative;} 
+.top{width: 100%; height: 1.5rem; background: #000; position: fixed;top: 0;left: 0;z-index: 9999;} 
 .top a{display: inline-block; width: 20%; height: 1.5rem; font-size: 0.6rem; text-align: center; line-height: 1.5rem; color: #fff; position: absolute; left: 2%;}
 .top span{display: inline-block; margin-right:2% ; font-size: 0.7rem;}
 .top p{width:60%;line-height:1.5rem;color: #FFFFFF; font-size: 0.6rem; position: absolute;left: 50%; margin-left:-30% ; text-align: center;}
 /*导购*/
-.shoppers{width: 100%; height: auto; overflow: hidden;  margin-bottom: 1.5rem;}
-.shoppers li{width: 100%; height: auto; position: relative; overflow: hidden;}
-.shoppers li>a{display:block;width: 100%; /*height: 10rem;*/}
-.shoppers li>a>img{float:left}
-.shoppers_div{width: 100%; height: auto;  position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,.6); overflow: hidden; line-height: 1rem;}
+.shoppers{width: 100%; height: auto; overflow: hidden;  margin-bottom: 1.5rem;margin-top: 1.5rem;}
+.shoppers ul li{width: 100%;height: 6.5rem; position: relative; overflow: hidden;text-align: center;background-size: 100% 100%;background-repeat: no-repeat;background-position: center center;}
+.shoppers ul li .titleImg{width: 15%;height: 1rem; border-radius: 50%;margin-top: 0.4rem;}
+.shoppers ul li .mTitle{width: 100%;font-size: 0.6rem;text-align: center;position: absolute;top: 2rem;}
+.shoppers ul li .subTitle{width: 100%;font-size: 0.5rem;text-align: center;position: absolute;top: 3.4rem;}
+.shoppers_div{width: 100%; height: 1.3rem;  position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,.6); overflow: hidden;}
 .shoppers_div del{display: inline-block;width: 50%; height: 1.3rem; line-height: 1.3rem; font-size: 0.5rem; color: #FFFFFF;}
 .shoppers_div del span{display: inline-block;width: 20%;height: 1rem;border-radius: 50%;float: left;margin: 0.1rem 6% 0.2rem 4%;}
 .shoppers_div del span img{height: 1rem; border-radius: 50%; }
-.shoppers_div a{display: inline-block;width: 20%; height:1rem; font-size: 0.5rem; color: #FFFFFF; text-align: center; line-height: 1.1rem;}
-
+.shoppers_div a{display: inline-block;width: 20%; height: 1.3rem; line-height: 1.3rem;font-size: 0.5rem; color: #FFFFFF; text-align: center;float: right;}
+.shoppers_div a i {margin-right: 0.1rem;display: inline-block;}
+.activeI {color: red;}
 /*底部*/
 .bottom{width:100%; height:1.5rem; background:#000000; position:fixed; bottom:0rem; z-index:888; overflow:hidden}
 .bottom ul{width:100%; height:1.5rem;}

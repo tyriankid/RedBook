@@ -74,9 +74,7 @@ namespace Taotaole.IApi
             DataTable dtData = CustomsBusiness.GetPageData(from, orderby, "*"
                 , currPage, ps.ToInt(), where, DbServers.DbServerName.LatestDB);
             int pageCount = count ;
-            int nextPage = (currPage < pageCount) ? (currPage + 1) : 0; //下一页为0时，表示无数据可加载（数据加载完毕）
-            if (int.Parse(ps) > 1)
-                nextPage = (currPage < pageCount) ? (int.Parse(ps) + 1) : 0; //下一页为0时，表示无数据可加载  ;否则为当前的pagesize+1 (用于一次性加载相应数量的商品,避免重复调用该接口)
+            int nextPage = dtData.Rows.Count<= 0 ? currPage :((currPage < pageCount) ? (currPage + 1) : 0); //下一页为0时，表示无数据可加载（数据加载完毕）
             //输出JSON
             string result = string.Format("{{\"state\":{0},\r\"count\":{1},\r\"pageCount\":{2},\r\"nextPage\":{3},\r\"imgroot\":\"{4}\",\r\"data\":"
                 , (dtData.Rows.Count > 0) ? 0 : 1, count, pageCount, nextPage, Globals.G_UPLOAD_PATH);

@@ -4,9 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-		<meta charset="UTF-8">
 		<title></title>
-		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta charset="UTF-8" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<link rel="stylesheet" href="css/new-index.css" />
         <script src="js/vue.min.js"></script>
         <script src="js/vue-resource.min.js"></script>
@@ -23,15 +22,15 @@
 				url('iconfont/iconfont.svg#iconfont') format('svg');
 				/* iOS 4.1- */
 			}
-			
-			.iconfont {
-				font-family: "iconfont" !important;
-				font-size: 16px;
-				font-style: normal;
-				-webkit-font-smoothing: antialiased;
-				-webkit-text-stroke-width: 0.2px;
-				-moz-osx-font-smoothing: grayscale;
-			}
+
+		    .iconfont {
+		        font-family: "iconfont" !important;
+		        font-size: 16px;
+		        font-style: normal;
+		        -webkit-font-smoothing: antialiased;
+		        -webkit-text-stroke-width: 0.2px;
+		        -moz-osx-font-smoothing: grayscale;
+		    }
 		</style>
 	</head>
 
@@ -46,16 +45,16 @@
 			    <!--导购-->
 			    <div class="shoppers">
 				    <ul>
-					    <li>
+					    <li v-for="val in showData">
                             <div class="art-title">
-                                <img src="" alt="" />
-                                <p>{{}}</p>
-                                <p>{{}}</p>
+                                <img src="../images/img/6.png" alt="" class="titleImg" />
+                                <p class="mTitle">{{val.MainTitle}}</p>
+                                <p class="subTitle">{{val.SubTitle}}</p>
                             </div>
 						    <div class="shoppers_div">
-							    <del><span><img src="../images/img/6.png"/></span>用户昵称</del>
-							    <a href="javascript:;"><i class="iconfont dibu_a">&#xe66d;</i>{{}}</a>
-							    <a href="javascript:;"><i class="iconfont ">&#xe618;</i>{{}}</a>
+							    <del><span><img src="../images/img/6.png"/></span>{{val.usename}}</del>
+                                <a href="javascript:;"><i class="iconfont">&#xe618;</i><span>{{val.WatchCount}}</span></a>
+							    <a class="dibu_a" href="javascript:;"><i class="iconfont" id="{{val.rid}}" >&#xe66d;</i><span>{{val.FabulousCount}}</span></a>
 						    </div>
 					    </li>
 				    </ul>
@@ -64,17 +63,17 @@
 			    <div class="bottom">
 				    <ul id="cc">
 					    <li>
-						    <a href="new-index.html" class="cr">
+						    <a href="javascript:;" class="cr">
 							    <i class="iconfont ">&#xe717;</i> 最热门
 						    </a>
 					    </li>
 					    <li>
-						    <a href="new-fenlei.html">
+						    <a href="new-fenlei.aspx">
 							    <i class="iconfont">&#xe600;</i> 大厅
 						    </a>
 					    </li>
 					    <li>
-						    <a href="new-wo.html">
+						    <a href="new-wo.aspx">
 							    <i class="iconfont ">&#xe601;</i> 我的
 						    </a>
 					    </li>
@@ -84,7 +83,6 @@
         </div>
 	</body>
 	<script src="js/jquery-1.8.3.min.js"></script>
-	<script src="js/new-index.js"></script>
     <script src="js/new-index-more.js"></script>
 	<script>
 	    //高度使用rem

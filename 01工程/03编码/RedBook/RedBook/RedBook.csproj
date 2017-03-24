@@ -74,7 +74,7 @@
     <Content Include="css\new-style.css" />
     <Content Include="css\new-wo.css" />
     <Content Include="css\new-xiangqing.css" />
-    <Content Include="css\new-xiangqing1.css" />
+    <Content Include="css\new-proDetail.css" />
     <Content Include="dist\css\export.css" />
     <Content Include="dist\img\1.png" />
     <Content Include="dist\img\2.png" />
@@ -245,6 +245,10 @@
     <Content Include="js\yxMobileSlider.js" />
     <Content Include="lib\Ionic.Zip.dll" />
     <Content Include="lib\LitJson.dll" />
+    <Content Include="new-fenlei.aspx" />
+    <Content Include="new-proDetail.aspx" />
+    <Content Include="new-wo.aspx" />
+    <Content Include="new-xiangqing.aspx" />
     <Content Include="NewUserGet.aspx" />
     <Content Include="quan.index.aspx" />
     <Content Include="quan.item.aspx" />
@@ -512,6 +516,34 @@
     </Compile>
     <Compile Include="internalapi\taotaolegift.ashx.cs">
       <DependentUpon>taotaolegift.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="new-fenlei.aspx.cs">
+      <DependentUpon>new-fenlei.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new-fenlei.aspx.designer.cs">
+      <DependentUpon>new-fenlei.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new-proDetail.aspx.cs">
+      <DependentUpon>new-proDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new-proDetail.aspx.designer.cs">
+      <DependentUpon>new-proDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new-wo.aspx.cs">
+      <DependentUpon>new-wo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new-wo.aspx.designer.cs">
+      <DependentUpon>new-wo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new-xiangqing.aspx.cs">
+      <DependentUpon>new-xiangqing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new-xiangqing.aspx.designer.cs">
+      <DependentUpon>new-xiangqing.aspx</DependentUpon>
     </Compile>
     <Compile Include="NewUserGet.aspx.cs">
       <DependentUpon>NewUserGet.aspx</DependentUpon>
