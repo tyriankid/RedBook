@@ -99,9 +99,23 @@
     <Compile Include="go_zenPointDetailBusiness.cs" />
     <Compile Include="go_zhigouBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedBookDynamic\Browse.cs" />
+    <Compile Include="RedBookDynamic\Comment.cs" />
+    <Compile Include="RedBookDynamic\CreateBook.cs" />
+    <Compile Include="RedBookDynamic\Fabulous.cs" />
+    <Compile Include="RedBookDynamic\Favorite.cs" />
+    <Compile Include="RedBookDynamic\Share.cs" />
+    <Compile Include="RedBookDynamic\UserDynamic.cs" />
     <Compile Include="RedBook\RB_BookBusiness.cs" />
     <Compile Include="RedBook\RB_Book_CategoryBusiness.cs" />
     <Compile Include="RedBook\RB_Book_ContentBusiness.cs" />
+    <Compile Include="RedBook\RB_User_BrowseBusiness.cs" />
+    <Compile Include="RedBook\RB_User_CommentBusiness.cs" />
+    <Compile Include="RedBook\RB_User_DynamicBusiness.cs" />
+    <Compile Include="RedBook\RB_User_FabulousBusiness.cs" />
+    <Compile Include="RedBook\RB_User_FavoriteBusiness.cs" />
+    <Compile Include="RedBook\RB_User_FocusBusiness.cs" />
+    <Compile Include="RedBook\RB_User_ShareBusiness.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Taotaole.Common\Taotaole.Common.csproj">

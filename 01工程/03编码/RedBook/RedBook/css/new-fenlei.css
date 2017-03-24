@@ -1,0 +1,33 @@
+*{margin: 0px; padding: 0px; text-decoration: none; list-style: none;}
+img{width: 100%;}
+.tt{width: 100%; height: auto; margin-bottom: 1.5rem;}
+/*顶部*/
+.top{width: 100%; height: 1.5rem; background: #000; position: relative;} 
+.top a{display: inline-block; width: 20%; height: 1.5rem; font-size: 0.6rem; text-align: center; line-height: 1.5rem; color: #fff; position: absolute; left: 2%;}
+.top span{display: inline-block; margin-right:2% ; font-size: 0.7rem;}
+.top p{width:60%;line-height:1.5rem;color: #FFFFFF; font-size: 0.6rem; position: absolute;left: 50%; margin-left:-30% ; text-align: center;}
+/*分类*/
+.fenlei{width: 100%; height: auto; overflow: hidden;}
+.fenlei_u1{width: 50%; height: auto; overflow: hidden;}
+.fenlei_u2{width: 50%; height: auto; overflow: hidden;}
+.fenlei_u1>li{width: 94%; margin: 0.2rem 2%;border: 1px solid #646464; border-radius: 3px;}
+.fenlei_u2>li{width: 94%; margin: 0.2rem 2%;border: 1px solid #646464; border-radius: 3px;}
+.fenlei_u1 li>a,.fenlei_u2 li>a{display:inline-block;width:100%; }
+.fenlei_u1{float: left;}
+.fenlei_u2{float: right;}
+.fenlei h4{width:100%; height:0.8rem; font-size:.4rem; line-height:0.8rem;}
+.fenlei ul p{width:100%; height:0.6rem; line-height:0.6rem; font-size:.3rem; }
+.fenlei ul p del{display: inline-block; float: right;}
+.fenlei span{display: inline-block; width: 10%; height: 0.5rem; border-radius: 50%; background: red; margin-top:0.1rem; margin: 0 2% 0 0; float: left;}
+.fenlei_p2{overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color: #646464;}
+.fenlei_l1{position: relative; width: 100%;}
+.fenlei_l1 a{display: inline-block; width: 100%; height:auto ;}
+.fenlei_dd{width: 94%; margin: 0 auto;}
+/*.fenlei_dd{width: 100%; height: 6rem; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,.5);}
+.fenlei_l1{}*/
+/*底部*/
+.bottom{width:100%; height:1.5rem; background:#000000; position:fixed; bottom:0rem; z-index:888; overflow:hidden}
+.bottom ul{width:100%; height:1.5rem;}
+.bottom li{width:33.3%; height:1.5rem; float:left; }
+.bottom li a{display:inline-block;width:100%; height:1.5rem;text-align:center; line-height:1.5rem;color: #FFFFFF; font-size: 0.5rem; }
+.cr{color:#ec5300!important;}

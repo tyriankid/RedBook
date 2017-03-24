@@ -69,6 +69,12 @@
     <Content Include="css\aui-slide.css" />
     <Content Include="css\all.goods.css" />
     <Content Include="css\export.index.css" />
+    <Content Include="css\new-fenlei.css" />
+    <Content Include="css\new-index.css" />
+    <Content Include="css\new-style.css" />
+    <Content Include="css\new-wo.css" />
+    <Content Include="css\new-xiangqing.css" />
+    <Content Include="css\new-xiangqing1.css" />
     <Content Include="dist\css\export.css" />
     <Content Include="dist\img\1.png" />
     <Content Include="dist\img\2.png" />
@@ -113,6 +119,10 @@
     <Content Include="dist\lib\require.js" />
     <Content Include="errPage.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="iconfont\demo.css" />
+    <Content Include="iconfont\demo.html" />
+    <Content Include="iconfont\iconfont.css" />
+    <Content Include="iconfont\iconfont.svg" />
     <Content Include="images\403.png" />
     <Content Include="images\404.png" />
     <Content Include="images\baozhu.png" />
@@ -162,6 +172,17 @@
     <Content Include="images\icon\qrcode_taotaole.jpg" />
     <Content Include="images\icon\taotaole.png" />
     <Content Include="images\icon\touxiang.png" />
+    <Content Include="images\img\1.png" />
+    <Content Include="images\img\11.png" />
+    <Content Include="images\img\2.png" />
+    <Content Include="images\img\3.png" />
+    <Content Include="images\img\4.png" />
+    <Content Include="images\img\5.png" />
+    <Content Include="images\img\6.png" />
+    <Content Include="images\img\top_04.jpg" />
+    <Content Include="images\img\top_06.jpg" />
+    <Content Include="images\img\top_08.jpg" />
+    <Content Include="images\img\tuo_02.jpg" />
     <Content Include="images\newUserGet_01.gif" />
     <Content Include="images\newUserGet_02.gif" />
     <Content Include="images\newUserGet_03.gif" />
@@ -199,14 +220,18 @@
     <Content Include="images\wxShare.png" />
     <Content Include="images\smaillogo2.png" />
     <Content Include="index.AllGoods.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="index.zhifubaoAgreement.aspx" />
     <Content Include="js\aui-slide.js" />
     <Content Include="js\idangerous.swiper-2.1.min.js" />
     <Content Include="js\jquery-1.10.1.min.js" />
+    <Content Include="js\jquery-1.8.3.min.js" />
     <Content Include="js\jquery.cookie.js" />
     <Content Include="js\jquery.min2.js" />
     <Content Include="js\jquery.rotate.js" />
     <Content Include="js\jquery.slides.min.js" />
+    <Content Include="js\new-index-more.js" />
+    <Content Include="js\new-index.js" />
     <Content Include="js\PackIscroll.js" />
     <Content Include="js\userlocation.js" />
     <Content Include="js\Validform_v5.3.2.js" />
@@ -431,7 +456,7 @@
     <Content Include="gift.zhuan.aspx" />
     <Content Include="gift.list.aspx" />
     <Content Include="user.giftconfirm.aspx" />
-    <Content Include="index.aspx" />
+    <Content Include="index_taotaole.aspx" />
     <Content Include="quan.category.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -458,6 +483,13 @@
     </Compile>
     <Compile Include="index.AllGoods.aspx.designer.cs">
       <DependentUpon>index.AllGoods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.zhifubaoAgreement.aspx.cs">
       <DependentUpon>index.zhifubaoAgreement.aspx</DependentUpon>
@@ -1001,12 +1033,12 @@
     <Compile Include="user.giftconfirm.aspx.designer.cs">
       <DependentUpon>user.giftconfirm.aspx</DependentUpon>
     </Compile>
-    <Compile Include="index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="index_taotaole.aspx.cs">
+      <DependentUpon>index_taotaole.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="index_taotaole.aspx.designer.cs">
+      <DependentUpon>index_taotaole.aspx</DependentUpon>
     </Compile>
     <Compile Include="quan.category.aspx.cs">
       <DependentUpon>quan.category.aspx</DependentUpon>
@@ -1329,6 +1361,9 @@
     <Content Include="internalapi\taotaolegift.ashx" />
     <Content Include="internalapi\RedbookUser.ashx" />
     <Content Include="internalapi\RedbookCommon.ashx" />
+    <Content Include="iconfont\iconfont.eot" />
+    <Content Include="iconfont\iconfont.ttf" />
+    <Content Include="iconfont\iconfont.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

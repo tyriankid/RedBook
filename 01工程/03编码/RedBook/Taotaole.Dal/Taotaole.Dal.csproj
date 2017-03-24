@@ -97,6 +97,13 @@
     <Compile Include="RedBook\RB_BookManager.cs" />
     <Compile Include="RedBook\RB_Book_CategoryManager.cs" />
     <Compile Include="RedBook\RB_Book_ContentManager.cs" />
+    <Compile Include="RedBook\RB_User_BrowseManager.cs" />
+    <Compile Include="RedBook\RB_User_CommentManager.cs" />
+    <Compile Include="RedBook\RB_User_DynamicManager.cs" />
+    <Compile Include="RedBook\RB_User_FabulousManager.cs" />
+    <Compile Include="RedBook\RB_User_FavoriteManager.cs" />
+    <Compile Include="RedBook\RB_User_FocusManager.cs" />
+    <Compile Include="RedBook\RB_User_ShareManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Taotaole.Model\Taotaole.Model.csproj">

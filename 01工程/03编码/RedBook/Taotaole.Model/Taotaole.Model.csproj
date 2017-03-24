@@ -101,6 +101,13 @@
     <Compile Include="RedBook\RB_BookEntity.cs" />
     <Compile Include="RedBook\RB_Book_CategoryEntity.cs" />
     <Compile Include="RedBook\RB_Book_ContentEntity.cs" />
+    <Compile Include="RedBook\RB_User_BrowseEntity.cs" />
+    <Compile Include="RedBook\RB_User_CommentEntity.cs" />
+    <Compile Include="RedBook\RB_User_DynamicEntity.cs" />
+    <Compile Include="RedBook\RB_User_FabulousEntity.cs" />
+    <Compile Include="RedBook\RB_User_FavoriteEntity.cs" />
+    <Compile Include="RedBook\RB_User_FocusEntity.cs" />
+    <Compile Include="RedBook\RB_User_ShareEntity.cs" />
     <Compile Include="SiteSettings.cs" />
     <Compile Include="SortAction.cs" />
     <Compile Include="wxArticleList.cs" />

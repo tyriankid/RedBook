@@ -53,7 +53,7 @@ namespace RedBook
             //处理完及时清理异常 
             Server.ClearError();
             //跳转至出错页面 
-            Response.Redirect("403.html");
+            //Response.Redirect("403.html");
         }
     }
 }

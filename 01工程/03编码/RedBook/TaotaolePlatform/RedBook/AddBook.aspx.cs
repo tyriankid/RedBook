@@ -1,16 +1,10 @@
-﻿using ASPNET.WebControls;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data;
 using System.IO;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 using Taotaole.Bll;
 using Taotaole.Common;
 using Taotaole.Model;
-using YH.Utility;
 
 namespace RedBookPlatform.RedBook
 {
@@ -29,7 +23,6 @@ namespace RedBookPlatform.RedBook
                 init();
             }
         }
-
         protected void init()
         {
             DataTable dtcategory = RB_Book_CategoryBusiness.GetListData("1=1", "CategoryName,Id");
@@ -68,7 +61,7 @@ namespace RedBookPlatform.RedBook
             keywords.Value = bookEntity.Keyword;
             description.Value = bookEntity.Description;
             DataTable dtBookContent = RB_Book_ContentBusiness.GetListData("BusinessType = 'book' and BusinessId ='" + bookEntity.Id + "'", "[Content]");
-
+            hidProductIds.Value = bookEntity.ProductIds;
             contents.Value = dtBookContent.Rows[0]["Content"].ToString();
             thumbImg.ImageUrl = Globals.UPLOAD_PATH + bookEntity.BackImgUrl;
             ddlCategory.SelectedValue = bookEntity.CategoryId.ToString();
@@ -115,7 +108,7 @@ namespace RedBookPlatform.RedBook
                     Keyword = keywords.Value.Trim(),
                     Description = description.Value.Trim(),
                     BackImgUrl = thumbUrl,
-                    //Contents = contents.Value,
+                    ProductIds = hidProductIds.Value,
                     AddTime = DateTime.Now,
                     Status = 0,
                     FabulousCount = 0,
@@ -144,7 +137,7 @@ namespace RedBookPlatform.RedBook
                 bookEntity.AddTime = DateTime.Now;
                 bookEntity.SortBaseNum = Convert.ToInt32(Ordersn.Value.Trim());
                 bookEntity.CategoryId =new Guid(ddlCategory.SelectedValue);
-                //bookContent
+                bookEntity.ProductIds = hidProductIds.Value;
                 bookContentEntity.BusinessId = new Guid(id);
                 bookContentEntity.BusinessType = "book";
                 bookContentEntity.Id = Guid.NewGuid();

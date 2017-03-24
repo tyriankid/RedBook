@@ -106,14 +106,15 @@ namespace Taotaole.Dal
 			try
 			{
 				string execSql = (isAdd) ?
-				"Insert Into RB_Book_Category(Id,SortBaseNum,AddTime,CategoryName,Description)values(@Id,@SortBaseNum,@AddTime,@CategoryName,@Description)" :
-				"Update RB_Book_Category Set Id=@Id,SortBaseNum=@SortBaseNum,AddTime=@AddTime,CategoryName=@CategoryName,Description=@Description Where Id=@Id";
+				"Insert Into RB_Book_Category(Id,SortBaseNum,AddTime,CategoryName,CategoryIcon,Description)values(@Id,@SortBaseNum,@AddTime,@CategoryName,@CategoryIcon,@Description)" :
+				"Update RB_Book_Category Set Id=@Id,SortBaseNum=@SortBaseNum,AddTime=@AddTime,CategoryName=@CategoryName,CategoryIcon=@CategoryIcon,Description=@Description Where Id=@Id";
 				SqlParameter[] para = new SqlParameter[]
 				{
 					(entity.Id==null)?new SqlParameter("@Id",DBNull.Value):new SqlParameter("@Id",entity.Id),
 					new SqlParameter("@SortBaseNum",entity.SortBaseNum),
 					(entity.AddTime==null || entity.AddTime==DateTime.MinValue)?new SqlParameter("@AddTime",DBNull.Value):new SqlParameter("@AddTime",entity.AddTime),
 					(entity.CategoryName==null)?new SqlParameter("@CategoryName",DBNull.Value):new SqlParameter("@CategoryName",entity.CategoryName),
+					(entity.CategoryIcon==null)?new SqlParameter("@CategoryIcon",DBNull.Value):new SqlParameter("@CategoryIcon",entity.CategoryIcon),
 					(entity.Description==null)?new SqlParameter("@Description",DBNull.Value):new SqlParameter("@Description",entity.Description),
 				};
 				DataAccessFactory.GetDataProvider(DbServers.GetCurrentDB(currDbName)).Execute(execSql, para);

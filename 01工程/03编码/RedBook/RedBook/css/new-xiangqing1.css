@@ -1,0 +1,65 @@
+*{margin: 0px; padding: 0px; text-decoration: none; list-style: none;}
+img{width: 100%;}
+.tt{width: 100%; height: auto; background: #F4F8FB;}
+/*顶部*/
+.top{width: 100%; height: 1.5rem; background: #000; position: relative;} 
+.top a{display: inline-block; width: 20%; height: 1.5rem; font-size: 0.6rem; text-align: center; line-height: 1.5rem; color: #fff; position: absolute; left: 2%;}
+.top span{display: inline-block; margin-right:2% ; font-size: 0.7rem;}
+.top p{width:60%;line-height:1.5rem;color: #FFFFFF; font-size: 0.6rem; position: absolute;left: 50%; margin-left:-30% ; text-align: center;}
+/*商品详情*/
+.details{width: 100%; height: auto; overflow:hidden; background: #FFFFFF; margin-bottom:0.2rem ;}
+.details_img{width: 100%; height: auto; overflow: hidden;}
+.details_bottom{width: 92%; height: 1.6rem; margin: 0 auto;}
+.details_bottom p:first-child{height: 0.8rem; line-height: 0.8rem; font-size: 0.5rem;}
+.details_bottom p>span{float: right; font-size: 0.4rem; color: #737373;}
+.details_bottom p:last-child{height: 0.8rem; line-height: 0.8rem; font-size: 0.4rem;color: #737373;}
+/*<!--组团-->*/
+.zutuan{width: 100%; height: auto; overflow: hidden; background: #FFFFFF;}
+.zutuan_p{width: 92%; height: 1rem; line-height: 1rem; font-size: 0.4rem; margin: 0 auto;}
+.zutuan_p>span{color: red; margin-right: 2%;}
+.zutuan_d{width: 92%; height: 1.8rem; margin: 0 auto 0.2rem; position: relative; overflow: hidden; background: #F4F8FB;}
+.zutuan_d img{width: 18%; height: 1.8rem; border-radius: 50%; position: absolute; left: 0; top: 0.1rem;}
+.zutuan_sp{display:block; width: 42%; height: 0.8rem; line-height: 0.8rem; font-size: 0.4rem; color: red; margin-left: 20%; margin-top: 0.1rem;}
+.zutuan_sp b{margin:0 3%; font-size: 0.5rem;}
+.zutuan_de{display:block; width: 42%; height: 0.8rem; line-height: 0.8rem; font-size: 0.3rem;margin-left: 20%; color: #737373;}
+.zutuan_de span{margin:0 3%;}
+.zutuan_a{display:block; width: 36%; height: 1.8rem; font-size: 0.5rem; position: absolute; right: 0; top: 0; background: red; border-top-right-radius:50% ; border-bottom-right-radius:50% ;color: #FFFFFF;}
+.zutuan_a del{display:block;width: 100%; height: 0.7rem; line-height: 0.7rem; text-align: center; margin-top: 0.2rem;}
+.zutuan_a span{display:block;width: 100%; height: 0.7rem;line-height: 0.7rem; text-align: center; font-size: 0.4rem;}
+/*评论*/
+.comments{width: 100%;height:auto; overflow: hidden; border-top:8px solid #f4f8fb ;border-bottom:8px solid #f4f8fb ; background: #FFFFFF;}
+.comments_p{width: 92%; height: 1rem; line-height: 1rem; font-size: 0.4rem; margin: 0 auto;}
+.comments_p>span{color: red; margin-right: 2%;}
+.comments ul{width: 92%; height: 4.3rem;overflow: hidden;margin: 0 auto;}
+.comments li{width: 100%; height: 2rem; border-bottom: 1px solid #000000; margin: 0.1rem 0;}
+.comments li a:first-of-type{display: inline-block; width: 11%; height: 1rem; border-radius: 100%; background: red; float: left; margin-top: 0.1rem;}
+.comments_p1{width: 82%;height: 0.7rem; line-height: 0.7rem; font-size: 0.5rem; color:#B1B1B1 ; margin-left:15% ; }
+.comments_p1 span{display: inline-block; float: right;}
+.comments_p2{width: 82%;height: 0.6rem;line-height: 0.6rem; font-size: 0.5rem; margin-left:15% ;}
+.a1{display: inline-block;height: 0.6rem;line-height: 0.6rem; font-size: 0.4rem; float: right; color: #646464; }
+.a2{display: inline-block;height: 0.6rem;line-height: 0.6rem; font-size: 0.4rem; float: right; color: #646464; margin-right: 5%;}
+.active{color: red;}
+.comments_bot{width: 100%; height: 1.5rem; line-height: 1.5rem; text-align: center; font-size: 0.5rem; color: #cacaca;}
+/*类似商品*/
+.guild{width: 100%; height: auto; overflow: hidden; border-bottom: 8px solid #f4f8fb; background: #FFFFFF;	margin-bottom: 1.5rem;}
+.guild_p1{width: 92%; height: 1.4rem; line-height: 1.4rem; margin: 0 auto; font-size: 0.5rem;}
+.guild_p1 a{display: inline-block; height: 1.4rem; line-height: 1.4rem;  float: right; font-size: 0.4rem; color: #CDBFE3}
+.guild ul{width: 100%; height: auto; overflow: hidden;}
+.guild ul li{width: 23.5%; height:auto; margin-left: 1%; float: left;}
+.guild li p:first-of-type{height: 0.8rem; line-height: 0.8rem; font-size: 0.5rem; margin-top: 0.1rem;}
+.guild li p:last-child{height: 0.8rem; line-height: 0.8rem; font-size: 0.6rem; color: red; margin-bottom: 0.6rem;}
+.guild li p:last-child span{color: #737373;font-size: 0.4rem;}
+.guild_sp{text-decoration:line-through}
+/*底部*/
+.bottom{width: 100%; height: 1.5rem; background:#FFFFFF; position:fixed; left: 0; bottom:0; z-index:888; overflow:hidden}
+.bottom ul{width: 40%; height: 1.5rem; float: left;}
+.bottom li{width: 48%; height: 1.3rem; float: left; text-align: center; /*line-height: 1.3rem;*/ font-size: 0.5rem; margin-top: 0.2rem;}
+.bottom li:first-child{border-right:1px solid #000000 ;}
+.bottom li:last-child{border-left:1px solid #000000 ;}
+.bottom div{width: 60%; height: 1.5rem; float: right; overflow: hidden; background: red;}
+.bottom div a{display: inline-block; width: 50%; height: 1.5rem; text-align: center;  font-size: 0.4rem; color: #FFFFFF; float: left;}
+.bottom div a span{display: block; width: 100%; height: 0.8rem; text-align: center; line-height: 0.8rem;font-size: 0.5rem;}
+.bottom div a:first-child{background: #FA6A6A;}
+.bottom div a:last-child{background: #F50B0C; line-height: 1.5rem;}
+.bottom_active{color: #E7201F;}
+.bottom i{display: block; width: 100%; height: 0.6rem; line-height: 0.6rem;}

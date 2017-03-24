@@ -15,6 +15,7 @@ namespace Taotaole.Model {
 		public static string FieldDescription = "Description";
 		public static string FieldAddTime = "AddTime";
 		public static string FieldSortBaseNum = "SortBaseNum";
+		public static string FieldCategoryIcon = "CategoryIcon";
 		#endregion
 
 		#region 属性
@@ -48,6 +49,12 @@ namespace Taotaole.Model {
 			get{ return _sortBaseNum;}
 			set{ _sortBaseNum=value;}
 		}
+		private string  _categoryIcon;
+		public string  CategoryIcon
+		{
+			get{ return _categoryIcon;}
+			set{ _categoryIcon=value;}
+		}
 		#endregion
 
 		#region 构造函数
@@ -74,6 +81,10 @@ namespace Taotaole.Model {
 			if (dr[FieldSortBaseNum] != DBNull.Value)
 			{
 			_sortBaseNum = (int )dr[FieldSortBaseNum];
+			}
+			if (dr[FieldCategoryIcon] != DBNull.Value)
+			{
+			_categoryIcon = (string )dr[FieldCategoryIcon];
 			}
 		}
 		#endregion

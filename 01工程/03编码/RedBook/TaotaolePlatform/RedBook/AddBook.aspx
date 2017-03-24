@@ -63,7 +63,7 @@
                         </tr>
                         <tr>
                             <td>关联商品</td>
-                            <td><input type="button" id="btnProductList" value="选择商品" onclick="bindProducts()"/><input type="text"  id="hidProductIds" /></td>
+                            <td><input type="button" id="btnProductList" value="选择商品" onclick="bindProducts()"/><input type="text" runat="server" style="display:none" id="hidProductIds" /></td>
                         </tr>
                      
                         <tr>

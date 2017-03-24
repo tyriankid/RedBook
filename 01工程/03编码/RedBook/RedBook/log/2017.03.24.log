@@ -1,0 +1,76 @@
+﻿
+2017.03.24 15:14:19
+.客户信息：
+	Ip:::1
+	浏览器:Chrome
+	浏览器版本:55
+	操作系统:WinNT
+.错误信息：
+	页面：http://localhost:8095/default.aspx
+	错误信息：拒绝访问。
+	错误源：
+	异常方法：
+	堆栈信息：
+--------------------------------------------------------------------------------------------------
+2017.03.24 15:16:56
+.客户信息：
+	Ip:::1
+	浏览器:Chrome
+	浏览器版本:55
+	操作系统:WinNT
+.错误信息：
+	页面：http://localhost:8095/default.aspx
+	错误信息：找不到网络路径。
+	错误源：
+	异常方法：
+	堆栈信息：
+--------------------------------------------------------------------------------------------------
+2017.03.24 15:16:56
+.客户信息：
+	Ip:::1
+	浏览器:Chrome
+	浏览器版本:55
+	操作系统:WinNT
+.错误信息：
+	页面：http://localhost:8095/default.aspx
+	错误信息：找不到网络路径。
+	错误源：
+	异常方法：
+	堆栈信息：
+--------------------------------------------------------------------------------------------------
+2017.03.24 16:52:25
+.客户信息：
+	Ip:::1
+	浏览器:Chrome
+	浏览器版本:55
+	操作系统:WinNT
+.错误信息：
+	页面：http://localhost:8095/internalapi/RedbookUser.ashx?action=goFabulous&id=9667A4C3-CC00-4C83-952D-A33B65F47722&uid=3
+	错误信息：远程服务器返回错误: (500) 内部服务器错误。
+	错误源：System
+	异常方法：System.Net.WebResponse GetResponse()
+	堆栈信息：   在 System.Net.HttpWebRequest.GetResponse()
+   在 Taotaole.Common.WebUtils.DoPost(String url, String value) 位置 C:\project\RedBook\01工程\03编码\RedBook\Taotaole.Common\WebUtils.cs:行号 80
+   在 RedBook.internalapi.RedbookUser.goFabulous(HttpContext context) 位置 C:\project\RedBook\01工程\03编码\RedBook\RedBook\internalapi\RedbookUser.ashx.cs:行号 45
+   在 RedBook.internalapi.RedbookUser.ProcessRequest(HttpContext context) 位置 C:\project\RedBook\01工程\03编码\RedBook\RedBook\internalapi\RedbookUser.ashx.cs:行号 23
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--------------------------------------------------------------------------------------------------
+2017.03.24 17:01:57
+.客户信息：
+	Ip:::1
+	浏览器:Chrome
+	浏览器版本:55
+	操作系统:WinNT
+.错误信息：
+	页面：http://localhost:8095/internalapi/RedbookUser.ashx?action=goFabulous&id=9667A4C3-CC00-4C83-952D-A33B65F47722&uid=3
+	错误信息：请求被中止: 操作超时。
+	错误源：System
+	异常方法：System.Net.WebResponse GetResponse()
+	堆栈信息：   在 System.Net.HttpWebRequest.GetResponse()
+   在 Taotaole.Common.WebUtils.DoPost(String url, String value) 位置 C:\project\RedBook\01工程\03编码\RedBook\Taotaole.Common\WebUtils.cs:行号 80
+   在 RedBook.internalapi.RedbookUser.goFabulous(HttpContext context) 位置 C:\project\RedBook\01工程\03编码\RedBook\RedBook\internalapi\RedbookUser.ashx.cs:行号 45
+   在 RedBook.internalapi.RedbookUser.ProcessRequest(HttpContext context) 位置 C:\project\RedBook\01工程\03编码\RedBook\RedBook\internalapi\RedbookUser.ashx.cs:行号 23
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--------------------------------------------------------------------------------------------------

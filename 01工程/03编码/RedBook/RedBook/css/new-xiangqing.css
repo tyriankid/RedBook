@@ -1,0 +1,76 @@
+*{margin: 0px; padding: 0px; text-decoration: none; list-style: none;}
+img{width: 100%;}
+.tt{width: 100%; height: auto;}
+/*顶部*/
+.top{width: 100%; height: 1.5rem; background: #000; position: relative;} 
+.top a{display: inline-block; width: 20%; height: 1.5rem; font-size: 0.6rem; text-align: center; line-height: 1.5rem; color: #fff; position: absolute; left: 2%;}
+.top span{display: inline-block; margin-right:2% ; font-size: 0.7rem;}
+.top p{width:60%;line-height:1.5rem;color: #FFFFFF; font-size: 0.6rem; position: absolute;left: 50%; margin-left:-30% ; text-align: center;}
+/*商品详情*/
+.banner{width: 100%;height:auto;border-bottom: 1px solid #000000; overflow: hidden;}
+.banner_img{width: 100%; height: auto; overflow: hidden;}
+.banner_bottom{width: 92%;height: 1.5rem; margin: 0px auto;}
+.banner_bottom a:first-child{display: inline-block; width: 13%; height: 1rem; border-radius: 100%; margin-top: 0.1rem; background: red; padding:0.1rem 0 ; float: left;}
+.banner_bottom p{width: 50%; height: 0.8rem; font-size: 0.4rem; line-height: 0.8rem; float: left; margin:0 10% 0 2%; color: #B1B1B1;}
+.banner_bottom a:last-child{display: inline-block; width: 20%; height: 0.8rem; border: 1px solid #fcacac; border-radius: 5px; font-size: 0.5rem; text-align: center; line-height: 0.8rem; color: #FCACAC; margin-top: 0.3rem;}
+/*内容区*/
+.summary{width: 92%;height:auto; margin: 0 auto; overflow: hidden;}
+.summary_p1{font-size: 0.6rem; line-height: 0.8rem; margin-top: 0.3rem;}
+.summary_p2{text-align: center; font-size: 0.5rem;margin-top: 0.2rem;}
+.sanjiao{width:0%;height:0;margin: 0 auto; border-top:10px solid transparent;border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:10px solid #000; margin-bottom: 0.2rem;}
+.summary_p3{font-size: 0.5rem; line-height: 0.7rem;}
+.summary_bottom{width: 100%; height: auto; margin:0.2rem 0;}
+/*评论*/
+.comments{width: 100%;height:auto; overflow: hidden; border-top:8px solid #f4f8fb ;border-bottom:8px solid #f4f8fb ;}
+.comments ul{width: 92%; height: 4.3rem;overflow: hidden;margin: 0 auto;}
+.comments li{width: 100%; height: 2rem; border-bottom: 1px solid #000000; margin: 0.1rem 0;}
+.comments li a:first-of-type{display: inline-block; width: 11%; height: 1rem; border-radius: 100%; background: red; float: left; margin-top: 0.1rem;}
+.comments_p1{width: 82%;height: 0.7rem; line-height: 0.7rem; font-size: 0.5rem; color:#B1B1B1 ; margin-left:15% ; }
+.comments_p1 span{display: inline-block; float: right;}
+.comments_p2{width: 82%;height: 0.6rem;line-height: 0.6rem; font-size: 0.5rem; margin-left:15% ;}
+.a1{display: inline-block;height: 0.6rem;line-height: 0.6rem; font-size: 0.4rem; float: right; color: #646464; }
+.a2{display: inline-block;height: 0.6rem;line-height: 0.6rem; font-size: 0.4rem; float: right; color: #646464; margin-right: 5%;}
+.active{color: red;}
+.comments_bot{width: 100%; height: 1.5rem; line-height: 1.5rem; text-align: center; font-size: 0.5rem; color: #cacaca;}
+/*选购指南*/
+.guild{width: 100%; height: auto; overflow: hidden; border-bottom: 8px solid #f4f8fb; position: relative;}
+.guild_p1{width: 92%; height: 1.4rem; line-height: 1.4rem; margin: 0 auto; font-size: 0.5rem;}
+.guild_p1 a{display: inline-block; height: 1.4rem; line-height: 1.4rem;  float: right; font-size: 0.4rem; color: #CDBFE3}
+/*.guild_p1 a span{color: #CDBFE3}*/
+.guild ul{width: 100%; height: 5rem; overflow: hidden; position: relative;}
+.guild ul li{width: 23.5%; height:auto; margin-left: 1%; float: left;position: relative;}
+.guild img{width: 100%; height: 2.5rem;}
+.guild li p:first-of-type{height: 0.8rem; line-height: 0.8rem; font-size: 0.5rem; margin-top: 0.1rem;}
+.guild li p:last-child{height: 0.8rem; line-height: 0.8rem; font-size: 0.5rem; color: red; margin-bottom: 0.6rem;}
+.guild li p:last-child span{color: #737373;font-size: 0.4rem;}
+.guild_sp{text-decoration:line-through}
+/*#mp1{width:10%; height: 1rem;line-height: 1rem;text-align: center; background: rgba(255,255,255,.6); position: absolute; left: 0; top: 40%; margin-top: 0.5rem;}
+#mp2{width:10%; height: 1rem;line-height: 1rem; text-align: center; background: rgba(255,255,255,.6); position: absolute; right: 0; top: 40%; margin-top: 0.5rem;}*/
+
+/*推荐*/
+.list{width: 100%; height: auto;overflow: hidden; margin-bottom: 1.5rem;}
+.list_p1{width: 92%; height: 1.4rem; line-height: 1.4rem; margin: 0 auto; font-size: 0.5rem;}
+.list_p1 a{display: inline-block; height: 1.4rem; line-height: 1.4rem; float: right; font-size: 0.4rem; color: #CDBFE3}
+.list_p1 a span{color: #CDBFE3}
+.list_u1{width: 50%; height: auto; overflow: hidden;}
+.list_u2{width: 50%; height: auto; overflow: hidden;}
+.list_u1>li{width: 94%; margin: 0.2rem 2%;border: 1px solid #646464; border-radius: 3px;}
+.list_u2>li{width: 94%; margin: 0.2rem 2%;border: 1px solid #646464; border-radius: 3px;}
+.list_u1 li>a,.list_u2 li>a{display:inline-block;width:100%; }
+.list_u1{float: left;}
+.list_u2{float: right;}
+.list h4{width:100%; height:0.8rem; font-size:.4rem; line-height:0.8rem;}
+.list ul p{width:100%; height:0.6rem; line-height:0.6rem; font-size:.3rem; }
+.list ul p del{display: inline-block; float: right;}
+.list span{color:#ff2e2e; font-size:.4rem; }
+.list_p2{overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color: #646464;}
+.list_dd{width: 94%; margin: 0 auto;}
+.list_dd span{display:inline-block;width: 10%; height: 0.4rem; background: red; border-radius: 50%;margin-top: 0.1rem;float: left;}
+/*底部*/
+.dibu{width:100%; height:1.5rem; background:#000000; position:fixed; bottom:0rem; z-index:888; overflow:hidden}
+.dibu ul{width:100%; height:1.5rem;}
+.dibu li{width:33%; height:1.5rem; float:left; }
+.dibu li>a{display:inline-block;width:100%; height:1.5rem;text-align:center; line-height:1.5rem;color: #FFFFFF;}
+.dibu i{display:block;width:100%; height:.7rem; text-align:center; line-height:1rem; font-size:.6rem}
+.dibu p{width:100%; height:.6rem;font-size:.4rem; text-align:center; line-height:.6rem; margin-top:.1rem;}
+.cr{color:#ec5300}

@@ -1,5 +1,4 @@
 C:\project\RedBook\01工程\03编码\RedBook\YH.DataAccess\bin\Debug\YH.DataAccess.dll
 C:\project\RedBook\01工程\03编码\RedBook\YH.DataAccess\bin\Debug\YH.DataAccess.pdb
-C:\project\RedBook\01工程\03编码\RedBook\YH.DataAccess\obj\Debug\YH.DataAccess.csprojResolveAssemblyReference.cache
 C:\project\RedBook\01工程\03编码\RedBook\YH.DataAccess\obj\Debug\YH.DataAccess.dll
 C:\project\RedBook\01工程\03编码\RedBook\YH.DataAccess\obj\Debug\YH.DataAccess.pdb
